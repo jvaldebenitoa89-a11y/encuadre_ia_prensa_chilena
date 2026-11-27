@@ -1,0 +1,194 @@
+{
+ "lote": "P019",
+ "desacuerdos": [
+  {
+   "alias": "N91367",
+   "codigo": "3.3.REG",
+   "tipo": "v",
+   "causa": "ambiguedad_libro",
+   "a": "1 registro: A/FM (debate); no registra el titular ni la defensa del ministro",
+   "b": "2 registros: + P (titular) y A/FM (debate)",
+   "diagnostico": "El libro no dice si un mismo código puede repetirse en una nota con fragmentos de distinto v o voz (solo 1.3 es 'uno por nota'; la sección 6 pide registrar titular y cuerpo con su propio v). B repite REG y A lo agrega en un único A/FM. El '+' del titular ('avanza... con foco en DDHH') es además discutible: no hay adjetivo valorativo claro.",
+   "propuesta_regla": "Unidad de registro: un código puede registrarse más de una vez en la misma nota solo si los fragmentos difieren en v o en voz (máximo 2 instancias; 1.3 sigue siendo uno por nota). El choque de posturas es una instancia (v=A, voz=FM); una voz que defiende o rechaza por su cuenta (p. ej. el ministro) es otra. No repetir un código por simple reiteración de la misma postura."
+  },
+  {
+   "alias": "N16176",
+   "codigo": "2.1.HER",
+   "tipo": "v",
+   "causa": "ambiguedad_libro",
+   "a": "+ con el fragmento 'podrá escribir códigos... ayudar a crear sitios webs'; la angustia queda en 2.3",
+   "b": "A con el fragmento 'herramientas que han sido alabadas por muchos, pero que también generan cierta angustia y temor'",
+   "diagnostico": "Ambos codifican HER pero eligen fragmentos distintos y por tanto v distinto: el libro no dice si v se decide por fragmento o se agrega por nota. La lectura de B cumple el paso 3 de 3.1 (ambas valencias en un mismo fragmento, sin condición); la de A es defendible pero ignora la valencia negativa.",
+   "propuesta_regla": "Aplicar la regla de unidad de registro (ver 3.3.REG de N91367) y agregar: 'v=A solo cuando ambas valencias sobre el mismo objeto aparecen en el fragmento citado; si están en fragmentos separados, un registro por fragmento con su propio v (máximo 2).'"
+  },
+  {
+   "alias": "N91367",
+   "codigo": "3.4.EMP",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "3.4.EST (Cámara que despacha) y 3.4.EMP (operadores obligados a identificar contenido sintético)",
+   "b": "Solo 3.4.EST (Estado que promueve el uso y desarrollo)",
+   "diagnostico": "3.4 se define como 'quien debe ejecutar la acción' pero no aclara si en una norma ese actor es quien legisla o fiscaliza o el sujeto obligado. La obligación de transparencia además no tiene un 3.3 propio (queda subsumida en REG), así que el 3.4 queda sin anclaje.",
+   "propuesta_regla": "3.4 se asocia a un 3.3 concreto y cita la acción. En 3.3.REG, 3.3.CON y 3.3.PRO, 3.4 es quien dicta o fiscaliza la norma (normalmente EST) y, además, el sujeto obligado cuando el texto lo nombra con verbo de deber ('deben', 'obligación'); ambos pueden coexistir. En 3.3.ADO y 3.3.ADA, 3.4 es quien debe adoptar o capacitarse."
+  },
+  {
+   "alias": "N39428",
+   "codigo": "3.4.IND",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "Solo 3.4.EMP",
+   "b": "3.4.EMP + 3.4.IND ('es una obligación conocer acerca de ella para quienes estén interesados en trabajar de la mano de la tecnología')",
+   "diagnostico": "El libro habla de quien debe 'capacitarse' pero no distingue capacitador (empresa que forma) de capacitado (profesional que aprende). 'Formación de los profesionales' admite ambas lecturas y la exhortación a conocer la IA se dirige a personas, no a empresas.",
+   "propuesta_regla": "En 3.3.ADA, 3.4 es quien debe capacitarse (el capacitado). Si el texto atribuye a otro la obligación de ofrecer la formación (empresa, Estado), se codifica también ese actor. Exhortaciones del tipo 'es una obligación conocer...' dirigidas a personas o usuarios son 3.4.IND."
+  },
+  {
+   "alias": "N10332",
+   "codigo": "1.1.EST",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "1.1.EST D P escala Chile, con el eje del plan 'uso y desarrollo de Inteligencia Artificial en Chile'",
+   "b": "No codifica 1.1.EST",
+   "diagnostico": "El mismo plan de gobierno ya sustenta 3.3.ADO y 3.4.EST; A lo cuenta también como agente impulsor en D1. 1.1 trata de la causa de la génesis y expansión y su exclusión solo menciona la regulación, no las políticas de fomento anunciadas como respuesta.",
+   "propuesta_regla": "1.1.EST exige que el texto presente al Estado como quien hizo surgir o impulsa el desarrollo de la IA (financia, lidera, compite). Un plan o política que se anuncia como respuesta a la IA es 3.3.ADO + 3.4.EST, no 1.1.EST, salvo causalidad explícita sobre el origen o avance de la tecnología."
+  },
+  {
+   "alias": "N10332",
+   "codigo": "2.1.REV",
+   "tipo": "v",
+   "causa": "ambiguedad_libro",
+   "a": "+ explícita, cita de dos cláusulas ('buena noticia' + 'le va a cambiar la vida')",
+   "b": "D na, cita solo 'es un tema que le va a cambiar la vida a todos y cada uno de nuestros compatriotas'",
+   "diagnostico": "Falta una regla sobre si la valencia de una cláusula contigua del mismo hablante se transfiere al objeto del código. Ambas lecturas siguen la sección 5 (tramo mínimo que muestre código y valoración). B es además inconsistente: para 3.1.EST usó la cita larga y '+', para REV la corta y D.",
+   "propuesta_regla": "La valoración puede tomarse de una marca en la misma intervención de la misma voz y sobre el mismo objeto (aquí 'buena noticia' y 'va a cambiar la vida'); la cita incluye entonces ambos tramos (máximo 50 palabras) y marca=explicita. Si la marca está en otra intervención u otro objeto, v=D."
+  },
+  {
+   "alias": "N10332",
+   "codigo": "3.2.DEC",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "3.2.DEC con la cita del proceso de participación civil, academia y sector privado",
+   "b": "3.2.NEX (por defecto)",
+   "diagnostico": "El texto solo narra un procedimiento de consulta dentro de una política concreta; no afirma que el rumbo de la IA sea una decisión abierta. 'Decisión colectiva' no tiene umbral definido, por lo que una descripción procedimental puede leerse como DEC (A) o como nada (B).",
+   "propuesta_regla": "3.2.DEC exige que el texto presente el rumbo de la IA (si, cómo o con qué reglas se desarrolla o usa) como algo abierto a decisión colectiva ('con qué reglas la tendremos', 'nos toca decidir'). Narrar un proceso de consulta o participación dentro de una política concreta no basta; si es una instancia multiactor para ordenar la IA va en 3.3.GOB con v=D."
+  },
+  {
+   "alias": "N91367",
+   "codigo": "2.3.OTR",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "2.3.OTR v=- explícita G1 RDI (etiqueta 'derechos fundamentales') sobre la taxonomía de riesgos de la ley",
+   "b": "No codifica 2.3: 'categorías de riesgo de la ley, descripción normativa'",
+   "diagnostico": "2.3 exige daño atribuido a la IA, y 'pueden afectar derechos si fallan o se usan indebidamente' lo enuncia en G1. Pero el fragmento no tiene marcas valorativas, así que v='-' contradice 3.1 (no inferir valoración desde el tema) y el libro no dice si un riesgo solo consignado es 2.3 con v=D.",
+   "propuesta_regla": "2.3 admite v='D' cuando el daño se consigna de modo informativo (p. ej. taxonomía legal de riesgos) y v='-' solo si el fragmento advierte, califica o enfatiza el daño. Una clasificación de usos por nivel de riesgo, sin nombrar un daño concreto atribuido a la IA, no se codifica como 2.3; si nombra daño y causa ('manipulación subliminal que induzca conductas dañinas'), se codifica con g y resp."
+  },
+  {
+   "alias": "N91367",
+   "codigo": "2.1.HER",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "2.1.HER + voz FG sobre 'debe actuar al servicio de las personas' (contenido del proyecto)",
+   "b": "No codifica 2.1.HER",
+   "diagnostico": "La frase es un mandato normativo del proyecto de ley (objetivo de la norma), no una caracterización de la IA. Además A asigna FG a esta paráfrasis del proyecto pero P a otras paráfrasis del mismo proyecto (ADO, PRO): el libro no define la voz de textos normativos relatados por el periodista.",
+   "propuesta_regla": "Voz de un proyecto de ley, norma o plan descritos por el periodista sin atribuirlos a una persona: P. FG solo si una autoridad es citada o nombrada como quien enuncia. No codificar 2.1.HER sobre un mandato normativo ('debe actuar al servicio de...'), que es contenido de 3.3.REG, salvo que el fragmento caracterice a la IA como herramienta fuera de la norma."
+  },
+  {
+   "alias": "N16176",
+   "codigo": "1.1.CORP",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "No codifica 1.1.CORP",
+   "b": "1.1.CORP D P escala global, calidad 1, cita 'este software de la empresa OpenAI podía responder a comandos escritos'",
+   "diagnostico": "El libro se contradice: el principio 1 pide codificar lo que el texto construye, no nombres, pero la exclusión de 1.2.ECO dice que 'nombrar a la empresa sin explicar su interés es solo 1.1.CORP', lo que sugiere que nombrarla basta. Aquí OpenAI aparece solo como dueña del producto.",
+   "propuesta_regla": "1.1.CORP exige que el texto presente a una empresa como quien desarrolla, lanza o impulsa la IA (verbo de agencia: 'OpenAI desarrolló', 'lanzó', 'anunció'); la mera pertenencia ('software de la empresa X') o el rol de proveedora no basta. En 1.2.ECO reemplazar la exclusión por: 'nombrar a la empresa sin explicar su interés no es 1.2.ECO'."
+  },
+  {
+   "alias": "N16176",
+   "codigo": "3.3.CON",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "No codifica 3.3 ni 3.4 (duda sobre los filtros más estrictos); 3.3.NIN",
+   "b": "3.3.CON + P y 3.4.EMP sobre 'ahora se implementaron filtros más estrictos...'",
+   "diagnostico": "No está claro si una función técnica que la empresa anuncia para su propio producto es una medida (3.3.GOB incluye 'autorregulación', 3.3.CON 'límites') o solo un atributo del producto. La misma frontera aparece en N58252, donde A dudó si 'promoviendo el uso' era 3.3.ADO y B lo descartó como 'lanzamiento de producto'.",
+   "propuesta_regla": "Una función o cambio técnico que la empresa anuncia para su propio producto (filtros, nuevas funciones, incorporar IA a su plataforma) no es 3.3. Es 3.3.GOB (autorregulación) solo si el texto lo presenta expresamente como límite o compromiso frente a un riesgo de la IA ('se comprometió a limitar...'), con su 3.4.EMP y v sobre la medida. De lo contrario va como 2.1, 2.2 o 2.3 según el caso."
+  },
+  {
+   "alias": "N34694",
+   "codigo": "2.1.AGE",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "No codifica AGE; solo códigos por defecto",
+   "b": "2.1.AGE D P calidad 1, cita 'La IA de OpenAI afirma que el encuentro tendrá \"un marcador estrecho\",'",
+   "diagnostico": "AGE se define con 'piensa, decide, quiere' y el libro solo dice que transcribir a un chatbot lleva voz P; no dice si verbos de habla neutros ('afirma', 'responde', 'predice') cuentan. B es además incoherente: en N75361 declara que no codifica AGE sobre respuestas transcritas de ChatGPT. Ambos pasaron por alto 'se le ocurrió' y 'dijo que quería hacer actos destructivos' en N16176.",
+   "propuesta_regla": "2.1.AGE se codifica cuando el texto atribuye a la IA intención, juicio propio, voluntad o emoción ('piensa', 'decide', 'quiere', 'se le ocurrió'). Verbos de habla neutros aplicados a un chatbot en una consulta transcrita ('responde', 'afirma', 'señala') no bastan. Si el texto trata la respuesta del chatbot como pronóstico o autoridad propia, usar el emergente 'IA como oráculo consultable'."
+  },
+  {
+   "alias": "N39428",
+   "codigo": "2.1.MER",
+   "tipo": "presencia",
+   "causa": "error_codificador",
+   "a": "2.1.MER + P, cita sobre crecimiento de la inversión en IA y 'apuestas monetarias'",
+   "b": "No codifica 2.1.MER",
+   "diagnostico": "La regla es clara: 2.1.MER incluye 'inversión' y el texto presenta la inversión en IA como cifra y 'apuestas monetarias' clave. B la omitió por cautela (principio 3) pero el caso está cubierto de forma expresa."
+  },
+  {
+   "alias": "N39428",
+   "codigo": "2.2.LAB",
+   "tipo": "presencia",
+   "causa": "ambiguedad_libro",
+   "a": "Solo 2.2.ECO (competitividad, márgenes y productividad de empleados)",
+   "b": "2.2.ECO + 2.2.LAB ('optimizar los trabajos y facilitar la vida de los colaboradores')",
+   "diagnostico": "2.2.ECO incluye 'productividad' y 2.2.LAB 'aumento de capacidades, nuevos empleos', sin frontera entre ambos. El texto mezcla 'productividad de los empleados' (ECO) con 'facilitar la vida de los colaboradores' (LAB), por lo que ambos códigos son defendibles.",
+   "propuesta_regla": "2.2.LAB: el beneficio recae en quienes trabajan (tareas facilitadas, capacidades, empleos, condiciones). 2.2.ECO: el beneficio recae en la empresa o la economía (productividad, márgenes, competitividad, crecimiento). 'Productividad de los empleados' medida como ganancia empresarial es ECO; si el texto además atribuye un beneficio al trabajador, se registra LAB con su propia cita."
+  }
+ ],
+ "emergentes": [
+  {
+   "alias": "N16176",
+   "etiqueta": "Angustia ante capacidad",
+   "indicador": "2",
+   "definicion": "La IA se construye como fuente de angustia y temor por capacidades aparentemente ilimitadas.",
+   "origen": "B",
+   "cita": "aumentan la angustia en ciertas personas, pues pareciera no tener límites en lo que puede llegar a hacer."
+  },
+  {
+   "alias": "N34694",
+   "etiqueta": "IA como oráculo consultable",
+   "indicador": "2",
+   "definicion": "El medio interroga al chatbot como fuente de pronóstico o descripción y reporta su respuesta como contenido noticioso, lo que le confiere autoridad epistémica; en N75361 los expertos la desmienten. Distinto de 2.1.AGE (antropomorfización).",
+   "origen": "adjudicador",
+   "cita": "le consultamos a la inteligencia artificial (IA), concretamente a ChatGPT, por cómo le podría ir al combinado nacional"
+  },
+  {
+   "alias": "N39428",
+   "etiqueta": "Carrera competitiva",
+   "indicador": "3",
+   "definicion": "La adopción de IA se presenta como carrera entre empresas o países: quien no adopta queda rezagado y quien adopta lidera. También en N10332 ('estar a la vanguardia en la región').",
+   "origen": "adjudicador",
+   "cita": "Las compañías que no la incluyan, quedarán rezagadas en la carrera por la transformación digital"
+  },
+  {
+   "alias": "N39428",
+   "etiqueta": "IA ubicua e invisible",
+   "indicador": "2",
+   "definicion": "La IA se construye como ya presente en lo cotidiano sin que se advierta, lo que naturaliza su existencia como infraestructura corriente.",
+   "origen": "adjudicador",
+   "cita": "Usamos la Inteligencia Artificial (IA) a diario, aún cuando no nos damos cuenta."
+  },
+  {
+   "alias": "N91367",
+   "etiqueta": "Regulación como habilitante",
+   "indicador": "3",
+   "definicion": "La regulación se presenta como condición que habilita inversión e innovación, no como freno; es el contraencuadre explícito al 'exceso de regulación' del mismo debate.",
+   "origen": "adjudicador",
+   "cita": "Salvaguarda derechos fundamentales y es una palanca para nuestra economía y desarrollo productivo"
+  }
+ ],
+ "vacios_del_libro": [
+  "No define la unidad de registro: si un código puede repetirse en una nota, si v se decide por fragmento o por nota, ni a qué 3.3 se ancla cada 3.4 (N91367, N16176).",
+  "c1 no cubre la IA como recurso o fuente periodística (consultar a ChatGPT) ni notas con titular vacío: ambos dudaron entre secundaria y tangencial en N34694 y N75361 y dejaron secundaria sin ningún código sustantivo; c3 no tiene categoría para emergencias, deportes ni tecnología general ('otro' absorbió 3 de 8 notas y A y B divergieron en N75361: salud_ciencia frente a otro).",
+  "Faltan fronteras entre 2.1.REV y 3.1.EST (la misma frase 'le va a cambiar la vida' se codificó como carácter y como futuro) y para enumeraciones temáticas de un plan ('ética, estándares, seguridad y regulación'), que disparan REG y GOB a la vez.",
+  "La regla 'columna firmada = P' choca con textos de interés comercial: columna de un gerente de empresa del rubro (N39428) y comunicado corporativo (N58252) generaron duda en c5 y voz en ambos codificadores.",
+  "La cita continua de máximo 50 palabras no permite sustentar un FM de debate con dos posturas separadas por varias oraciones (N91367: ambos citaron un solo lado).",
+  "Contradicciones internas: la sección 3 limita v='NA' a 1.3, 2.4, 2.5, 3.2 y 3.4, pero la sección 8 exige NA en 3.1.NIN y 3.3.NIN; 3.4.NES figura entre los códigos 'por defecto' con cita vacía en la sección 5, pero la sección 4 lo define como de uso condicionado."
+ ]
+}

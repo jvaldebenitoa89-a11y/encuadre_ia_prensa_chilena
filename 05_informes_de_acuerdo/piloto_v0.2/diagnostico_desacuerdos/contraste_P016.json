@@ -1,0 +1,166 @@
+{
+  "lote": "P016",
+  "desacuerdos": [
+    {
+      "codigo": "c1",
+      "alias": "N85047",
+      "tipo": "c1",
+      "a": "secundaria",
+      "b": "central",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La definicion de central incluye 'aparece en el titular', pero la regla de titular dice que la IA solo en titular es secundaria o tangencial. El extracto nombra la IA una vez, como componente de la cuarta revolucion industrial; el titular ('Politica de Estado en IA') construye sentido (anuncia que hacer), asi que la regla especifica da secundaria. B aplico la regla general.",
+      "propuesta_regla": "Central: la IA es el objeto del titular Y el cuerpo la desarrolla (la caracteriza, valora, explica su uso o prescribe que hacer con ella). Aparecer en el titular no basta por si solo. Si el titular nombra la IA y el cuerpo la menciona sin desarrollarla, es secundaria cuando el titular construye sentido sobre ella y tangencial en caso contrario."
+    },
+    {
+      "codigo": "c1",
+      "alias": "N71609",
+      "tipo": "c1",
+      "a": "central",
+      "b": "secundaria",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Se solapan 'IA en el titular = central' y 'con IA como adjetivo de un producto = tangencial'. Titular y bajada atribuyen a la IA una funcion concreta (detectar el fuera de juego) y el cuerpo la describe, de modo que no es mero adjetivo; pero la IA es un componente de un sistema semiautomatizado, no el tema. Ambas lecturas son compatibles con la letra del libro.",
+      "propuesta_regla": "Aplicacion concreta: si titular o bajada atribuyen a la IA una funcion ('usara IA para X') y el cuerpo explica esa funcion, es central. Si 'IA' solo califica a un producto o evento sin que el texto diga que hace ni con que efecto, es tangencial. Secundaria solo cuando la IA es una de varias tecnologias o temas y no ocupa el eje."
+    },
+    {
+      "codigo": "2.1.HER",
+      "alias": "N71609; N80997",
+      "tipo": "presencia",
+      "a": "Codifica 2.1.HER en ambas notas (N71609: FC, 'tomar decisiones mas rapidas, precisas y fiables'; N80997: D, 'utilizo ChatGPT para elaborar un escrito')",
+      "b": "No lo codifica en ninguna (en N71609 usa 2.1.INN para el mismo pasaje; en N99495 si codifica HER por 'asistentes... han ayudado')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro no fija si el mero uso narrado basta para HER ni como se distingue de INN. La definicion ('medio al servicio de fines humanos') favorece a A cuando el uso trae un fin explicito (bajada de N80997: 'uso de la IA para apoyar su investigacion'), pero B aplica 'ante la duda no codifiques'. Es una diferencia de umbral.",
+      "propuesta_regla": "2.1.HER requiere que el fragmento presente a la IA como medio para un fin humano explicito ('para apoyar su investigacion', 'con el objetivo de tomar decisiones mas rapidas', 'asistente', 'herramienta'). Que alguien 'use' IA sin nombrar el fin no basta. Si el fragmento solo destaca capacidad o avance de la tecnologia, es 2.1.INN. HER e INN pueden coexistir si los sustentan fragmentos distintos."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N71609",
+      "tipo": "voz",
+      "a": "voz FC, v +, cita de Infantino ('decidida a aprovechar los avances tecnologicos')",
+      "b": "voz P, v +, cita de la oracion periodistica 'La FIFA empleara tecnologia... con el objetivo de tomar decisiones...' (la frase de Infantino la usa B para 2.1.INN)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La regla fuente-vs-periodista no cubre el entrecomillado parcial dentro de una oracion del periodista. La oracion de B solo reporta una medida (3.3 pide D si solo se reporta), pero B la valoro + por la cita embebida de la FIFA. Ademas 3.3 se define como respuesta a la IA y aqui es adopcion propia de un actor.",
+      "propuesta_regla": "Voz: si el fragmento contiene un entrecomillado atribuido a una fuente que porta la valoracion, la voz es la de esa fuente; si la oracion es del periodista y no hay valoracion verbal propia, voz P y v D. En 3.3, v valora la medida: + solo si el fragmento la defiende o exhorta (con la voz de quien lo hace); un reporte sin posicion es D."
+    },
+    {
+      "codigo": "3.4.EMP",
+      "alias": "N71609",
+      "tipo": "voz",
+      "a": "voz P",
+      "b": "voz na (con cita)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro fija voz 'na' solo para codigos por defecto; para codigos con v=NA que si llevan cita (3.4, 2.4, 2.5, 3.2.INE/DEC, 1.3.IRR/TRA) no dice nada. En los demas casos del lote ambos pusieron la voz del fragmento (2.5.ALA FC, 3.4.EST FG); B puso 'na' junto a una cita solo aqui.",
+      "propuesta_regla": "Cuando v=NA y el codigo lleva cita (1.3.IRR/TRA, 2.4, 2.5, 3.2.INE/DEC, 3.4 distinto de NES), voz es quien enuncia el fragmento citado y marca es na. Solo los codigos por defecto sin cita llevan voz na."
+    },
+    {
+      "codigo": "1.1.CORP",
+      "alias": "N99495",
+      "tipo": "presencia",
+      "a": "1.1.CORP D, voz P, escala global (Musk lanza Grok)",
+      "b": "No lo codifica",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "D1 se define sobre la genesis y expansion de la IA, pero 1.1.CORP dice 'desarrollo o impulso a empresas nombradas'. El lanzamiento de un asistente por Musk encaja en la letra de CORP. En N90581 ambos codificaron CORP por 'responsable de ChatGPT', asi que B trato distinto el mismo tipo de atribucion entre notas.",
+      "propuesta_regla": "1.1 se aplica cuando el fragmento nombra un agente que desarrolla, lanza o financia un sistema de IA, sea la IA en general o un producto concreto ('OpenAI desarrollo ChatGPT', 'Musk lanzo Grok'). No se aplica si la empresa solo aparece como usuaria, demandante, vocera o fuente."
+    },
+    {
+      "codigo": "3.1.CON",
+      "alias": "N99495",
+      "tipo": "v",
+      "a": "v D, voz P: 'se espera que la proxima generacion de IA sea aun mas avanzada'",
+      "b": "v +, voz FC: Suleyman 'apostando porque la conversacion sea la interfaz del futuro'",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Dos fragmentos distintos sustentan 3.1.CON y el formato admite una entrada por codigo; cada codificador cito uno, de ahi D vs +. Hay ademas un hueco simetrico a la regla de dano futuro: los beneficios futuros ('la IA interactiva producira contenidos mas novedosos') no tienen destino claro entre 2.2 y 3.1.",
+      "propuesta_regla": "Un codigo aparece una vez por nota. Si lo sustentan varios fragmentos, cita el de marca mas explicita (en empate, titular > bajada > cuerpo) y decide v con los pasos 1 a 3 de 3.1 sobre ese fragmento; anota el otro en dudas. Beneficio futuro: 'permitira/podria mejorar X' va en 2.2 con v +, igual que el dano futuro va en 2.3; 3.1 solo recoge la trayectoria o el estado futuro de la IA misma."
+    },
+    {
+      "codigo": "2.3.EMP",
+      "alias": "N99495",
+      "tipo": "mod",
+      "a": "G2, voz FE: 'algunos expertos en tecnologia creen que es solo cuestion de tiempo antes de que los trabajos... sean sustituidos por la IA'",
+      "b": "G1, voz P: 'las predicciones sobre la IA alimentan la preocupacion de que la tecnologia pueda sustituir rapidamente a millones de empleos'",
+      "causa": "juicio_legitimo",
+      "diagnostico": "El parrafo trae dos oraciones: una con verbo de posibilidad ('pueda sustituir', G1, voz del periodista) y otra con marcador de certeza atribuido a expertos ('solo cuestion de tiempo', G2, FE). Cada codificacion es coherente con la oracion que cito; la diferencia nace de cual se cito, no de como se aplico g o voz."
+    },
+    {
+      "codigo": "2.3.OTR",
+      "alias": "N90581",
+      "tipo": "voz",
+      "a": "voz FE (estimacion de Goldman Sachs / informe)",
+      "b": "voz FC",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro no ubica a bancos, consultoras ni analistas de industria: Goldman Sachs es una empresa (FC) que emite una estimacion con pretension tecnica (FE). Mismo problema en N99495 ('expertos del sector', 'analistas tecnologicos', 'los criticos'), donde ambos usaron FE.",
+      "propuesta_regla": "FE: fuentes cuya autoridad declarada es la investigacion o el conocimiento tecnico independiente (universidades, centros de estudio, revistas cientificas, peritos). FC: toda empresa o directivo, incluidos bancos y consultoras, y 'expertos de la industria' que hablan desde su sector comercial; las estimaciones de instituciones financieras son FC. Fuentes vagas ('los criticos', 'algunos analistas'): FE si el texto las presenta como especialistas, P si no."
+    },
+    {
+      "codigo": "3.1.EST",
+      "alias": "N14328",
+      "tipo": "presencia",
+      "a": "3.1.EST D, ambito sociedad: 'Toda la humanidad va a funcionar con inteligencia artificial,'",
+      "b": "3.1.NIN por defecto (en dudas reconoce esa frase y no la codifica)",
+      "causa": "error_codificador",
+      "diagnostico": "El texto proyecta con claridad un futuro estructural ('El chasis del mundo futuro es la inteligencia artificial', 'Toda la humanidad va a funcionar con inteligencia artificial', quinta y sexta revolucion industrial). Los principios piden codificar lo que el texto construye con claridad; B vio la frase y asigno el defecto. A lo aplico bien."
+    },
+    {
+      "codigo": "2.3.OTR",
+      "alias": "N14328",
+      "tipo": "presencia",
+      "a": "No codifica 2.3",
+      "b": "2.3.OTR 'consumo energetico', G2, RTE, voz FG",
+      "causa": "error_codificador",
+      "diagnostico": "'el problema es que requiere gigantescos data center... consumiran la mitad de la energia del planeta' atribuye un dano explicito a la expansion de la IA, con marca verbal ('el problema'). En N90581 A si codifico 2.3.OTR por emisiones de centros de datos, de modo que trato distinto el mismo tipo de dano. G2 se sostiene por la certeza ('consumiran', 'exponencial')."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N14328",
+      "tipo": "v",
+      "a": "v +, voz FG: 'Chile podria y debiera ser el centro mundial de datos del mundo'",
+      "b": "v D, voz FG: Comision Chilena de IA creada tras la estrategia presentada a Pinera",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Hay dos fragmentos de 3.3 (una exhortacion y el reporte de una estrategia o comision) y una entrada por codigo; cada uno cito uno, de ahi + vs D. Ademas una estrategia nacional multiactor puede ser ADO o GOB y el libro no da criterio; la exhortacion sobre data centers es infraestructura para la IA, no una medida frente a ella.",
+      "propuesta_regla": "Estrategias, planes o comisiones nacionales de IA: 3.3.GOB si ordenan, estandarizan o coordinan a varios actores; 3.3.ADO si impulsan o incorporan IA. Si un codigo tiene un fragmento prescriptivo y otro de reporte, cita el prescriptivo y asigna v por el (+/-); un reporte sin posicion es D."
+    },
+    {
+      "codigo": "c5",
+      "alias": "N98932",
+      "tipo": "otro",
+      "a": "otro",
+      "b": "columna_opinion",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La lista de c5 no contempla resenas o criticas culturales firmadas. La firma ('Por Marcel Socias Montofre') y el juicio evaluativo ('Sinceramente un acierto') la acercan a columna_opinion, pero 'otro' tambien es defendible con la regla actual.",
+      "propuesta_regla": "Resenas y criticas culturales firmadas (libros, cine, musica, teatro) se codifican como columna_opinion. 'otro' queda para formatos sin firma ni juicio (agenda, galeria, infografia, transcripcion, comunicado sin llamado comercial)."
+    }
+  ],
+  "emergentes": [
+    {
+      "etiqueta": "Responsabilidad del usuario",
+      "indicador": "2",
+      "definicion": "El fallo de la IA se resuelve atribuyendo la falta a quien la uso sin verificar su resultado, no a la tecnologia ni a su diseno; ninguna condicionalidad de 2.4 la recoge porque no hay formula explicita.",
+      "alias": "N80997",
+      "cita": "la única verificación que había llevado a cabo era preguntar a la aplicación si los casos que citaba eran reales",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "IA como infraestructura",
+      "indicador": "2",
+      "definicion": "La IA se presenta como sustrato o chasis sobre el que funcionara la sociedad, con exigencias materiales (centros de datos, energia); no es herramienta, producto ni agente.",
+      "alias": "N14328",
+      "cita": "El chasis del mundo futuro es la inteligencia artificial",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "IA como sujeto moral ficcional",
+      "indicador": "2",
+      "definicion": "En un relato de ficcion la IA (cyborg) aparece como agente moral con proposito de justicia, mas etico que los humanos. Solo aplica si el proyecto decide codificar ficcion; hoy una nota asi queda tangencial y sin codigos.",
+      "alias": "N98932",
+      "cita": "un cyborg creado con la última tecnología de Inteligencia Artificial, que luego viaja con su creador a Chile, con un claro propósito de justicia y reparación",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "Una entrada por codigo y nota, pero 1.1 admite coexistencia y el principio 7 admite varios fragmentos: el libro no dice que hacer cuando un mismo codigo tiene fragmentos con distinto v, voz o g (N99495 3.1.CON y 2.3.EMP; N14328 3.3.ADO), y cada codificador elige uno distinto.",
+    "Frontera 2.1.LIM / 2.3 sin resolver: una falla tecnica que produce un dano explicito (video del atentado que circula en N88096; casos inventados ante un tribunal en N80997) quedo sin 2.3 en ambos codificadores, con duda declarada; el libro exige dano atribuido a la IA y excluye el hecho adverso sin vinculo explicito, pero no trata el caso con vinculo explicito y atribucion compartida con el usuario o la empresa.",
+    "2.2.OTR y 2.3.OTR absorben temas recurrentes del lote (energia y clima en N90581 y N14328; deporte en N71609) con etiquetas libres inconsistentes ('impacto ambiental', 'impacto energetico y ambiental', 'consumo energetico', 'deporte', 'deporte y arbitraje'); falta un ambito ambiental/energetico en 2.2 y 2.3 y una lista cerrada de etiquetas.",
+    "2.4 exige formula condicional explicita sin listar las validas, por lo que condicionalidades evidentes quedaron sin codigo: 'se basa en datos de entrenamiento... necesita miles de ejemplos para que pueda detectar' (N88096) y el uso sin verificar (N80997); ampliar la lista de marcadores ('depende de', 'segun como', 'siempre que', 'para que', 'se basa en') o relajar el requisito.",
+    "Voz sin reglas para cuatro casos: columnista que es politico (N85047: ambos pusieron FG pese a que 'una columna firmada es P'; la regla solo menciona academicos), entrecomillado parcial dentro de una oracion del periodista, bancos, consultoras y 'expertos de la industria' (FE o FC), y voz de los codigos NA con cita (3.4, 2.5).",
+    "Fronteras de D3 y D1 sin criterio: 3.3.ADO se define como respuesta a la IA pero se aplico a la adopcion propia de un actor ('FIFA usara IA', N71609); no se dice si un titular nominal como 'Politica de Estado en IA' (N85047) es prescripcion sin verbo (ambos pusieron 3.3.NIN); 3.4.INT no define si una federacion privada internacional como FIFA es INT o EMP (A dudo); y 1.3.TRA/SIN no aclara si una secuencia de revoluciones industriales con duraciones que ubica a la IA como cuarta etapa narra su origen (N14328, B dudo)."
+  ]
+}

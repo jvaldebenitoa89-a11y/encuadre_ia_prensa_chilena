@@ -1,0 +1,648 @@
+{
+ "lote": "P005",
+ "coder": "L",
+ "notas": [
+  {
+   "alias": "N16132",
+   "c1": "central",
+   "c2": [
+    "generica"
+   ],
+   "c3": "politica_estado",
+   "c4": [
+    "Pedro Maldonado"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "2.1.INN",
+     "v": "+",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "\"La inteligencia artificial tiene por primera vez en la historia de la humanidad la capacidad de hacer cosas que antes solo los humanos hacían,",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.AGE",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "la inteligencia artificial puede tomar decisiones, puede reconocer cosas,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.3.EMP",
+     "v": "-",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "Es necesario reflexionar, agrega, qué pasa en el ambiente laboral, qué tipo de trabajos van hacer reemplazados por la IA,",
+     "calidad": 2,
+     "mod": {
+      "g": "G1",
+      "resp": "RDI"
+     }
+    },
+    {
+     "cod": "3.1.EST",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "esta herramienta va a cambiar la manera en cómo la sociedad funciona,",
+     "calidad": 1,
+     "mod": {
+      "ambito": "otro"
+     }
+    },
+    {
+     "cod": "3.2.DEC",
+     "v": "NA",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "la sociedad tiene que poder preguntarse qué tipo de máquinas van a poder existir, quién va a poder usarlas y cuáles van a ser sus propósitos.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.REG",
+     "v": "+",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "\"y de alguna manera tenemos que como país y como sociedad, preocuparnos de establecer políticas y normativas que regulen esa actividad\".",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.EST",
+     "v": "NA",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "\"y de alguna manera tenemos que como país y como sociedad, preocuparnos de establecer políticas y normativas que regulen esa actividad\".",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "posible 2.3.PRI: privacidad mental solo como pregunta abierta, sin vínculo causal; posible 3.5.REZ: 'no vamos a estar preparados' sin rezago frente a otros; estrategia de investigadores no codificada como GOB/ADO por duda."
+  },
+  {
+   "alias": "N53610",
+   "c1": "central",
+   "c2": [
+    "generica",
+    "generativa"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Nvidia",
+    "Estados Unidos",
+    "China"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.1.EST",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Países de Asia, Medio Oriente, Europa y América están invirtiendo miles de millones de dólares en nuevas instalaciones informáticas nacionales para inteligencia artificial,",
+     "calidad": 2,
+     "mod": {
+      "escala": "global"
+     }
+    },
+    {
+     "cod": "1.2.GEO",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "El motor de las inversiones es la búsqueda de una mayor autosuficiencia estratégica en medio de las crecientes tensiones entre Estados Unidos y China, centradas en la tecnología.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.MER",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Esos esfuerzos se están convirtiendo en una ganancia inesperada para Nvidia,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.6.ACT",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Para controlar sus destinos de inteligencia artificial en medio del dominio de EE.UU. y China, los países están construyendo su propia infraestructura informática.",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADO",
+     "v": "D",
+     "voz": "FG",
+     "marca": "na",
+     "cita": "Japón, que dijo que está invirtiendo unos US$ 740 millones para aumentar la potencia de computación de IA nacional este año tras una visita de Huang.",
+     "calidad": 2,
+     "mod": {
+      "objeto": "inversión de Japón en cómputo de IA"
+     }
+    },
+    {
+     "cod": "3.3.ADO",
+     "v": "D",
+     "voz": "FG",
+     "marca": "na",
+     "cita": "El presidente francés, Emmanuel Macron, instó el mes pasado a Europa a crear asociaciones público-privadas para comprar más unidades de procesamiento gráfico, o los chips centrales utilizados para entrenar la IA,",
+     "calidad": 2,
+     "mod": {
+      "objeto": "asociaciones para comprar chips de IA en Europa"
+     }
+    },
+    {
+     "cod": "3.4.EST",
+     "v": "NA",
+     "voz": "FG",
+     "marca": "na",
+     "cita": "Japón, que dijo que está invirtiendo unos US$ 740 millones para aumentar la potencia de computación de IA nacional este año tras una visita de Huang.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "Pronósticos de ventas de Nvidia excluidos de 3.1."
+  },
+  {
+   "alias": "N90515",
+   "c1": "central",
+   "c2": [
+    "generativa"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Alibaba",
+    "DeepSeek",
+    "OpenAI"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.1.CORP",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Alibaba presentó su último modelo de razonamiento de inteligencia artificial (IA).",
+     "calidad": 2,
+     "mod": {
+      "escala": "global"
+     }
+    },
+    {
+     "cod": "2.1.INN",
+     "v": "+",
+     "voz": "FC",
+     "marca": "explicita",
+     "cita": "A través de un comunicado, la compañía china afirmó que su IA supera “casi por completo a OpenAI-o1-mini” y rivaliza “con el modelo de razonamiento de código abierto más fuerte, DeepSeek-R1”.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.MER",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "El anuncio provocó que sus acciones que cotizan en Hong Kong cerraran con un alza del 8% en el día",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "Inversión de Alibaba en su propia infraestructura no es 3.3.ADO; nota central con pocos códigos sustantivos."
+  },
+  {
+   "alias": "N78864",
+   "c1": "tangencial",
+   "c2": [
+    "generica"
+   ],
+   "c3": "otro",
+   "c4": [
+    "Senado",
+    "Fundación Encuentros del Futuro"
+   ],
+   "c5": "noticia",
+   "codigos": [],
+   "emergentes": [],
+   "dudas": "IA solo en una frase de una cita del evento."
+  },
+  {
+   "alias": "N72715",
+   "c1": "central",
+   "c2": [
+    "generica",
+    "sistemas_especificos"
+   ],
+   "c3": "otro",
+   "c4": [
+    "Timnit Gebru",
+    "Google"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "2.1.LIM",
+     "v": "-",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "“Los métodos actuales de recopilación y anotación de datos para el aprendizaje automático están plagados de sesgos capaces de causar daños en el mundo real”,",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "2.3.DES",
+     "v": "-",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Su investigación puso de relieve los algoritmos racistas y los dilemas éticos de los proyectos de minería de datos y la IA.",
+     "calidad": 2,
+     "mod": {
+      "g": "G1",
+      "resp": "RTE"
+     }
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "Poder de grandes tecnológicas, empoderar trabajadores y leyes: refieren a 'la tecnología' sin vínculo explícito con IA, no codificados (posible 2.3.DES, 3.3.CON/REG); 'guerra de odio' sin vínculo con IA; calidad 1 en LIM por no nombrar la IA."
+  },
+  {
+   "alias": "N15993",
+   "c1": "secundaria",
+   "c2": [
+    "generativa"
+   ],
+   "c3": "consumo_cotidiano",
+   "c4": [],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "2.6.REC",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "usuarios de internet le han preguntando a Midjourney -una IA que genera imágenes a partir de texto- cómo se vería el actor en la actualidad.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.HER",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "muchas personas todavía le tienen un poco de temor a la inteligencia artificial , hay otras que le sacan provecho para crear imágenes",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "posible 2.3: temor sin daño nombrado; 'Midjourney imagina' no codificado como AGE."
+  },
+  {
+   "alias": "N88933",
+   "c1": "central",
+   "c2": [
+    "generica"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Gobierno de Mentougou",
+    "Grupo ZGC",
+    "Huawei"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.1.EST",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "El centro fue financiado de manera conjunta por el Gobierno del distrito de Mentougou, el Grupo ZGC y Huawei.",
+     "calidad": 1,
+     "mod": {
+      "escala": "global"
+     }
+    },
+    {
+     "cod": "2.1.MER",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Ya tiene registrados a 47 clientes y ofrece una potencia informática prevista de más de 248P.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADO",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Beijing inauguró su primer centro de cómputo de inteligencia artificial, el Centro de Cómputo de Inteligencia Artificial Ascend de Beijing, para apoyar la demanda de rápido crecimiento",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.EST",
+     "v": "NA",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Beijing inauguró su primer centro de cómputo de inteligencia artificial, el Centro de Cómputo de Inteligencia Artificial Ascend de Beijing, para apoyar la demanda de rápido crecimiento",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "Género posible gacetilla (otro); hoja de ruta de expansión excluida de 3.1; ADO dudoso."
+  },
+  {
+   "alias": "N13326",
+   "c1": "central",
+   "c2": [
+    "generica"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Accenture",
+    "Centro de Implementación de Políticas Públicas para la Equidad y el Crecimiento"
+   ],
+   "c5": "columna_opinion",
+   "codigos": [
+    {
+     "cod": "2.1.REV",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "La IA es capaz de incrementar la productividad de forma masiva, porque cambia la forma de producir de la economía completa.",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "2.2.ECO",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Se estima que la incorporación de IA en los negocios aumentará la productividad hasta en un 40%",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.2.LAB",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Inteligencia Artificial, ya que ésta permite a los trabajadores centrarse en lo que mejor saben hacer: crear e innovar.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.EST",
+     "v": "+",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "Un estudio realizado por la consultora Accenture sobre el impacto que tendrá la Inteligencia Artificial (IA) en diversas economías revela que ésta podría llegar a duplicar las tasas anuales de crecimiento económico en 2035, cambiando la naturaleza del trabajo y estableciendo una nueva relación entre las personas y la tecnología.",
+     "calidad": 2,
+     "mod": {
+      "ambito": "trabajo_economia"
+     }
+    },
+    {
+     "cod": "3.2.INE",
+     "v": "NA",
+     "voz": "P",
+     "marca": "na",
+     "cita": "El potencial transformador de las tecnologías de IA es cada vez más evidente y las empresas que ya trabajan con estas soluciones, saben que no hay vuelta atrás.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADO",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Tenemos que hacer algo –y pronto–, para promover y facilitar el proceso de adopción tecnológica en las compañías y también para readaptar las habilidades de los trabajadores.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADA",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Tenemos que hacer algo –y pronto–, para promover y facilitar el proceso de adopción tecnológica en las compañías y también para readaptar las habilidades de los trabajadores.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.NES",
+     "v": "NA",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Tenemos que hacer algo –y pronto–, para promover y facilitar el proceso de adopción tecnológica en las compañías y también para readaptar las habilidades de los trabajadores.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.5.REZ",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "De otro modo, el riesgo es convertirse en un actor de segundo plano que exporte talento y empresas emergentes para el crecimiento de otros países,",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "ADO/ADA/REZ: 'adopción tecnológica' vinculada a IA por contexto previo, calidad 1; 3.4.NES por 'tenemos' genérico."
+  }
+ ]
+}

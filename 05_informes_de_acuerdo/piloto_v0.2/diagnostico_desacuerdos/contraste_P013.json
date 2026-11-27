@@ -1,0 +1,185 @@
+{
+  "lote": "P013",
+  "desacuerdos": [
+    {
+      "codigo": "2.1.HER",
+      "alias": "N94036, N75118, N31249, N75542",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "HER solo en N94036 (v +, cita el titular 'La relevancia de...') y N75542; el uso instrumental de N75118 y N31249 lo lleva a 2.2.CUL o 2.1.INN.",
+      "b": "HER en las 4 notas (N94036 con v=D citando el cuerpo; N75118 'como herramienta de lluvia de ideas'; N31249 'Con la ayuda de la inteligencia artificial').",
+      "diagnostico": "El libro no fija umbral para 2.1.HER ni su frontera con 2.2.* y 2.1.INN: el mismo fragmento fue HER (B) o 2.2.CUL (A). En N94036 la diferencia de v nace de citar el titular (marca 'relevancia') frente al cuerpo descriptivo; la regla 6.4 pide registrar ambos y ninguno lo hizo.",
+      "propuesta_regla": "2.1.HER exige una marca de instrumentalidad en el fragmento ('herramienta', 'asistente', 'con la ayuda de', 'permite al usuario'); una enumeración de usos sin esa marca no es HER. Si además se atribuye un beneficio en un ámbito, registrar 2.2.* con su propia cita (una frase puede llevar ambos, regla 6.3). Si titular y cuerpo difieren en v, registrar dos entradas HER."
+    },
+    {
+      "codigo": "voz en códigos con v=NA (1.3.IRR, 2.5, 3.4.*)",
+      "alias": "N56221, N67633, N75542",
+      "tipo": "voz",
+      "causa": "ambiguedad_libro",
+      "a": "Deja voz=na en 1.3.IRR y en todos los 3.4.* (EMP en N56221, EST en N67633 y N75542).",
+      "b": "Asigna la voz del fragmento: P en 1.3.IRR y en 3.4.EST de N75542, FG en 3.4.EST de N67633, FS en 3.4.IND, FE en 2.5.HYP.",
+      "diagnostico": "El libro manda voz=na solo en los códigos por defecto y marca=na cuando v es D o NA, pero no define la voz de los códigos NA que sí llevan cita. Los codificadores aplican criterios opuestos de forma sistemática (5 casos) y generan desacuerdo de voz sin desacuerdo de lectura.",
+      "propuesta_regla": "En todo código con cita, voz es quien enuncia el fragmento citado, también si v=NA (1.3.IRR/TRA, 2.4, 2.5, 3.2.INE/DEC, 3.4.*). Solo los códigos por defecto (cita vacía) llevan voz=na. marca=na siempre que v sea D o NA."
+    },
+    {
+      "codigo": "c5",
+      "alias": "N94036",
+      "tipo": "otro",
+      "causa": "ambiguedad_libro",
+      "a": "noticia (nota sin llamado comercial ni aviso).",
+      "b": "contenido_patrocinado (fuente única corporativa y listado de funciones del producto).",
+      "diagnostico": "Sin firma, con una sola fuente (CEO de SimpliRoute), lenguaje promocional ('muy útil') y lista de funciones, pero sin llamado a la acción. La regla define patrocinado por 'llamado a la acción' y también por 'claramente promocionales', y solo excluye notas con firma y fuentes plurales, que aquí no se dan. B decide distinto en N31249 (situación similar, noticia), señal de criterio difuso.",
+      "propuesta_regla": "contenido_patrocinado si se cumplen al menos dos de tres: (a) fuente única corporativa o de la empresa protagonista, (b) lenguaje promocional (superlativos, beneficios del producto, 'oportunidad única'), (c) ausencia de firma periodística o de contrapunto; basta una de ellas si hay aviso de 'contenido presentado por'. Con este criterio N31249 también pasaría a patrocinado; el equipo debe confirmarlo."
+    },
+    {
+      "codigo": "2.3.PRI vs 2.3.SEG",
+      "alias": "N56221",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "2.3.PRI (G2, RMA, -) sobre los anuncios con impostores generados por IA.",
+      "b": "2.3.SEG (G2, RMA, -) sobre el mismo daño; cita incluye 'advirtieron a sus seguidores'.",
+      "diagnostico": "El libro no ubica la suplantación de identidad ni los deepfakes. El titular ('sin su consentimiento') empuja a PRI y el cuerpo (anuncio engañoso, 'haga clic en un enlace', plan dental) empuja a SEG. Ambas lecturas son compatibles con el texto.",
+      "propuesta_regla": "Suplantación de identidad o deepfake: 2.3.SEG cuando el daño descrito es engaño, fraude o delito (anuncios falsos, estafas); 2.3.PRI cuando el daño es el uso de imagen, voz o datos de la persona sin consentimiento sin fin delictivo; 2.3.DEM cuando el daño es el engaño informativo masivo. Si dos fragmentos sostienen dos daños, registrar ambos."
+    },
+    {
+      "codigo": "2.2.CUL / 2.2.EDU",
+      "alias": "N75118",
+      "tipo": "v",
+      "causa": "ambiguedad_libro",
+      "a": "2.2.CUL v=D (lista 'en arte y creatividad como herramienta de lluvia de ideas') y 2.2.EDU v=D (calidad 1).",
+      "b": "2.2.CUL v=+ explicita citando 'múltiples aplicaciones que estas técnicas permiten, como crear nuevas alternativas...'; no codifica 2.2.EDU.",
+      "diagnostico": "2.2 exige 'beneficio atribuido, no solo mencionar el ámbito', pero no dice si una enumeración de campos de aplicación cumple ni qué v lleva. B infiere '+' de una marca débil ('múltiples') y omite EDU; A codifica ambos como D. El listado de usos está redactado de forma casi neutra.",
+      "propuesta_regla": "Una enumeración de aplicaciones que declara para qué sirven (beneficio atribuido) se codifica 2.2.* con v=D y marca=na, un código por ámbito mencionado. v=+ solo si el fragmento trae una marca valorativa verbalizada sobre el beneficio ('permite mejorar', 'más fácilmente que', 'ayuda a')."
+    },
+    {
+      "codigo": "3.4.EMP vs 3.4.NES",
+      "alias": "N56221",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "3.4.EMP (con 3.3.GOB D) para el acuerdo de la huelga de guionistas; el propio A anota que el actor es inferido (industria/estudios).",
+      "b": "3.4.NES con cita vacía porque el acuerdo se enuncia en pasiva ('se llegó a un acuerdo tentativo').",
+      "diagnostico": "El libro define 3.4 como 'quien debe ejecutar la acción' y NES como 'solo si hay prescripción sin sujeto', sin tratar los acuerdos entre partes ni decir si se puede inferir el actor. A infiere un actor que el texto no nombra; B aplica NES literalmente. Los acuerdos bilaterales (gremio y estudios) no encajan en un único actor.",
+      "propuesta_regla": "3.4 se codifica con el actor que el texto presenta como quien ejecuta o suscribe la medida; si la medida se enuncia en pasiva o impersonal sin nombrar partes, 3.4.NES con cita del fragmento de 3.3. No se infiere un actor desde conocimiento externo. En acuerdos entre partes identificadas se registra un 3.4 por parte (p. ej. 3.4.SOC y 3.4.EMP)."
+    },
+    {
+      "codigo": "3.3.ADA / 3.4.IND",
+      "alias": "N56221",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "No codifica prescripción en el llamado de Gayle King.",
+      "b": "3.3.ADA + (voz FS, calidad 1) y 3.4.IND citando 'Por favor, no se dejen engañar por estos videos de IA'.",
+      "diagnostico": "3.3(a) incluye 'exhortar', pero 3.3.ADA se define con ejemplos institucionales (capacitar, reconvertir, alfabetizar). El libro no dice si una advertencia individual de cautela dirigida a seguidores es una acción prescrita ni cómo valorarla. B tiene apoyo en 3.3(a); A aplicó 'ante la duda, no codifiques'.",
+      "propuesta_regla": "Una advertencia de cautela al público ('cuidado', 'no se dejen engañar') es 3.3.ADA con 3.4.IND y v=+ solo si prescribe una conducta de protección frente a la IA (verificar, desconfiar, no compartir). La denuncia de un caso concreto sin exhortación a una conducta no es 3.3."
+    },
+    {
+      "codigo": "3.3.PRO",
+      "alias": "N67633",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "No lo codifica: la prohibición de importar robots humanoides en EE.UU. 'no responde a la IA'.",
+      "b": "3.3.PRO v=D alcance=parcial (veto de importación por seguridad nacional), calidad moderada según su propia duda.",
+      "diagnostico": "Ambos tratan los robots humanoides como IA (c1 central), pero el libro define 3.3 como medida 'como respuesta a la IA' sin distinguir entre medida sobre la IA y medida comercial o de seguridad nacional sobre productos tecnológicos. Ambas lecturas son defendibles; esa frontera decide el resultado.",
+      "propuesta_regla": "3.3 se codifica solo si la medida recae sobre la IA, o sobre sistemas que el texto presenta como IA, y se justifica por sus capacidades o riesgos. Las restricciones comerciales o de seguridad nacional sobre productos o empresas tecnológicas (listas de importación, sanciones) se registran como 1.2.GEO, no como 3.3.PRO, salvo que la nota las justifique por el riesgo o las capacidades de la IA."
+    },
+    {
+      "codigo": "1.2.ECO / 1.2.NEC",
+      "alias": "N67633, N75542",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "No codifica 1.2.ECO en N67633 ni 1.2.NEC en N75542; trata el material como contexto (1.1.*) o beneficio (2.2.EST).",
+      "b": "1.2.ECO D (calidad 1) citando 'lo que abarca tanto el entusiasmo de los inversionistas como la rivalidad entre China y Estados Unidos'; 1.2.NEC D (calidad 1) citando el titular 'Impulsan modelo predictivo... para reducir... casos sin imputado conocido'.",
+      "diagnostico": "Solo 1.2.CON exige causalidad explícita. Para ECO y NEC el libro no dice si basta la coexistencia del tema (inversión, problema social) o si hace falta un vínculo que explique el impulso. Además 1.2.NEC se solapa con 2.2.* (propósito frente a beneficio). B lo aplica con umbral bajo, A con umbral alto.",
+      "propuesta_regla": "Los códigos 1.2.* exigen una fórmula causal o final que vincule el surgimiento o impulso de la IA con el motor ('gracias a', 'impulsado por', 'para ganar mercado', 'se apresuran a rentabilizar', 'se impulsa para resolver X'). La mera coexistencia de inversión, competencia o un problema social no basta. Un beneficio descrito ('permite ahorrar costos') va en 2.2.*. Con esta regla se mantiene 1.2.NEC en N75542 (impulso con finalidad) y se descarta 1.2.ECO en N67633."
+    },
+    {
+      "codigo": "2.1.INN",
+      "alias": "N67633",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "No lo codifica.",
+      "b": "2.1.INN v=D voz FC (calidad 1) citando la presentación del robot 'Superman' (saltar dos metros, 12,66 m/s).",
+      "diagnostico": "INN admite v=D, de modo que cualquier descripción de una capacidad podría cumplirlo. Sin umbral, INN aparecería en casi todas las notas; ambos lo omiten en N94036 y N75542 pese a que describen capacidades, y lo aplican solo cuando hay adjetivo fuerte (N75118, N31249).",
+      "propuesta_regla": "2.1.INN se codifica cuando el fragmento presenta la IA como novedad, hito o capacidad destacada (primera vez, récord, 'pionero', 'nuevo', 'capaz de' con énfasis); la descripción corriente de qué hace un sistema no es INN y va, si procede, en 2.1.HER o 2.2.*. Con esta regla N67633 mantiene INN por el récord comparado con Bolt."
+    },
+    {
+      "codigo": "2.5.HYP",
+      "alias": "N67633",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "No lo codifica (aplica 'ante la duda, no codifiques').",
+      "b": "2.5.HYP voz FE (calidad 1) citando que el 'santo grial' de las máquinas que reaccionan de forma independiente 'aún está muy lejos'.",
+      "diagnostico": "No hay frontera definida entre 2.5.HYP y 2.1.LIM/3.1.INC. Los expertos señalan un límite o plazo largo, pero el fragmento no nombra ni rechaza una promesa concreta. El E de 2.5 solo cubre 'pros y contras sin cuestionar'. B lee una contra-narrativa implícita al entusiasmo bursátil; A lee un límite técnico.",
+      "propuesta_regla": "2.5 se codifica cuando el fragmento nombra o alude a la expectativa o el alarmismo que cuestiona ('pese al entusiasmo', 'se exagera', 'no hay evidencia', 'burbuja'). Constatar límites técnicos o plazos largos sin aludir a esa expectativa va en 2.1.LIM o 3.1.INC. Con esta regla se descarta 2.5.HYP en N67633."
+    },
+    {
+      "codigo": "2.2.EST (marca)",
+      "alias": "N75542",
+      "tipo": "otro",
+      "causa": "ambiguedad_libro",
+      "a": "marca=explicita (v +) citando 'para reducir en la Fiscalía casos sin imputado conocido'.",
+      "b": "marca=implicita (v +) con el mismo fragmento (titular).",
+      "diagnostico": "El libro define 'explícita' por el tipo de marca (adjetivo, verbo, promesa) e 'implícita' por inferirse del titular. En un titular con cláusula final ('para reducir...') ambos criterios se cumplen, así que las dos marcas son aplicables a la misma cita.",
+      "propuesta_regla": "marca=explicita cuando la valoración está en palabras del fragmento citado (adjetivo, verbo valorativo, promesa o finalidad como 'para reducir/mejorar'), aunque el fragmento sea el titular. marca=implicita solo si el fragmento no contiene ninguna palabra valorativa y la valoración surge de qué se destaca, del orden o de la ausencia de contrapunto."
+    },
+    {
+      "codigo": "3.1.CON (v)",
+      "alias": "N67633",
+      "tipo": "v",
+      "causa": "juicio_legitimo",
+      "a": "v=D marca=na (voz FE).",
+      "b": "v=+ marca=explicita (voz FE), misma cita: 'momento \"decisivo\" para pasar de las pruebas a pequeña escala a una \"implantación masiva\"'.",
+      "diagnostico": "§3.1 dice que el contenido del futuro es neutral y la valencia debe venir de marcas. 'Decisivo' es una marca ambigua: puede leerse como entusiasmo de una fuente promotora (+) o como descripción de una transición (D). Ambas lecturas son defendibles."
+    },
+    {
+      "codigo": "2.1.MER (v y voz)",
+      "alias": "N67633",
+      "tipo": "v",
+      "causa": "juicio_legitimo",
+      "a": "v=+ voz=FE citando al estratega de Quintex Intel ('la IA física se convirtió en el nuevo objeto de deseo').",
+      "b": "v=D voz=P citando el titular 'Unitree se dispara 600% en su debut bursátil'.",
+      "diagnostico": "Fragmentos distintos del mismo código. A cita una marca favorable, aunque el mismo analista habla de 'frontera especulativa', lo que sugiere A. B aplica correctamente 'no infieras la valoración desde el tema' a un titular descriptivo. La voz de un analista financiero (FE o FC) no está definida (ver vacíos)."
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N75118",
+      "etiqueta": "IA como espejo humano",
+      "indicador": "2",
+      "definicion": "El sesgo se presenta como reflejo de los datos y de las personas que entrenan el sistema, no como falla del modelo; la responsabilidad se desplaza a la sociedad. 2.1.LIM y 2.3.DES (resp RDI) no recogen esa atribución.",
+      "origen": "adjudicador",
+      "cita": "Estos sesgos no son propios del modelo, sino del contenido generado por nosotros, las personas."
+    },
+    {
+      "alias": "N75118",
+      "etiqueta": "IA recombina, no crea",
+      "indicador": "2",
+      "definicion": "Se deflaciona la creatividad atribuida a la IA: produce variantes de lo aprendido y repite modelos de representación ('silos'), sin crear de la nada; no es antropomorfización (2.1.AGE) ni límite técnico (2.1.LIM).",
+      "origen": "adjudicador",
+      "cita": "DALL·E no crea imágenes a partir de la nada, sino que es capaz de producir variantes posibles basadas en el aprendizaje extraído de las imágenes empleadas en su entrenamiento."
+    },
+    {
+      "alias": "N67633",
+      "etiqueta": "IA como fuerza laboral",
+      "indicador": "2",
+      "definicion": "Los humanoides con IA se encuadran como equivalentes de trabajadores humanos (costo frente a salario, trabajo continuo, paso de 'espectáculo' a utilidad económica), sin valorarlos como oportunidad ni como amenaza al empleo (2.2.LAB y 2.3.EMP no lo recogen).",
+      "origen": "adjudicador",
+      "cita": "sus fabricantes buscan que pasen de atracciones a trabajadores y bienes de consumo"
+    },
+    {
+      "alias": "N31249",
+      "etiqueta": "Ilusión de realidad celebrada",
+      "indicador": "2",
+      "definicion": "La capacidad de la IA de producir imágenes indistinguibles de lo real se celebra como logro creativo y publicitario; el engaño de la audiencia es el objetivo. Contrasta con N56221, donde el mismo poder es daño (2.3.DEM).",
+      "origen": "adjudicador",
+      "cita": "En el video todo es real, menos la mitad de la torre Entel para arriba"
+    }
+  ],
+  "vacios_del_libro": [
+    "3.4.NES se lista como código por defecto con cita vacía en §5, pero no figura entre los por defecto del principio 3 ni del paso 5 del procedimiento, y su definición ('solo si hay prescripción sin sujeto') lo hace condicional; B lo registró junto a 3.4.IND en la misma nota.",
+    "La lista de voz no tiene categoría para personas individuales afectadas o figuras públicas (Hanks, King: B forzó FS, A usó P) ni para analistas financieros o consultoras de mercado (Innes, Li: FE o FC sin regla).",
+    "2.1.LIM incluye 'sesgos' y 2.3.DES incluye 'sesgo o discriminación': en N75118 ambos codificadores aplicaron ambos al mismo sesgo sin regla de cuándo corresponde uno, otro o los dos, ni de cómo fijar resp cuando el texto dice que el sesgo viene de los datos humanos.",
+    "La excepción de 1.3.IRR (masividad de un producto concreto frente al origen de la tecnología) no resuelve 'los programas de IA generativa irrumpieron con fuerza... con ChatGPT' (N56221); ambos lo codificaron como 1.3.IRR y 1.1.DIF sobre la misma cita, y el libro no dice si pueden compartir fragmento.",
+    "c1 y c2 no cubren robótica o 'IA física': en N67633 ambos dudaron de 'central' (la IA no está en titular ni bajada) y c2 no menciona robots; además mod.escala solo prevé global, Chile o no_especificada, y ambos usaron 'global' para empresas y gobierno de China.",
+    "La fórmula del propio libro 'llegó para quedarse' (3.2.INE) aparece en N31249 aplicada a la publicidad OOH mediada por IA, y ambos codificaron 3.2.NEX por defecto; no hay regla para sujetos que no son la IA misma, ni para 3.1 ante 'el comienzo de un emocionante viaje de innovación'."
+  ]
+}

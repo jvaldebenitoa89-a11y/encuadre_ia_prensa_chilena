@@ -1,0 +1,622 @@
+{
+ "lote": "P005",
+ "coder": "M",
+ "notas": [
+  {
+   "alias": "N16132",
+   "c1": "central",
+   "c2": [
+    "generica"
+   ],
+   "c3": "otro",
+   "c4": [
+    "Pedro Maldonado",
+    "Grupo de trabajo Hacia una Estrategia de Desarrollo de Inteligencia Artificial en Chile"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.INN",
+     "v": "+",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "\"La inteligencia artificial tiene por primera vez en la historia de la humanidad la capacidad de hacer cosas que antes solo los humanos hacían,",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.AGE",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "la inteligencia artificial puede tomar decisiones, puede reconocer cosas,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.3.EMP",
+     "v": "-",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "qué tipo de trabajos van hacer reemplazados por la IA, y en manos de quién van a estar esas decisiones.",
+     "calidad": 2,
+     "mod": {
+      "g": "G1",
+      "resp": "RTE"
+     }
+    },
+    {
+     "cod": "2.3.PRI",
+     "v": "-",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "\"Incluso nuestras propias decisiones, que uno podría considerar como propias, podrían ser traspasadas a máquinas de inteligencia artificial\",",
+     "calidad": 1,
+     "mod": {
+      "g": "G1",
+      "resp": "RDI"
+     }
+    },
+    {
+     "cod": "3.1.EST",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "esta herramienta va a cambiar la manera en cómo la sociedad funciona,",
+     "calidad": 2,
+     "mod": {
+      "ambito": "otro"
+     }
+    },
+    {
+     "cod": "3.2.DEC",
+     "v": "NA",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "En pleno auge de la Inteligencia Artificial, la sociedad tiene que preguntarse qué tipo de máquinas van a existir, quién va a poder usarlas y cuáles van a ser sus propósitos,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.GOB",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Denominada \"Hacia una Estrategia de Desarrollo de Inteligencia Artificial en Chile\", busca ser el primer paso para una estrategia de cómo Chile se enfrentará a una sociedad automatizada en la era de la Inteligencia Artificial (IA).",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.ACA",
+     "v": "NA",
+     "voz": "P",
+     "marca": "na",
+     "cita": "A fines de junio, un equipo multidisciplinario de investigadores e investigadoras presentó una propuesta de trabajo y programa,",
+     "calidad": 2,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "2.3.PRI: privacidad mental formulada como pregunta abierta; se codifica solo el traspaso de decisiones (calidad 1). 'maquinas' sin vinculo IA en 'politicas y normativas que regulen esa actividad': posible 3.3.REG sin codificar. 3.3.ADO posible ('hay que verlo como una oportunidad'): referente 'verlo' ambiguo, no codificado. 1.1.DIF no: 'en pleno auge' solo contextualiza. 3.4.ACA: actor tomado de oracion previa."
+  },
+  {
+   "alias": "N53610",
+   "c1": "central",
+   "c2": [
+    "generativa",
+    "generica"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Nvidia",
+    "Estados Unidos",
+    "China"
+   ],
+   "c5": "reportaje",
+   "codigos": [
+    {
+     "cod": "1.1.EST",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Países de Asia, Medio Oriente, Europa y América están invirtiendo miles de millones de dólares en nuevas instalaciones informáticas nacionales para inteligencia artificial,",
+     "calidad": 2,
+     "mod": {
+      "escala": "global"
+     }
+    },
+    {
+     "cod": "1.2.GEO",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "El motor de las inversiones es la búsqueda de una mayor autosuficiencia estratégica en medio de las crecientes tensiones entre Estados Unidos y China, centradas en la tecnología.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.MER",
+     "v": "D",
+     "voz": "FC",
+     "marca": "na",
+     "cita": "El mes pasado, Nvidia declaró que se espera que las iniciativas de IA soberana generen casi US$ 10.000 millones este año, frente a la cifra nula del año pasado.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.REV",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "“Hay una enorme ansiedad entre algunos gobiernos sobre cómo la revolución de la IA generativa va a afectar a sus economías”,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.6.ACT",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Para controlar sus destinos de inteligencia artificial en medio del dominio de EE.UU. y China, los países están construyendo su propia infraestructura informática.",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADO",
+     "v": "+",
+     "voz": "FG",
+     "marca": "explicita",
+     "cita": "El presidente francés, Emmanuel Macron, instó el mes pasado a Europa a crear asociaciones público-privadas para comprar más unidades de procesamiento gráfico, o los chips centrales utilizados para entrenar la IA, con el fin de impulsar su cuota",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.EST",
+     "v": "NA",
+     "voz": "FG",
+     "marca": "na",
+     "cita": "El presidente francés, Emmanuel Macron, instó el mes pasado a Europa a crear asociaciones público-privadas para comprar más unidades de procesamiento gráfico, o los chips centrales utilizados para entrenar la IA, con el fin de impulsar su cuota",
+     "calidad": 2,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "'ganancia inesperada' valora a Nvidia, no a la IA. 3.4 podria sumar EMP (asociaciones publico-privadas). Posible reportaje vs noticia. 'ansiedad' no es 2.3."
+  },
+  {
+   "alias": "N90515",
+   "c1": "central",
+   "c2": [
+    "generativa"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Alibaba",
+    "DeepSeek",
+    "OpenAI"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.1.CORP",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "Este jueves 6 de marzo, Alibaba presentó su último modelo de razonamiento de inteligencia artificial (IA).",
+     "calidad": 2,
+     "mod": {
+      "escala": "global"
+     }
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.INN",
+     "v": "+",
+     "voz": "FC",
+     "marca": "explicita",
+     "cita": "Alibaba manifestó que su nuevo modelo, QwQ-32B, ofrece “un rendimiento excepcional”.",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.MER",
+     "v": "D",
+     "voz": "FC",
+     "marca": "na",
+     "cita": "en febrero, Alibaba se comprometió a invertir al menos 380.000 millones de yuanes en su infraestructura de IA y computación en la nube durante los próximos tres años.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "c2 generativa por inferencia (modelo de razonamiento tipo LLM, equivalente a ChatGPT)."
+  },
+  {
+   "alias": "N78864",
+   "c1": "tangencial",
+   "c2": [
+    "generica"
+   ],
+   "c3": "otro",
+   "c4": [
+    "Guido Girardi"
+   ],
+   "c5": "noticia",
+   "codigos": [],
+   "emergentes": [],
+   "dudas": "IA solo aparece en una frase de Girardi ('aprender a vivir con la inteligencia artificial, nueva era'); tema principal es el lanzamiento de Congreso Futuro. Posible 2.1.REV no codificado por tangencial."
+  },
+  {
+   "alias": "N72715",
+   "c1": "secundaria",
+   "c2": [
+    "generica",
+    "sistemas_especificos"
+   ],
+   "c3": "otro",
+   "c4": [
+    "Timnit Gebru",
+    "Google"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.LIM",
+     "v": "-",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Su investigación puso de relieve los algoritmos racistas y los dilemas éticos de los proyectos de minería de datos y la IA.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "Posibles 2.3.DES/3.3 (empoderar trabajadores, leyes, reducir poder de corporaciones) no codificados: hablan de 'tecnologia' sin vinculo explicito con IA (referente). 'guerra de odio' sin vinculo a IA."
+  },
+  {
+   "alias": "N15993",
+   "c1": "secundaria",
+   "c2": [
+    "generativa"
+   ],
+   "c3": "consumo_cotidiano",
+   "c4": [],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "2.6.REC",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "hay otras que le sacan provecho para crear imágenes que por cosas del destino no podrían ser ciertas, como por ejemplo: imaginar cómo sería el difundo actor Paul Walker en la actualidad.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "'Midjourney imagina' posible 2.1.AGE no codificado (uso coloquial, linea final posible pie de imagen). 2.1.HER no: uso recreativo sin fin."
+  },
+  {
+   "alias": "N88933",
+   "c1": "secundaria",
+   "c2": [
+    "generica"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Gobierno de Beijing"
+   ],
+   "c5": "otro",
+   "codigos": [
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.MER",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "basados en hardware y software de inteligencia artificial Ascend, a empresas e instituciones de investigación",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "c1 dudosa entre secundaria y tangencial (IA como adjetivo de centro de computo). c5 otro: gacetilla sin fuentes. 1.1 no codificado: infraestructura, no modelo de IA; financistas no son agente. Expansion del centro es hoja de ruta de proyecto (excluye 3.1)."
+  },
+  {
+   "alias": "N13326",
+   "c1": "central",
+   "c2": [
+    "generica"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Accenture",
+    "Centro de Implementación de Políticas Públicas para la Equidad y el Crecimiento"
+   ],
+   "c5": "columna_opinion",
+   "codigos": [
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.REV",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "La IA es capaz de incrementar la productividad de forma masiva, porque cambia la forma de producir de la economía completa.",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "2.2.ECO",
+     "v": "+",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "Se estima que la incorporación de IA en los negocios aumentará la productividad hasta en un 40%",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.2.LAB",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "ya que ésta permite a los trabajadores centrarse en lo que mejor saben hacer: crear e innovar.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.EST",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "ésta podría llegar a duplicar las tasas anuales de crecimiento económico en 2035, cambiando la naturaleza del trabajo y estableciendo una nueva relación entre las personas y la tecnología.",
+     "calidad": 2,
+     "mod": {
+      "ambito": "trabajo_economia"
+     }
+    },
+    {
+     "cod": "3.2.INE",
+     "v": "NA",
+     "voz": "P",
+     "marca": "na",
+     "cita": "El potencial transformador de las tecnologías de IA es cada vez más evidente y las empresas que ya trabajan con estas soluciones, saben que no hay vuelta atrás.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADO",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Tenemos que hacer algo –y pronto–, para promover y facilitar el proceso de adopción tecnológica en las compañías y también para readaptar las habilidades de los trabajadores.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADA",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Tenemos que hacer algo –y pronto–, para promover y facilitar el proceso de adopción tecnológica en las compañías y también para readaptar las habilidades de los trabajadores.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.EST",
+     "v": "NA",
+     "voz": "P",
+     "marca": "na",
+     "cita": "el desafío es que Chile tome un rol más protagónico con iniciativas tanto del sector público como privado,",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.EMP",
+     "v": "NA",
+     "voz": "P",
+     "marca": "na",
+     "cita": "el desafío es que Chile tome un rol más protagónico con iniciativas tanto del sector público como privado,",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.5.REZ",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "De otro modo, el riesgo es convertirse en un actor de segundo plano que exporte talento y empresas emergentes para el crecimiento de otros países,",
+     "calidad": 2,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "3.3: 'adopcion tecnologica' sin nombrar IA en la oracion (calidad 1, referente por contexto). 'potencial transformador' excluido de REV. Columna del CEO de una empresa tecnologica, sin promocion directa de su firma."
+  }
+ ]
+}

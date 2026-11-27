@@ -1,0 +1,686 @@
+{
+ "lote": "P017",
+ "coder": "M",
+ "notas": [
+  {
+   "alias": "N20174",
+   "c1": "central",
+   "c2": [
+    "generica"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "OpenAI"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "2.3.EMP",
+     "v": "-",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "OpenAI, empresa responsable de ChatGPT , realizó una lista con las profesiones que están con más amenazas en eficiencia, rapidez e impacto general por la IA.",
+     "calidad": 2,
+     "mod": {
+      "g": "G1",
+      "resp": "RTE"
+     }
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "Lista de exposicion atribuida a OpenAI (voz FE por aproximacion de informe). g G1 por duda con G2. 'Con el avance de la IA' solo contextualiza, sin 1.1.DIF."
+  },
+  {
+   "alias": "N56616",
+   "c1": "central",
+   "c2": [
+    "generativa"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "OpenAI"
+   ],
+   "c5": "reportaje",
+   "codigos": [
+    {
+     "cod": "1.1.DIF",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "expertos dan cuenta de cómo la irrupción de la inteligencia artificial ha cambiado los campos laborales de ciertas profesiones",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.3.EMP",
+     "v": "-",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "tanto las áreas ligadas a las humanidades y como a las matemáticas estarían amenazadas en su desarrollo producto del avance de la IA.",
+     "calidad": 2,
+     "mod": {
+      "g": "G1",
+      "resp": "RTE"
+     }
+    },
+    {
+     "cod": "2.2.LAB",
+     "v": "+",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "este software aliviará la carga de trabajo en las labores más repetitivas",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.2.ECO",
+     "v": "+",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "no percibe a esta tecnología como una amenaza , sino que como un potencial para acelerar los tiempos de entrega de forma considerable en el rubro.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.LIM",
+     "v": "-",
+     "voz": "FE",
+     "marca": "explicita",
+     "cita": "no siempre esta herramienta entrega las respuestas correctas.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "2.6.PCH",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "nada de esto es posible sin el humano , que es capaz de escribir buenas instrucciones, mejorar el texto y revisar que el contenido generado sea correcto”,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.5.ALA",
+     "v": "NA",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "A pesar de lo lapidario que pueden parecer estos resultados , expertos aseguran que el panorama real no es para nada lúgubre",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.4.USO",
+     "v": "NA",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "quien no sepa usar la IA será absolutamente prescindible.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.EST",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "esto formará parte de un cambio a gran escala para la fuerza laboral del mundo,",
+     "calidad": 2,
+     "mod": {
+      "ambito": "trabajo_economia"
+     }
+    },
+    {
+     "cod": "3.2.INE",
+     "v": "NA",
+     "voz": "P",
+     "marca": "na",
+     "cita": "El área laboral no es la única que se prepara para esta inevitable irrupción.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADA",
+     "v": "D",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "Incluimos capacitaciones en herramientas generativas , pero con énfasis en las habilidades únicas de los humanos como pensamiento crítico y la comprensión cultural”.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.ACA",
+     "v": "NA",
+     "voz": "FE",
+     "marca": "na",
+     "cita": "Incluimos capacitaciones en herramientas generativas , pero con énfasis en las habilidades únicas de los humanos como pensamiento crítico y la comprensión cultural”.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "Posible 2.3.DES/CUL (Torres: sesgos, pensamiento critico) sin vinculo causal claro; 2.3.EMP tambien en Halpern (reducciones de personal). 1.3.IRR descartado: 'irrupcion' sin evento subito explicito. 3.2.INE de 'inevitable irrupcion' dudoso. Voces son academicos (filiacion no se registra como actor)."
+  },
+  {
+   "alias": "N75287",
+   "c1": "central",
+   "c2": [
+    "generativa"
+   ],
+   "c3": "consumo_cotidiano",
+   "c4": [
+    "OpenAI"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.1.CORP",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "La empresa OpenAI , creadora del programa ChatGPT, presentó este lunes su nuevo modelo de inteligencia artificial generativa , GPT-4o,",
+     "calidad": 2,
+     "mod": {
+      "escala": "global"
+     }
+    },
+    {
+     "cod": "2.1.INN",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "su nuevo modelo de inteligencia artificial generativa , GPT-4o, con nuevas capacidades de producción y comprensión de textos, imágenes y sonidos,",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.HER",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "es capaz de leer las emociones en sus rostros a través de la cámara de su teléfono inteligente, guiarlos para que hagan ejercicios de respiración, contarles una historia o ayudarlos a resolver un problema matemático,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.MER",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "que estará disponible de forma gratuita.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "'lanzó la revolución de la IA generativa' no codificado como 2.1.REV/1.3.IRR (referido al lanzamiento de ChatGPT, pasado). 'leer las emociones' no codificado como 2.1.AGE (funcion tecnica)."
+  },
+  {
+   "alias": "N54903",
+   "c1": "central",
+   "c2": [
+    "generativa"
+   ],
+   "c3": "consumo_cotidiano",
+   "c4": [
+    "My Heritage"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "1.1.CORP",
+     "v": "D",
+     "voz": "P",
+     "marca": "na",
+     "cita": "La aplicación Deep Nostalgia, desarrollada por My Heritage, se volvió todo un fenómeno viral al aprovechar la inteligencia artificial y el deep learning",
+     "calidad": 2,
+     "mod": {
+      "escala": "no_especificada"
+     }
+    },
+    {
+     "cod": "2.6.REC",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "aplicar realistas animaciones a fotografías, ofreciendo la posibilidad a los usuarios de darle vida a imágenes de sus familiares.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [
+    {
+     "indicador": 2,
+     "etiqueta": "entretenimiento_viral",
+     "definicion": "La IA se presenta como fenomeno viral de entretenimiento",
+     "v": "D",
+     "voz": "P",
+     "cita": "se volvió todo un fenómeno viral al aprovechar la inteligencia artificial y el deep learning"
+    }
+   ],
+   "dudas": "'realistas' como marca explicita + en REC es dudoso (adjetivo de las animaciones)."
+  },
+  {
+   "alias": "N64005",
+   "c1": "central",
+   "c2": [
+    "generica"
+   ],
+   "c3": "politica_estado",
+   "c4": [
+    "Gobierno de Chile",
+    "Fundación Encuentros del Futuro"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "2.2.SEG",
+     "v": "+",
+     "voz": "FG",
+     "marca": "explicita",
+     "cita": "“La IA jugará un rol importante en la búsqueda de nuestros detenidos desaparecidos”",
+     "calidad": 3,
+     "mod": {}
+    },
+    {
+     "cod": "2.2.SAL",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "Junto a los beneficios que tiene la IA, Boric ejemplificó con los distintos usos que se le pueden otorgar a desafíos país, tales como la detección de incendios y en el campo de la Medicina.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.2.AMB",
+     "v": "+",
+     "voz": "FG",
+     "marca": "explicita",
+     "cita": "Tomando los debidos resguardos, la IA va a ser una gran herramienta para Chile y América Latina en el respeto por el Medioambiente”,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.5.ALA",
+     "v": "NA",
+     "voz": "FG",
+     "marca": "na",
+     "cita": "“Hay algunos que cuando se hablan de IA hablan con miedo y de los riegos, pero nosotros vemos las oportunidades”,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "Posibles no codificados: 2.4 ('Tomando los debidos resguardos', sin factor claro), 3.2.DEC (Girardi 'depende de nosotros', sin referente IA claro), 2.3 (Girardi 'amenaza que comienza a erosionar el mundo', hedged y sobre 'la tecnologia'). 2.2.SAL v + por 'beneficios' del periodista."
+  },
+  {
+   "alias": "N27382",
+   "c1": "central",
+   "c2": [
+    "sistemas_especificos",
+    "generativa"
+   ],
+   "c3": "consumo_cotidiano",
+   "c4": [
+    "Lovense"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "2.1.AGE",
+     "v": "+",
+     "voz": "FC",
+     "marca": "explicita",
+     "cita": "La compañía asegura que el sistema de la muñeca sexual cuenta con “cognición similar a la humana, conciencia emocional y comportamiento expresivo”",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.1.INN",
+     "v": "+",
+     "voz": "P",
+     "marca": "explicita",
+     "cita": "una empresa sorprendió al presentar un producto que va más allá de lo convencional: una muñeca sexual de tamaño real equipada con inteligencia artificial.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "2.2.CUL",
+     "v": "+",
+     "voz": "FC",
+     "marca": "explicita",
+     "cita": "fue diseñado para enfrentar la creciente crisis global de la soledad, afirman, ya que con la ayuda de la IA podría mejorar la relación con su “humano dueño”.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.NIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [
+    {
+     "indicador": 2,
+     "etiqueta": "compania_afectiva",
+     "definicion": "La IA como companera virtual o afectiva",
+     "v": "D",
+     "voz": "P",
+     "cita": "es la evolución natural de los compañeros virtuales que hasta ahora solo existían en pantallas de teléfonos y computadoras."
+    }
+   ],
+   "dudas": "Fallas de seguridad previas de Lovense (grabacion sin consentimiento) no vinculadas a IA, sin 2.3.PRI. No 2.1.MER (precio no revelado). Residuos 'Lee tambien' y tweet no codificados."
+  },
+  {
+   "alias": "N94964",
+   "c1": "central",
+   "c2": [
+    "generativa"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Fondo Monetario Internacional"
+   ],
+   "c5": "noticia",
+   "codigos": [
+    {
+     "cod": "2.3.EMP",
+     "v": "-",
+     "voz": "FI",
+     "marca": "explicita",
+     "cita": "FMI alerta que inteligencia artificial también podría sustituir a humanos en empleos más calificados",
+     "calidad": 3,
+     "mod": {
+      "g": "G1",
+      "resp": "RTE"
+     }
+    },
+    {
+     "cod": "2.2.EST",
+     "v": "+",
+     "voz": "FI",
+     "marca": "explicita",
+     "cita": "el FMI cree que la IA tiene potencial para seguir reduciendo la evasión fiscal a nivel mundial y mejorar en la aplicación de las leyes fiscales.",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.1.INC",
+     "v": "D",
+     "voz": "FI",
+     "marca": "na",
+     "cita": "el FMI insiste en la “incertidumbre enorme” que existe sobre el impacto económico que puede generar el progreso de la IA avanzada en la sociedad,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.LIB",
+     "v": "+",
+     "voz": "FI",
+     "marca": "explicita",
+     "cita": "el organismo desaconseja aplicar impuestos especiales sobre la IA para reducir la inversión en ella, puesto que considera que podría obstaculizar la productividad,",
+     "calidad": 2,
+     "mod": {}
+    },
+    {
+     "cod": "3.3.ADA",
+     "v": "+",
+     "voz": "FI",
+     "marca": "explicita",
+     "cita": "anima a evaluar si los sistemas de protección social, educación y fiscalidad son adecuados y lo suficientemente flexibles para hacer frente a una amplia gama de escenarios.",
+     "calidad": 1,
+     "mod": {
+      "objeto": "adaptar protección social, educación y fiscalidad"
+     }
+    },
+    {
+     "cod": "3.3.ADA",
+     "v": "+",
+     "voz": "FI",
+     "marca": "explicita",
+     "cita": "pero recomienda que los países aumenten el impuesto medio sobre las rentas del capital.",
+     "calidad": 1,
+     "mod": {
+      "objeto": "aumentar impuesto a rentas del capital"
+     }
+    },
+    {
+     "cod": "3.4.NES",
+     "v": "NA",
+     "voz": "FI",
+     "marca": "na",
+     "cita": "anima a evaluar si los sistemas de protección social, educación y fiscalidad son adecuados y lo suficientemente flexibles para hacer frente a una amplia gama de escenarios.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "3.4.EST",
+     "v": "NA",
+     "voz": "FI",
+     "marca": "na",
+     "cita": "pero recomienda que los países aumenten el impuesto medio sobre las rentas del capital.",
+     "calidad": 1,
+     "mod": {}
+    },
+    {
+     "cod": "1.3.SIN",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    },
+    {
+     "cod": "3.2.NEX",
+     "v": "NA",
+     "voz": "na",
+     "marca": "na",
+     "cita": "",
+     "calidad": 0,
+     "mod": {}
+    }
+   ],
+   "emergentes": [],
+   "dudas": "2.3.EMP g G1 por duda con G2. Peligro de concentracion empresarial/monopolio ligado a baja fiscalidad del capital, no a la IA: no 2.3.DES. ADA 'recomienda' impuesto al capital: vinculo con IA debil (calidad 1)."
+  },
+  {
+   "alias": "N46613",
+   "c1": "tangencial",
+   "c2": [
+    "generica"
+   ],
+   "c3": "trabajo_economia",
+   "c4": [
+    "Cámara Regional de Comercio de Valparaíso",
+    "ProChile"
+   ],
+   "c5": "otro",
+   "codigos": [],
+   "emergentes": [],
+   "dudas": "IA solo como foco tematico en bajada; anuncio de evento."
+  }
+ ]
+}

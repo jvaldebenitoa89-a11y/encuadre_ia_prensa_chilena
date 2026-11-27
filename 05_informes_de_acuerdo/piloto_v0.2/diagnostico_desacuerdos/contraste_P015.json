@@ -1,0 +1,179 @@
+{
+ "lote": "P015",
+ "desacuerdos": [
+  {
+   "codigo": "2.3.EMP / 2.3.OTR",
+   "alias": "N26433",
+   "tipo": "voz",
+   "a": "P",
+   "b": "FS",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "El fragmento es la bajada, redactada por el medio pero que resume lo que perciben los encuestados. El libro no dice a quién se atribuye la voz en un sondeo: A leyó la mano del periodista (P), B la de la ciudadanía consultada (FS).",
+   "propuesta_regla": "Sondeos y encuestas: cuando el fragmento (incluidos titular y bajada) reporta lo que la ciudadanía consultada percibe, cree o valora, voz = FS. P solo si el medio añade una valoración propia no atribuida a los encuestados. Que la encuestadora sea una empresa (Cadem) no vuelve la voz FC."
+  },
+  {
+   "codigo": "2.1.INN",
+   "alias": "N26433",
+   "tipo": "presencia",
+   "a": "No codifica",
+   "b": "Codifica (+, FS) con \"Futuro\", \"avance\", \"innovación\" como palabras para definir la IA",
+   "causa": "juicio_legitimo",
+   "diagnostico": "Son palabras de los encuestados reportadas como asociación dominante. B lo lee como la nota construyendo a la IA como avance; A lo trata como mención léxica (principio 1) y la misma oración trae \"peligro\" y \"miedo\". Ambas lecturas son defendibles."
+  },
+  {
+   "codigo": "2.1.LIM",
+   "alias": "N26433",
+   "tipo": "presencia",
+   "a": "No codifica",
+   "b": "Codifica (D, FS, calidad 1): 44% recibió información equivocada",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "LIM exige enfatizar fallas, pero aquí solo hay un porcentaje reportado sin adjetivo ni advertencia. B lo codifica con v=D, combinación que el libro no prevé (enfatizar ya es una marca valorativa).",
+   "propuesta_regla": "2.1.LIM exige que el fragmento afirme o enfatice una falla (errores, sesgos, límites, 'miente', 'alucina'). Reportar solo el porcentaje de usuarios que experimentó errores, sin juicio, no se codifica. LIM no admite v=D: si no hay marca, no hay código."
+  },
+  {
+   "codigo": "2.1.HER",
+   "alias": "N45140 / N18833",
+   "tipo": "presencia",
+   "a": "N45140: HER (+, P) sobre el titular 'gracias a la Inteligencia Artificial'. N18833: no codifica",
+   "b": "N45140: no codifica. N18833: HER (D, P, calidad 1) sobre 'La herramienta que permite entablar conversaciones con inteligencia artificial'",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "El umbral de HER es vago. A lo aplica a un complemento instrumental ('gracias a la IA'); B a una definición léxica ('herramienta'). Cada codificador cubre un extremo distinto y el patrón se repite en dos notas.",
+   "propuesta_regla": "2.1.HER requiere un enunciado propio que atribuya a la IA una función al servicio de fines humanos (herramienta, asistente, 'ayuda a', 'sirve para', 'permite'). Un complemento que solo nombra el medio de un evento ('con IA', 'gracias a la IA', 'generado mediante IA') no basta. Si no hay función atribuida, no se codifica."
+  },
+  {
+   "codigo": "c3",
+   "alias": "N14883",
+   "tipo": "otro",
+   "a": "salud_ciencia",
+   "b": "politica_estado",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "En una nota tangencial c3 no tiene un ámbito 'donde la nota ubica a la IA', porque la IA aparece en dos frases. A tomó el tema de fondo (ciencia), B el sujeto institucional (comisión del Senado).",
+   "propuesta_regla": "En notas tangenciales c3 registra el ámbito del tema principal de la nota, no el de la IA. Si el sujeto es una institución estatal (Senado, ministerio, gobierno) y el contenido es su gestión o sus logros, politica_estado. salud_ciencia solo si el eje es el contenido científico o sanitario mismo."
+  },
+  {
+   "codigo": "3.4.* (voz en códigos con v=NA)",
+   "alias": "N26333 / N50921 / N78410",
+   "tipo": "voz",
+   "a": "voz = quien enuncia el fragmento citado (P en 3.4.EST de N26333 y en 3.4.EMP de N50921)",
+   "b": "voz = na en esos 3.4 aunque llevan cita; en cambio pone FS en 3.4.EST de N26433 y FE en 3.2.DEC de N78410",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "La sección 3 dice que marca es na cuando v es NA, pero calla sobre voz, y la sección 8 pone voz=na solo en los códigos por defecto. A aplica siempre la voz del fragmento; B es incoherente entre notas.",
+   "propuesta_regla": "En todo código con cita, incluidos los de v=NA (2.4, 2.5, 3.2, 3.4), voz es quien enuncia el fragmento citado. voz = na solo en los códigos por defecto sin cita (1.3.SIN, 3.1.NIN, 3.2.NEX, 3.3.NIN, 3.4.NES)."
+  },
+  {
+   "codigo": "1.1.DIF",
+   "alias": "N50921",
+   "tipo": "presencia",
+   "a": "Codifica (D, P, calidad 1) sobre 'Siguiendo la proliferación de las herramientas [...] gracias a modelos de inteligencia artificial'",
+   "b": "No codifica",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "La frase nominaliza 'proliferación' sin agente, pero es una subordinada de contexto y no un enunciado sobre el surgimiento de la IA. El libro define DIF solo por ausencia de sujeto, lo que lo hace aplicable a casi cualquier nominalización (A mismo marcó la cita como débil).",
+   "propuesta_regla": "1.1.DIF solo si el fragmento afirma, como enunciado principal, que la IA o su avance 'irrumpió', 'llegó', 'avanza' o 'se expande' sin nombrar agente humano ni institucional. Nominalizaciones en subordinadas de contexto ('siguiendo la proliferación de...') no se codifican. Ante la duda, no codifiques."
+  },
+  {
+   "codigo": "3.1.CON / 3.1.NIN",
+   "alias": "N50921",
+   "tipo": "presencia",
+   "a": "3.1.CON (D, P, calidad 1) sobre 'probablemente este no será el fin de la suspensión o las polémicas pro proyectos de arte generado'",
+   "b": "3.1.NIN (sin proyección)",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "El pronóstico trata de las polémicas y suspensiones en Kickstarter, no de la trayectoria de la IA. El libro no define cuál debe ser el objeto de la proyección en 3.1.",
+   "propuesta_regla": "3.1 exige que el fragmento proyecte el futuro de la IA (su desarrollo, adopción o efectos). Pronósticos sobre disputas, decisiones de una empresa o casos puntuales ('no será el fin de las polémicas') no son 3.1; queda 3.1.NIN."
+  },
+  {
+   "codigo": "2.3.SEG",
+   "alias": "N50921",
+   "tipo": "presencia",
+   "a": "No codifica",
+   "b": "Codifica (-, FS, G1, RCO) sobre 'financiando una herramienta que puede crear contenido abusivo, como la pornografía no consentida'",
+   "causa": "error_codificador",
+   "diagnostico": "La cita, de un usuario de redes, atribuye a la herramienta la capacidad de crear contenido abusivo. Es un daño distinto del de 2.3.CUL (uso de obras ajenas), y el principio 7 exige registrarlo. A lo omitió. El ámbito (SEG o PRI) y resp (RCO o RMA) elegidos por B son discutibles, pero la presencia es clara."
+  },
+  {
+   "codigo": "3.2.DEC / 3.2.NEX",
+   "alias": "N78410",
+   "tipo": "presencia",
+   "a": "3.2.NEX (por defecto)",
+   "b": "3.2.DEC (FE) sobre 'debe haber una discusión ética sobre cómo se debe aplicar la tecnología'",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "A usó esa misma oración para 3.3.CON pero no para 3.2.DEC. El libro no distingue la prescripción (3.3) de presentar la dirección como decisión colectiva (DEC). La lectura de B está mejor sustentada.",
+   "propuesta_regla": "3.2.DEC se aplica cuando el texto pide o afirma deliberación, debate, consulta o decisión colectiva sobre si o cómo usar u ordenar la IA ('debe haber una discusión', 'hay que decidirlo entre todos'). Una prescripción simple ('debe regularse') es solo 3.3 y no activa DEC. Si hay DEC no se registra 3.2.NEX."
+  },
+  {
+   "codigo": "3.3.ADO",
+   "alias": "N78410",
+   "tipo": "presencia",
+   "a": "No codifica",
+   "b": "Codifica (+, FE) sobre 'ya que las escuelas deben mantenerse al día con los avances tecnológicos para abordar la verificación de la autoría'",
+   "causa": "juicio_legitimo",
+   "diagnostico": "La frase es paráfrasis sin comillas, de hablante dudoso (periodista o Lorenzen), y exhorta a seguir 'los avances tecnológicos', no a adoptar la IA de forma explícita. B la lee como exhortación a adoptar; A como justificación de la predicción ya codificada en 3.1.CON."
+  },
+  {
+   "codigo": "3.4.EST / 3.4.NES",
+   "alias": "N78410",
+   "tipo": "presencia",
+   "a": "3.4.NES: la acción de 3.3.CON no tiene sujeto",
+   "b": "3.4.EST: el actor es la escuela (por el 3.3.ADO); no registra NES para CON",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "Deriva del desacuerdo anterior, pero muestra dos vacíos: el libro no dice si 3.4 se registra una vez por nota o por cada actor, y no ubica a escuelas o establecimientos educativos en ninguna categoría de 3.4.",
+   "propuesta_regla": "3.4 se registra una vez por cada actor distinto que deba ejecutar algún 3.3 de la nota. 3.4.NES se suma si algún 3.3 queda sin sujeto. Escuelas y liceos: 3.4.EST si actúan como parte del sistema educativo público. 3.4.ACA solo para universidades o centros de investigación en su rol científico."
+  },
+  {
+   "codigo": "c5",
+   "alias": "N18833",
+   "tipo": "otro",
+   "a": "otro",
+   "b": "entrevista",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "Formato pregunta-respuesta en que quien responde es un chatbot. La definición de c5 'por la forma' no dice si 'entrevista' exige un entrevistado humano; ambos lo anotaron en dudas.",
+   "propuesta_regla": "entrevista: intercambio pregunta-respuesta con una persona identificable. Si quien responde es un chatbot o sistema de IA, c5 = otro y se anota 'formato_chatbot' en dudas, para poder aislar este subgénero."
+  },
+  {
+   "codigo": "c4",
+   "alias": "N78410 / N18833",
+   "tipo": "otro",
+   "a": "Incluye 'Ghostwriter' y 'ChatGPT' entre los actores",
+   "b": "Solo instituciones y empresas ('Escuelas secundarias danesas', 'OpenAI', 'La Tercera')",
+   "causa": "error_codificador",
+   "diagnostico": "c4 enumera tipos de actor (empresas, personas, Estados, instituciones) y un programa o producto no es actor. A gastó plazas de c4 en productos que son el objeto del discurso, y lo hizo en dos notas."
+  }
+ ],
+ "emergentes": [
+  {
+   "etiqueta": "Resurrección digital",
+   "indicador": "2",
+   "definicion": "La IA devuelve a la escena a personas fallecidas y esto se celebra como reencuentro afectivo y memoria (N45140).",
+   "origen": "adjudicador",
+   "cita": "la sorpresa es mayúscula cuando aparecen los difuntos Gabriel Parra y Eduardo ‘Gato’ Alquinta"
+  },
+  {
+   "etiqueta": "IA como confidente",
+   "indicador": "2",
+   "definicion": "La IA aparece como interlocutor al que se confían problemas personales que dan vergüenza, función afectiva que no es herramienta ni oportunidad (N26433).",
+   "origen": "adjudicador",
+   "cita": "Ante la consulta si alguna vez le ha contado a la IA sobre un problema personal que le da vergüenza hablar con otras personas, un 28% dice que sí y un 72% dice que no."
+  },
+  {
+   "etiqueta": "Presión de adopción",
+   "indicador": "3",
+   "definicion": "No usar IA se presenta como riesgo de rezago o de brecha de competencias en el trabajo: un imperativo de adaptarse que no es prescripción del texto ni 3.2.INE (N26433).",
+   "origen": "adjudicador",
+   "cita": "un 55% cree que si no usa IA \"se va a quedar atrás\"."
+  },
+  {
+   "etiqueta": "IA como interlocutor",
+   "indicador": "2",
+   "definicion": "El medio trata a ChatGPT como informante al que se interroga sobre asuntos públicos y cuyas respuestas se publican como tales (N18833). Frontera con 2.1.AGE sin resolver.",
+   "origen": "adjudicador",
+   "cita": "En La Tercera sometimos a ChatGPT a cinco preguntas y estas son sus respuestas"
+  }
+ ],
+ "vacios_del_libro": [
+  "Encuestas sin regla de voz ni de cobertura: ambos codificadores registraron solo los riesgos de la bajada en N26433 y dejaron 3.1.NIN, ignorando el bloque de riesgos (desinformación, datos personales, manipulación) y el de 'proyecciones'. Falta decidir si los porcentajes de creencia cuentan como daño atribuido (2.3) y como futuro proyectado (3.1).",
+  "La frontera tangencial/secundaria no tiene criterio cuantitativo: en N14883 ambos dijeron tangencial aunque la fuente principal afirma que la IA 'acabará con la mitad de los empleos'. En N45140 ambos dijeron secundaria para un evento 'con IA', que la regla de c1 también podría leer como adjetivo de evento (tangencial).",
+  "El modificador 'escala' no define actores extranjeros que no son globales (empresas chinas, universidad danesa). A anotó 'global por no ser Chile'; falta precisar si global significa fuera de Chile o transnacional.",
+  "1.3.TRA no excluye, como sí lo hace 1.3.IRR, la trayectoria de un proyecto o herramienta concreta ('llevan años investigando' en N78410). Ambos dejaron SIN por lectura implícita; falta simetría entre IRR y TRA.",
+  "2.1.AGE no dice si verbos como 'responde', 'entabla conversaciones' o 'le contó problemas personales' son antropomorfización o uso lexicalizado: N18833 ('ChatGPT responde') y N26433 quedaron sin AGE en ambos codificadores.",
+  "Contradicción sobre los códigos por defecto: el principio 3 y el paso 5 del procedimiento listan 1.3.SIN, 3.1.NIN, 3.2.NEX y 3.3.NIN, pero la sección 5 agrega 3.4.NES a los que llevan cita vacía, mientras que 3.4.NES se define como 'solo si hay prescripción sin sujeto', es decir, no es por defecto."
+ ]
+}

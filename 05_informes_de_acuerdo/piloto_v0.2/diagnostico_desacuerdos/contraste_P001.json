@@ -1,0 +1,172 @@
+{
+ "lote": "P001",
+ "desacuerdos": [
+  {
+   "codigo": "2.3.EMP",
+   "alias": "N22527",
+   "tipo": "presencia",
+   "a": "Codifica 2.3.EMP (v=D, voz P, G1, RTE) con la pregunta '-Las personas temen que puedas quitarle sus trabajos.'",
+   "b": "No codifica 2.3.EMP",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "El texto solo reporta un temor y el chatbot lo desactiva ('no están diseñados para reemplazar'); no hay daño atribuido, pero el libro no dice qué hacer con temores citados para refutarlos. Además A usó v=D en 2.3, incoherente con un daño atribuido.",
+   "propuesta_regla": "Un temor o daño que el texto menciona solo para refutarlo o relativizarlo ('las personas temen que...') no es 2.3; si hay refutación se codifica 2.5.ALA. 2.3 exige que el texto afirme o admita el daño como posible y atribuido a la IA ('podría quitar empleos'). En 2.3, v=D indica que no hay daño atribuido: no aplicar el código."
+  },
+  {
+   "codigo": "1.2.NEC",
+   "alias": "N66333",
+   "tipo": "presencia",
+   "a": "Codifica 1.2.NEC (+, explícita): 'la planificación de un viaje puede volverse complicada. Con esta nueva IA, Google busca que...'",
+   "b": "No codifica 1.2.NEC; solo 1.1.CORP",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "El texto atribuye al lanzamiento el propósito de resolver una complicación de consumo. 1.2.NEC dice 'necesidades o problemas sociales' sin aclarar si una conveniencia individual califica, ni si D1 rige para un producto concreto (1.1.CORP se aplicó a nivel de producto, mientras 1.3.IRR excluye productos).",
+   "propuesta_regla": "1.2.NEC exige que el texto presente un problema social o colectivo (salud, educación, productividad, acceso) como razón de ser de la IA o de su desarrollo. La intención comercial de un lanzamiento o facilitar una conveniencia de consumo ('simplificar la planificación de viajes') no basta: solo 1.1.CORP; esa ventaja va en D2 (2.2)."
+  },
+  {
+   "codigo": "3.4.IND",
+   "alias": "N98949",
+   "tipo": "presencia",
+   "a": "Codifica 3.4.EMP y 3.4.IND (usuarios que aplican lo aprendido)",
+   "b": "Solo 3.4.EMP; usuarios como destinatarios",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "La regla de 3.4 incluye 'capacitarse' como acción ejecutable, lo que respalda a A, pero B leyó al usuario como destinatario de la oferta. El libro no dice si 3.4 admite varios valores ni si en 3.3.ADA el actor es quien ofrece o quien recibe la capacitación.",
+   "propuesta_regla": "En 3.3.ADA, 3.4 registra a quien ofrece o impulsa la capacitación (empresa, Estado). Agrega 3.4.IND solo si el texto exhorta expresamente al individuo a capacitarse ('debes aprender', 'hay que reconvertirse'); la mera oferta a un destinatario no cuenta. 3.4 admite más de un valor solo si cada actor ejecuta una acción distinta nombrada en el texto."
+  },
+  {
+   "codigo": "1.3.TRA",
+   "alias": "N62186",
+   "tipo": "otro",
+   "a": "1.3.TRA con cita 'un violoncelista que ha dedicado largos años al proyecto...' (calidad 2)",
+   "b": "1.3.TRA con cita 'hace casi diez años' (calidad 1)",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "Ambos aplican TRA al proyecto de diez años de un investigador y ambos anotan que es débil, pues no narra de dónde viene la IA. 1.3.IRR excluye explícitamente productos concretos, pero 1.3.TRA carece de la exclusión simétrica; con la lógica de IRR correspondería 1.3.SIN.",
+   "propuesta_regla": "1.3.TRA exige que el texto narre la trayectoria de la IA o de la tecnología como campo (años o décadas de investigación acumulada). La duración del proyecto o del desarrollo de un producto o sistema concreto ('diez años trabajando en BeethovANN') no es TRA: es 1.3.SIN."
+  },
+  {
+   "codigo": "EMERG-autenticidad",
+   "alias": "N62186",
+   "tipo": "presencia",
+   "a": "Registra el emergente 'Autenticidad creativa' con 'Quizá le falta la chispa del genio'",
+   "b": "No lo registra en esta nota (sí lo registró en N94708 y lo menciona en dudas)",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "v0.2 saca los juicios estéticos y de autenticidad de 2.1.LIM, pero no dice si van como emergente ni qué umbral cumple un comentario atenuado ('quizá') dentro de una valoración global favorable. B registró la afirmación fuerte (N94708) y omitió la atenuada. El patrón aparece en 2 de 8 notas.",
+   "propuesta_regla": "Los juicios de autenticidad, genio o identidad sobre lo creado con IA se registran como emergente 'Autenticidad creativa' (indicador 2) cuando el fragmento afirma la carencia sin atenuantes ('es artificial', 'no son los Beatles'). Un comentario atenuado ('quizá', 'un poco') que convive con una valoración global favorable de la misma fuente se anota en dudas, no como emergente. Evaluar un código 2.1.AUT en v0.3."
+  },
+  {
+   "codigo": "3.4.EST",
+   "alias": "N52666",
+   "tipo": "voz",
+   "a": "voz P (cita el titular 'Chile y China acuerdan...')",
+   "b": "voz FG (cita 'China y Chile expresaron este miércoles su voluntad de profundizar...')",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "Las citas son distintas y cada voz es coherente con la suya (titular = medio; frase del cuerpo = lo expresado por los gobiernos en discurso indirecto). El libro no dice cómo asignar voz con discurso indirecto ni en códigos con v=NA, donde la voz no tiene valoración que sostener.",
+   "propuesta_regla": "`voz` es P cuando el fragmento es titular o narración del medio. Es la fuente (FG, FC, FE...) cuando el fragmento atribuye expresamente lo dicho a esa fuente en discurso directo o indirecto ('X expresó que...', 'X afirmó que...'). La regla es la misma en códigos con v=NA."
+  },
+  {
+   "codigo": "1.1.CIE",
+   "alias": "N62186",
+   "tipo": "mod",
+   "a": "escala = global",
+   "b": "escala = no_especificada",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "El agente es la Escuela Politécnica Federal de Lausana, en un texto sin referencia a Chile ni a una escala. El libro enumera los valores de `escala` pero no define cuándo es 'global' y cuándo 'no_especificada'.",
+   "propuesta_regla": "`escala`: Chile si el agente es chileno o la nota sitúa el desarrollo en Chile; global si el agente es extranjero o transnacional (OpenAI, Google, una universidad extranjera) o la nota habla de alcance mundial; no_especificada solo si el texto no permite ubicar al agente."
+  },
+  {
+   "codigo": "c3",
+   "alias": "N66333",
+   "tipo": "otro",
+   "a": "trabajo_economia",
+   "b": "otro",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "La nota trata de un buscador de vuelos para consumidores y la lista de c3 no tiene categoría de consumo o tecnología cotidiana. A anotó la duda; 2.2.CUL sí incluye 'vida cotidiana', lo que muestra el desajuste entre c3 y D2.",
+   "propuesta_regla": "Agregar el valor `consumo_cotidiano` (productos y servicios de consumo: buscadores, apps, viajes, entretenimiento). `trabajo_economia` solo si la nota trata de empleo, productividad laboral, mercados o finanzas; que una empresa lance el producto no vuelve económica la nota."
+  },
+  {
+   "codigo": "c4",
+   "alias": "N94708, N20984, N52666",
+   "tipo": "otro",
+   "a": "Incluye a un comentarista (Cristofer Rodríguez) y un proyecto (Breakthrough Listen); en N52666 solo dos gobiernos",
+   "b": "Omite a ambos; en N52666 agrega a Francisco Pérez Mackenna",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "La regla de c4 ('los más relevantes para el discurso sobre la IA') no jerarquiza entre desarrolladores, decisores y fuentes citadas; el desacuerdo se repite en 3 de 8 notas, aunque es de bajo impacto analítico.",
+   "propuesta_regla": "c4: hasta 3 actores en este orden de prioridad: (1) quien desarrolla, lanza o impulsa la IA; (2) quien regula, decide o ejecuta la acción; (3) la fuente principal citada. Excluye proyectos, medios y marcas de contexto (p. ej., Breakthrough Listen) y a personas citadas solo por una opinión de paso."
+  },
+  {
+   "codigo": "2.1.AGE",
+   "alias": "N22527",
+   "tipo": "otro",
+   "a": "2.1.AGE (D) con cita 'se ofrece responder preguntas sobre su funcionamiento' (calidad 1)",
+   "b": "2.1.AGE (D) con cita de la bajada 'analizó su funcionamiento... reveló las preguntas más profundas' (calidad 1)",
+   "causa": "ambiguedad_libro",
+   "diagnostico": "Coinciden en el código pero con citas distintas y ambos con calidad 1: el formato de entrevista atribuye agencia al chatbot mientras su propio discurso la niega ('no tengo emociones'). El libro no dice si basta el formato ni de quién debe ser la cita.",
+   "propuesta_regla": "En entrevistas o diálogos con un chatbot, 2.1.AGE se codifica solo si el narrador o el medio le atribuye agencia o intención ('se animó', 'reveló', 'quiere'). Cita siempre el fragmento del narrador, nunca las respuestas del chatbot, que niegan agencia ('no tengo emociones'). Si solo lo sustenta el formato, calidad 1."
+  },
+  {
+   "codigo": "2.5.ALA",
+   "alias": "N22527",
+   "tipo": "otro",
+   "a": "Cita la respuesta del chatbot: 'los modelos de lenguaje como yo no están diseñados para reemplazar a las personas en sus trabajos...'",
+   "b": "Cita la intención del periodista: 'para despejar algunos de los temores que existen frente al impacto...'",
+   "causa": "error_codificador",
+   "diagnostico": "Coinciden en 2.5.ALA, pero la cita de B solo declara la intención de despejar temores y no cuestiona la narrativa; el cuestionamiento efectivo está en la respuesta del chatbot (cita de A). La sección 5 pide el tramo mínimo que muestre el código."
+  }
+ ],
+ "emergentes": [
+  {
+   "alias": "N94708",
+   "etiqueta": "Autenticidad creativa",
+   "indicador": "2",
+   "definicion": "La IA recrea la obra pero la vuelve artificial o inauténtica frente al original; no es falla técnica (excluida de 2.1.LIM).",
+   "cita": "hay que entenderlo como una cosa un poco artificial. No son los Beatles como los conoció la humanidad hace 60 años",
+   "origen": "ambos"
+  },
+  {
+   "alias": "N62186",
+   "etiqueta": "Autenticidad creativa",
+   "indicador": "2",
+   "definicion": "La IA imita el estilo pero carece de genio; comentario atenuado, registrado solo por A.",
+   "cita": "Quizá le falta la chispa del genio",
+   "origen": "A"
+  },
+  {
+   "alias": "N62186",
+   "etiqueta": "Recreación póstuma de artistas",
+   "indicador": "2",
+   "definicion": "La IA se presenta como medio para continuar o resucitar la obra y la voz de artistas fallecidos (Beethoven, Lennon); también en N94708.",
+   "cita": "Terminan la sinfonía inconclusa de Beethoven a siglos de su muerte: usaron inteligencia artificial",
+   "origen": "adjudicador"
+  },
+  {
+   "alias": "N98949",
+   "etiqueta": "IA democratizadora",
+   "indicador": "2",
+   "definicion": "La IA se presenta como capacidad puesta al alcance de todos (acceso universal, empoderamiento); distinta de 2.2 (beneficio sectorial) y opuesta a 2.3.DES. También en N62186 ('que todo el mundo pueda componer').",
+   "cita": "democratizar la educación en IA y empoderar a las personas con las habilidades que necesitan para prosperar en la era digital",
+   "origen": "adjudicador"
+  },
+  {
+   "alias": "N20984",
+   "etiqueta": "Autoevolución de la IA",
+   "indicador": "1",
+   "definicion": "La IA aparece como agente de su propia evolución y mejora (se perfecciona a sí misma); ningún 1.1 recoge a la propia IA como impulsora.",
+   "cita": "La IA puede incluso evolucionar, creando cada vez mejores versiones de sí misma en una escala de tiempo más rápida que la darwiniana durante miles de millones de años.",
+   "origen": "adjudicador"
+  },
+  {
+   "alias": "N22527",
+   "etiqueta": "Imaginario ficcional de IA",
+   "indicador": "2",
+   "definicion": "El texto ancla a la IA en referentes de ciencia ficción (Terminator) para activar o desactivar el temor; señal débil, con eco más tenue en el titular de N20984 (Matrix).",
+   "cita": "No, no soy pariente de Terminator.",
+   "origen": "adjudicador"
+  }
+ ],
+ "vacios_del_libro": [
+  "c1: la frontera secundaria/tangencial no tiene criterio operativo; algún codificador dudó en 3 de 8 notas (N94708 'fue creada con IA' calza con el ejemplo tangencial 'con IA' como adjetivo, N20984, N52666 donde la IA es una de dos áreas de cooperación).",
+  "c5: contenido_patrocinado menciona el 'llamado a la acción comercial' como ejemplo, pero no dice si basta fuente única más autopromoción sin llamado; ambos codificadores dudaron igual en N71202 (GeoVictoria) y N66333 (lanzamiento de Google) y resolvieron distinto de lo que sugiere la letra del libro.",
+  "D1 no aclara si rige para productos o sistemas concretos: 1.1.CORP se aplicó a nivel de producto en 3 notas, 1.3.IRR lo excluye, 1.3.TRA no tiene exclusión simétrica y 1.2.NEC no dice si una conveniencia de consumo cuenta.",
+  "voz: faltan reglas para discurso indirecto, para códigos con v=NA, para FE cuando el experto lo es de un dominio de aplicación y no de IA (director de orquesta, historiador) y para expertos empleados por una empresa (Astroza, GeoVictoria: FE o FC).",
+  "3.3 no fija umbral de especificidad para exhortaciones genéricas ('utilizar de manera responsable' en N22527) ni su relación con 2.4.USO; ambos codificadores descartaron 3.3 y ninguno consideró 2.4.USO.",
+  "2.1.INN/2.1.AGE: verbos cognitivos como 'interpretará los matices' o 'comprensión profunda de la intención' (N66333) no tienen regla y ambos codificadores usaron solo INN; tampoco hay regla para entrevistas a un chatbot, y 2.3 admite v=D sin decir qué significa."
+ ]
+}

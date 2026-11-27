@@ -1,0 +1,184 @@
+{
+  "lote": "P008",
+  "desacuerdos": [
+    {
+      "codigo": "c1",
+      "alias": "N75006",
+      "tipo": "c1",
+      "a": "tangencial; sin códigos (la IA solo se nombra en la bajada).",
+      "b": "secundaria; 2.1.INN+ (titular 'medida revolucionaria'), 2.2.OTR+ (sensor, decisiones más rápidas), 3.2.INE (cita 'La tecnología sigue revolucionando el fútbol y llegó para quedarse').",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La bajada 'Se empleará inteligencia artificial con el objetivo de tomar decisiones más rápidas' cumple literalmente 'anuncia qué hacer con ella' (secundaria), pero la IA es un componente de un sistema y el cuerpo solo habla de 'la tecnología' (tangencial). Los tres códigos de B se apoyan en fragmentos donde la IA no se nombra, así que el desacuerdo de c1 arrastra todo el conjunto.",
+      "propuesta_regla": "c1, solo titular/bajada: es secundaria únicamente si titular o bajada atribuyen a la IA misma un rasgo, efecto o decisión (la caracterizan, la valoran, o anuncian adoptarla, regularla o limitarla). Si la IA aparece como componente de un producto o sistema ('se empleará IA para...') y el cuerpo no la nombra ni la trata, es tangencial. No codifiques fragmentos donde el referente es 'la tecnología' si el texto no lo identifica con la IA."
+    },
+    {
+      "codigo": "c1",
+      "alias": "N63368",
+      "tipo": "c1",
+      "a": "central (titular: 'Inteligencia Artificial crea futuristas versiones').",
+      "b": "secundaria (la IA es la herramienta de la galería).",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La definición de central ('aparece en el titular o articula el argumento') convierte en central a casi cualquier titular con IA y choca con la cláusula de titular/bajada. Aquí la IA es el medio que produjo las imágenes; el cuerpo solo la caracteriza de modo instrumental ('programa de IA', 'avanzado') y el eje es la galería de autos.",
+      "propuesta_regla": "Central: la nota trata de qué es, qué hace o qué implica la IA. Si la IA es solo el medio con que se produjo el contenido que la nota exhibe (galería, imágenes o textos generados) y no hay discurso sobre ella más allá de su caracterización instrumental, es secundaria. Que aparezca en el titular no basta por sí solo."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N55086",
+      "tipo": "v",
+      "a": "Dos 3.3.ADO en fragmentos distintos: + (Rama, FG) y - (oposición de Berisha, FG); en dudas propone como alternativa un único ADO con v=A y voz=FM.",
+      "b": "Un solo 3.3.ADO con v=D y voz=P (el hecho del nombramiento), sin recoger la defensa de Rama ni la crítica de la oposición.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Ambas valoraciones explícitas están en el texto y B las omite al dejar D. El libro se contradice: la sec. 6 pide registrar los fragmentos con sus propios v (duplicar el código), mientras FM y v=A describen signos opuestos sobre el mismo objeto en un único registro. No dice si un código puede repetirse en una nota.",
+      "propuesta_regla": "Un código aparece una sola vez por nota. Si voces distintas valoran con signos opuestos la misma medida u objeto y el texto no resuelve, registra un único código con v=A, voz=FM y la cita de la voz más explícita (anota la otra en dudas). Duplica un código solo si los fragmentos sustentan objetos distintos. Una D con voz P no sustituye marcas explícitas de fuentes citadas."
+    },
+    {
+      "codigo": "1.2.GEO",
+      "alias": "N43008",
+      "tipo": "presencia",
+      "a": "1.2.GEO v=D (FG), cita de Wray sobre empresas chinas que roban innovación estadounidense.",
+      "b": "No codifica 1.2.GEO; registra emergente 'IA activo estratégico nacional' con la frase 'Protegeremos ferozmente las tecnologías sensibles...'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El texto no explica por qué surge o se impulsa la IA: la presenta como secreto que resguardar en la rivalidad EE.UU.-China. La definición de 1.2.GEO ('rivalidad entre Estados... o seguridad nacional') no distingue el motor del origen del encuadre de seguridad nacional sobre un objeto ya existente. B acierta en que D1 trata de génesis y expansión.",
+      "propuesta_regla": "1.2.GEO solo si la rivalidad entre Estados o la seguridad nacional se presenta como la razón por la que se desarrolla o acelera la IA (carrera, liderazgo). Si la IA aparece como activo o secreto a resguardar, o como objeto de espionaje o robo, no es 1.2.GEO: usar el nuevo 2.1.ACT (activo estratégico: tecnología sensible cuyo resguardo es asunto de seguridad nacional o competitiva)."
+    },
+    {
+      "codigo": "3.3.CON",
+      "alias": "N43008",
+      "tipo": "presencia",
+      "a": "3.3.CON v=+ (FG) y 3.4.EST con la cita 'Protegeremos ferozmente las tecnologías sensibles...'; en dudas admite calidad baja.",
+      "b": "3.3.NIN (por defecto).",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La medida es la persecución penal y la custodia de la tecnología frente al robo; no ordena, limita ni supervisa la IA, y CON presupone restringirla. En N81539 una medida penal sí es 3.3.REG porque penaliza el uso de IA. El libro no distingue entre medida sobre la IA y medida que protege la IA o persigue delitos contra ella.",
+      "propuesta_regla": "3.3 solo codifica medidas que ordenan, limitan, promueven o prohíben la IA o su uso. La persecución de delitos contra la IA (robo, espionaje) y la protección de la IA como activo no son 3.3. Si el texto justifica la restricción por el riesgo de la propia IA (p. ej., controles de exportación por seguridad), usa 3.3.CON con una cita que muestre ese vínculo."
+    },
+    {
+      "codigo": "2.1.HER",
+      "alias": "N63368",
+      "tipo": "presencia",
+      "a": "2.1.HER v=D (cita 'solicitó a un programa de Inteligencia Artificial (IA) proyectar cómo sería...').",
+      "b": "No codifica 2.1.HER.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La cita muestra un uso de la IA, no la enuncia como herramienta o asistente. Sin criterio léxico, 2.1.HER se aplica a casi toda nota donde alguien usa IA. En N57638 ambos lo aplican por la palabra 'herramienta' y en N55086 por 'ayudarles', pero en N63368 el umbral se vuelve a abrir.",
+      "propuesta_regla": "2.1.HER exige que el texto nombre o describa a la IA con un rol instrumental o de asistencia (herramienta, asistente, apoyo, 'ayuda a', 'sirve para'). Que alguien use, encargue o integre IA en una tarea no basta; en ese caso no codifiques."
+    },
+    {
+      "codigo": "2.2.EST",
+      "alias": "N81539",
+      "tipo": "presencia",
+      "a": "2.2.EST v=+ (FG), cita 'la IA puede ser bien orientada, por ejemplo, al combate del delito...'.",
+      "b": "2.2.OTR v=+ (FG) con etiqueta 'seguridad y combate del delito'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Ven el mismo beneficio (IA contra el delito, caso Operación Influencer). 2.3 tiene el ámbito SEG pero 2.2 no tiene seguridad ni justicia, así que A lo lleva a 2.2.EST (servicios públicos) y B a OTR con etiqueta. El libro obliga a elegir entre dos soluciones imperfectas.",
+      "propuesta_regla": "Agregar 2.2.SEG (seguridad, justicia y combate del delito), simétrico a 2.3.SEG. Mientras tanto, un beneficio en seguridad pública o persecución penal se codifica 2.2.SEG, no 2.2.OTR ni 2.2.EST."
+    },
+    {
+      "codigo": "3.4.EST",
+      "alias": "N81539, N55086",
+      "tipo": "voz",
+      "a": "Reutiliza la cita del 3.3 y su voz (FG) en ambas notas.",
+      "b": "Cita la frase narrativa que nombra al actor (el Senado presentó la moción; Rama nombró a Diella) y asigna voz P.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La voz es 'quién enuncia el fragmento citado', pero el libro no dice que 3.4 deba apoyarse en la cita del 3.3. Cada codificador elige otro fragmento y obtiene otra voz en un código sin valoración (v=NA) cuya voz no aporta información propia.",
+      "propuesta_regla": "3.4 reutiliza la cita y la voz del código 3.3 al que acompaña. Solo usa otra cita si el actor responsable se nombra únicamente en otro fragmento."
+    },
+    {
+      "codigo": "2.5.HYP",
+      "alias": "N55086",
+      "tipo": "presencia",
+      "a": "No codifica; sí 2.5.ALA para la frase de Diella sobre el verdadero peligro.",
+      "b": "2.5.HYP (FG) con 'Es imposible frenar la corrupción con Diella'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Berisha rebate de frente la promesa de Rama de '100 % libres de corrupción', lo que encaja con 'cuestiona las promesas'. Pero 2.5 pide cuestionar una 'narrativa dominante' sin definir cuál, y aquí es una promesa puntual de un actor. A lo omite y B lo captura; la omisión es defendible bajo 'ante la duda, no codifiques'.",
+      "propuesta_regla": "2.5 también aplica cuando una voz rebate una promesa o afirmación específica sobre lo que la IA logrará, aunque sea de un solo actor, siempre que la rebata por la capacidad o la evidencia sobre la IA y no por su legalidad (eso va en 2.3 o 3.3). Si la narrativa cuestionada es puntual, anótalo en dudas."
+    },
+    {
+      "codigo": "c4",
+      "alias": "N91956, N81539, N43008, N64345, N63368",
+      "tipo": "otro",
+      "a": "Tiende a registrar organizaciones o protagonistas (HPI International, Nawaiam, Kenneth Pugh, Linwei Ding, Agustín Vargas) y suma un tercer actor en N63368.",
+      "b": "Tiende a registrar a quien enuncia (Isaías Sharon, Javier Krawicki, Mette Frederiksen, Merrick Garland) y 'Capitaria'; normaliza 'EE.UU.' donde A escribe 'Estados Unidos'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Los c4 difieren en el tercer actor en 5 de 8 notas. La regla no dice si registrar a la persona o a la organización en cuyo nombre habla, ni cómo priorizar cuando hay más de tres actores, ni cómo normalizar nombres de países e instituciones.",
+      "propuesta_regla": "c4: si una persona habla en nombre de una organización, registra la organización ('HPI International'). Registra personas solo si actúan a título propio o son protagonistas del discurso (jefes de Estado, fundadores). Prioriza a quienes actúan sobre la IA (la desarrollan, adoptan, regulan o demandan) sobre quienes solo la comentan. Normaliza países como 'Estados Unidos' y evita cargos."
+    },
+    {
+      "codigo": "3.1.CON",
+      "alias": "N64345",
+      "tipo": "otro",
+      "a": "v=+, marca implícita, cita 'ambos indicadores de una demanda sostenida proyectada para los próximos trimestres'.",
+      "b": "v=+, marca explícita, cita 'está entrando en una nueva fase de aceleración'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La presencia y el signo coinciden; solo difiere la marca, porque cada uno cita un fragmento distinto. El libro se contradice: el paso 1 de v manda D si no hay marcas valorativas, mientras que la marca implícita permite inferir valoración de la selección o el orden. La cita de A es una proyección sin término valorativo.",
+      "propuesta_regla": "Marca implícita solo cuando la selección o el orden construyen la valoración y el fragmento carece de término valorativo; si el fragmento citado es una cifra o una proyección sin término valorativo, v=D. Cuando exista, cita el tramo con la marca explícita."
+    },
+    {
+      "codigo": "2.1.HER",
+      "alias": "N55086",
+      "tipo": "v",
+      "a": "v=+, marca explícita, voz P: 'su objetivo no es reemplazar a los humanos, sino ayudarles'.",
+      "b": "v=D, marca na, voz P, misma frase.",
+      "causa": "juicio_legitimo",
+      "diagnostico": "La frase es la autopresentación del avatar: puede leerse como promesa favorable (A) o como definición instrumental sin adjetivo ni advertencia (B). Ambas son defendibles; coincide la voz P por la regla de chatbots transcritos."
+    },
+    {
+      "codigo": "2.1.MER",
+      "alias": "N43008",
+      "tipo": "presencia",
+      "a": "2.1.MER v=D (FG): 'robó secretos comerciales relacionados con la inteligencia artificial de Google'.",
+      "b": "2.1.INN v=D con voz P: 'el robo de inteligencia artificial y otras tecnologías avanzadas'.",
+      "causa": "juicio_legitimo",
+      "diagnostico": "'Secretos comerciales' (activo de mercado) y 'tecnologías avanzadas' (capacidad) son lecturas igualmente pobres y defendibles; ninguna tiene marca valorativa y ambas serían dudosas bajo 'ante la duda, no codifiques'. Además B asigna voz P a un fragmento que está dentro de la declaración de Garland (FG); es un error de voz, pues usa FG para la misma frase en 2.3.SEG."
+    },
+    {
+      "codigo": "1.1.CORP",
+      "alias": "N91956",
+      "tipo": "presencia",
+      "a": "No codifica 1.1.CORP.",
+      "b": "1.1.CORP v=+, voz FC, escala Chile, calidad 1: emprendedores 'que desarrollan nuevas tecnologías como NotCo y Betterfly'.",
+      "causa": "error_codificador",
+      "diagnostico": "La cita de Krawicki habla de emprendedores que desarrollan tecnologías en general, sin vincularlas con la IA, y el texto presenta a las startups como usuarias ('está incorporando esta tecnología'), caso excluido por la regla. B misma la marcó débil. Debió aplicar 'ante la duda, no codifiques'."
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N43008",
+      "indicador": "2",
+      "etiqueta": "IA activo estratégico nacional",
+      "definicion": "La IA se construye como tecnología sensible cuyo resguardo frente a otros Estados es asunto de seguridad nacional.",
+      "origen": "B",
+      "cita": "Protegeremos ferozmente las tecnologías sensibles desarrolladas en Estados Unidos para que no caigan en manos de quienes no deberían tenerlas"
+    },
+    {
+      "alias": "N81539",
+      "indicador": "2",
+      "etiqueta": "IA coautora de política",
+      "definicion": "La IA participa en la producción de textos políticos y normativos, incluida su propia regulación, y el texto lo presenta como 'auto sustentación'.",
+      "origen": "adjudicador",
+      "cita": "se puede apreciar la auto sustentación de la IA"
+    },
+    {
+      "alias": "N55086",
+      "indicador": "2",
+      "etiqueta": "IA como golpe mediático",
+      "definicion": "La incorporación de la IA al poder se enmarca como gesto simbólico para captar atención y no como solución sustantiva.",
+      "origen": "adjudicador",
+      "cita": "El objetivo no es otro que llamar la atención"
+    },
+    {
+      "alias": "N57638",
+      "indicador": "2",
+      "etiqueta": "Democratización corporativa del acceso",
+      "definicion": "Una empresa presenta como mérito propio que la IA llegue masivamente a los consumidores, como bien accesible.",
+      "origen": "adjudicador",
+      "cita": "Como fabricante de volumen, hacemos que estas tecnologías sean accesibles para una gran cantidad de personas."
+    }
+  ],
+  "vacios_del_libro": [
+    "Contradicción entre la sec. 6 (registrar fragmentos con sus propios v, que duplica el código) y las definiciones de FM y de v=A (un único registro con signos opuestos): no se dice si un código puede repetirse en una nota (N55086, 3.3.ADO).",
+    "c1: la cláusula 'aparece en el titular o articula el argumento' convierte en central a casi cualquier titular con IA y choca con la cláusula titular/bajada; 'anuncia qué hacer con ella' es demasiado amplia y no cubre la IA como mero medio o componente (N75006, N63368).",
+    "Faltan códigos y simetrías: 2.2 no tiene ámbito de seguridad o justicia (sí 2.3.SEG), no hay lugar para la IA como activo estratégico u objeto de robo, y 1.2.GEO mezcla motor del origen con encuadre de seguridad nacional (N81539, N43008).",
+    "3.3 no distingue medidas sobre la IA (regular, limitar) de medidas que persiguen delitos contra ella o la protegen, y 3.2.DEC no tiene indicadores operativos: ambos codificadores usaron 3.2.NEX en notas legislativas o de política pública (N81539, N55086, N91956).",
+    "Los umbrales de 2.5 ('narrativa dominante' no definida; ¿'no siempre es la respuesta' basta para HYP?), 2.1.HER (uso o encargo no es rol instrumental) y 2.1.AGE ('IA agéntica' y 'realizando trabajo productivo' en N64345 no se resuelven con la exclusión de términos técnicos) están abiertos.",
+    "Otros vacíos: el paso 1 de v (sin marcas, D) choca con marca implícita, y no hay regla de voz (P o FC) para comunicados parafraseados ('La marca explicó que...'), ni de c5 para un comunicado de fuente única sin llamado comercial explícito, como N57638, que ambos dudaron."
+  ]
+}

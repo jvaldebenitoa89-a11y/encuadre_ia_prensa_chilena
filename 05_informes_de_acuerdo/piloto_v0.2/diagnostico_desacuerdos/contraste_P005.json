@@ -1,0 +1,185 @@
+{
+  "lote": "P005",
+  "desacuerdos": [
+    {
+      "codigo": "2.1.AGE",
+      "alias": "N16132",
+      "tipo": "presencia",
+      "a": "Codifica AGE (D, FE): 'la inteligencia artificial puede tomar decisiones, puede reconocer cosas'.",
+      "b": "No codifica; lo descarta argumentando con la pregunta de los esclavos, que es otro fragmento.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "'Puede tomar decisiones' pone a la IA como sujeto de un verbo cognitivo, pero el libro solo exime los tecnicismos lexicalizados ('aprendizaje automatico') y no dice si una capacidad funcional cuenta como agencia. B ademas justifico con un fragmento distinto al que A cito.",
+      "propuesta_regla": "2.1.AGE: aplica cuando la IA o la maquina es sujeto de un verbo cognitivo o volitivo (decidir, pensar, querer, entender), aunque la frase sea tecnica ('puede tomar decisiones'). No cuentan funciones tecnicas como reconocer patrones, predecir, clasificar o generar. Se evalua el fragmento citado, no el tono del resto de la nota."
+    },
+    {
+      "codigo": "3.3.GOB",
+      "alias": "N16132",
+      "tipo": "presencia",
+      "a": "No codifica GOB; deja la 'estrategia' sin codigo propio y solo usa 3.3.REG.",
+      "b": "3.3.GOB (+, voz P): 'Una estrategia en la que tienen que converger la opinion de distintos ambitos de nuestra sociedad.'",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El eje de la nota es una estrategia nacional de IA elaborada por un grupo multidisciplinario. El libro no la ubica: no es ley (REG), no es acuerdo ni estandar (GOB) y tampoco es solo impulso (ADO). Cada codificador la resolvio distinto.",
+      "propuesta_regla": "Una estrategia, plan pais o proceso deliberativo multiactor sobre que hacer con la IA se codifica 3.3.GOB. Si ademas busca impulsar o aprovechar la IA, se agrega 3.3.ADO. Si exige normas vinculantes, se agrega 3.3.REG. En 3.4 va quien debe elaborarla o ejecutarla."
+    },
+    {
+      "codigo": "3.4.EST (voz)",
+      "alias": "N16132",
+      "tipo": "voz",
+      "a": "FE: cita la frase entrecomillada de Maldonado ('tenemos que como pais y como sociedad...').",
+      "b": "P: cita narracion del periodista ('Ahora Chile tiene esa tarea.'); tambien asigna P a la parafrasis de GOB.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro define voz como quien enuncia el fragmento, pero no trata la parafrasis sin comillas de un entrevistado ni como elegir entre cita entrecomillada y narracion cuando ambas sustentan el mismo codigo. En entrevistas y perfiles esto desplaza la voz entre P y FE.",
+      "propuesta_regla": "Si el codigo se sustenta con una cita entrecomillada de la fuente, citarla (voz = fuente). Si solo hay parafrasis, voz = fuente cuando una frase con verbo de dicción (dice, agrega, destaca) la introduce; si es narracion sin atribucion, P. En 3.4 se reutiliza la cita del 3.3."
+    },
+    {
+      "codigo": "2.3.EMP (marca)",
+      "alias": "N16132",
+      "tipo": "otro",
+      "a": "marca = implicita.",
+      "b": "marca = explicita.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El fragmento es una pregunta abierta ('que tipo de trabajos van hacer reemplazados por la IA, y en manos de quien...') sin adjetivo ni verbo de dano. El libro no dice como tratar preguntas o exhortaciones a reflexionar, y como 2.3 ya presupone dano, v y marca quedan acoplados.",
+      "propuesta_regla": "marca = explicita solo si el fragmento trae adjetivo, verbo o sustantivo de dano o beneficio (amenaza, destruir, riesgo, ventaja). Las preguntas abiertas o llamados a 'reflexionar sobre' un efecto son implicita; si ademas no presuponen el efecto, v = D."
+    },
+    {
+      "codigo": "2.1.MER (v)",
+      "alias": "N53610",
+      "tipo": "v",
+      "a": "+ explicita: 'Esos esfuerzos se estan convirtiendo en una ganancia inesperada para Nvidia'.",
+      "b": "D: 'lo que abre una fuente de ventas de rapido crecimiento para Nvidia y otras empresas tecnologicas'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Ambos fragmentos estan en el texto y sustentan el mismo codigo con signo distinto. El libro no dice si el exito comercial de una empresa es valoracion favorable de la IA como mercancia, ni como elegir entre fragmentos con v distinta del mismo codigo.",
+      "propuesta_regla": "En 2.1.MER, v valora a la IA como activo comercial: + si el fragmento califica favorablemente su rentabilidad o crecimiento ('boom', 'ganancia inesperada'); cifras, ventas o alzas bursatiles sin calificativo = D. Si un mismo codigo tiene fragmentos con v distinta, se registra una entrada por cada v (mismo cod repetido)."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N53610",
+      "tipo": "v",
+      "a": "ADO +, voz FC: exhortacion de Huang ('debes tomar esos datos, refinarlos y ser dueno de tu propia inteligencia nacional').",
+      "b": "ADO D, voz P: 'Los gobiernos estan aumentando sus presupuestos y ofreciendo otros incentivos...'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Los dos fragmentos cumplen la definicion de 3.3 (exhortacion y programa estatal reportado), pero el formato implica un solo registro por codigo y cada codificador anoto uno distinto, con v, voz y 3.4 diferentes.",
+      "propuesta_regla": "Si hay exhortacion y medida reportada, registrar 3.3.ADO dos veces: una + con la voz de quien exhorta y otra D con voz P. 3.4 acompana a cada una."
+    },
+    {
+      "codigo": "3.3.ADO / 3.4.EMP",
+      "alias": "N90515",
+      "tipo": "presencia",
+      "a": "3.3.ADO (D) y 3.4.EMP: compromiso de Alibaba de invertir 380.000 millones de yuanes en su infraestructura de IA.",
+      "b": "No codifica; deja 3.3.NIN.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "ADO incluye 'invertir', pero la inversion de una empresa en su propio negocio de IA no es respuesta a la IA sino expansion del agente impulsor (1.1.CORP, 2.1.MER). Se repite en N88933, donde ambos codificaron ADO y 3.4 y ambos anotaron dudas (B ademas omitio 3.4.EMP pese a que la cita nombra a Huawei y ZGC), y en N53610.",
+      "propuesta_regla": "3.3.ADO solo si hay (a) exhortacion a adoptar o impulsar la IA, o (b) una medida o programa de un Estado o institucion que incorpora o promueve la IA como respuesta a un desafio. La inversion, lanzamiento o inauguracion de una empresa o proyecto en su propio negocio de IA va en 1.1 y 2.1.MER y no genera 3.3 ni 3.4 (queda 3.3.NIN)."
+    },
+    {
+      "codigo": "1.1.EST / 1.1.CORP (escala)",
+      "alias": "N88933",
+      "tipo": "mod",
+      "a": "escala = global ('por no ser Chile').",
+      "b": "escala = no_especificada.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro lista los valores de escala sin definirlos. Un centro de computo en Beijing sin referencia a alcance mundial queda entre 'global' (todo lo que no es Chile) y 'no_especificada'.",
+      "propuesta_regla": "escala: Chile si el agente o proceso es chileno o se aplica a Chile; global si el texto lo plantea como fenomeno de varios paises, mundial o de actores transnacionales; no_especificada en el resto, incluido un caso local extranjero sin alcance declarado. No se infiere global por no ser Chile."
+    },
+    {
+      "codigo": "1.2.ECO",
+      "alias": "N72715",
+      "tipo": "presencia",
+      "a": "No codifica.",
+      "b": "1.2.ECO (-, FE): 'el crecimiento es la maxima prioridad para la compania, con las terribles consecuencias que eso conlleva'.",
+      "causa": "error_codificador",
+      "diagnostico": "El fragmento habla de la prioridad de crecimiento de Facebook (caso Haugen), no de por que surge o se expande la IA; D1 se limita a la causa de la genesis de la IA. B misma marco calidad 1 y asigno FE a una parafrasis de una denunciante citada por Gebru."
+    },
+    {
+      "codigo": "2.3.DEM",
+      "alias": "N72715",
+      "tipo": "presencia",
+      "a": "No codifica: la 'guerra de odio y desinformacion' se atribuye a las redes sociales sin vinculo explicito con la IA.",
+      "b": "2.3.DEM (-, G2, RDI, calidad 1): 'hoy veo una horrible guerra de odio y desinformacion en las redes sociales'.",
+      "causa": "error_codificador",
+      "diagnostico": "La exclusion de 2.3 es clara: un hecho adverso sin vinculo explicito con la IA no se codifica. B anoto la fragilidad de su propia cita. Aun asi, el titular cierra con esa frase de una especialista en IA, lo que invita a leerla como dano tecnologico y a veces tienta a codificarla."
+    },
+    {
+      "codigo": "c3",
+      "alias": "N72715",
+      "tipo": "otro",
+      "a": "trabajo_economia.",
+      "b": "otro.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La nota trata de etica, poder corporativo y proteccion de trabajadores y no calza con un ambito sectorial. El libro pide 'el predominante' sin criterio para temas transversales; A lo llevo a economia por la mencion de trabajadores y empresas.",
+      "propuesta_regla": "c3 = ambito donde la nota ubica el problema o la aplicacion de la IA (donde ocurre el dano o el uso), no el actor mencionado. Los debates transversales de etica, sesgo, derechos o poder corporativo sin ambito concreto = otro. No se elige trabajo_economia solo porque aparezcan trabajadores o empresas."
+    },
+    {
+      "codigo": "c5",
+      "alias": "N72715",
+      "tipo": "otro",
+      "a": "noticia.",
+      "b": "reportaje.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro solo define contenido_patrocinado; noticia vs reportaje vs entrevista queda al criterio del codificador. B anoto la misma duda en N53610 (noticia vs reportaje) y en N16132 (entrevista vs reportaje), por lo que es una duda recurrente.",
+      "propuesta_regla": "noticia: informa un hecho o evento reciente, aunque incluya antecedentes breves. reportaje: contextualiza mas alla del hecho (perfil biografico extenso, multiples fuentes propias, estructura narrativa). entrevista: predominan las palabras de una persona entrevistada. Ante la duda, noticia."
+    },
+    {
+      "codigo": "3.1.EST (voz)",
+      "alias": "N13326",
+      "tipo": "voz",
+      "a": "FC: estudio de la consultora Accenture.",
+      "b": "FE: mismo estudio; B anoto la duda FE vs FC.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro no dice como clasificar estudios o proyecciones de consultoras y think tanks: son entidades privadas (FC) pero la fuente es un estudio (FE).",
+      "propuesta_regla": "Estudios, informes o proyecciones de consultoras, think tanks o centros de estudio = FE, aunque la entidad sea una empresa. FC solo para declaraciones, anuncios o comunicados de una empresa sobre su propio negocio. Una columna firmada por un ejecutivo es P."
+    },
+    {
+      "codigo": "2.2.CUL",
+      "alias": "N15993",
+      "tipo": "presencia",
+      "a": "No codifica; solo 2.1.HER (+) con 'le sacan provecho para crear imagenes que por cosas del destino no podrian ser ciertas'.",
+      "b": "Agrega 2.2.CUL (+, calidad 1) con la misma cita.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "2.2 exige un beneficio atribuido y no solo mencionar el ambito, pero el libro no fija el umbral. 'Sacar provecho' de un uso ludico es una valoracion generica del uso, y duplicar HER+ y 2.2.x con la misma cita infla la codificacion.",
+      "propuesta_regla": "2.2 exige un beneficio nombrado como resultado en un ambito (por ejemplo 'democratiza la creacion', 'ahorra tiempo'). Que alguien 'saque provecho' de la IA en un uso recreativo es 2.1.HER (+), no 2.2.CUL. No registrar 2.1.HER y 2.2.x con la misma cita salvo que el fragmento nombre ademas el beneficio."
+    }
+  ],
+  "emergentes": [
+    {
+      "etiqueta": "Empoderar a denunciantes",
+      "indicador": "3",
+      "definicion": "Se prescribe proteger y dar poder a quienes advierten los problemas de la tecnologia antes de que ocurran; ningun 3.3 recoge la proteccion de alertadores y trabajadores frente a las empresas (REG solo cubre 'leyes').",
+      "origen": "A",
+      "alias": "N72715",
+      "cita": "“Tenemos que empoderar a las personas que son capaces de advertirnos sobre los potenciales problemas que trae la tecnología antes de que estos se manifiesten."
+    },
+    {
+      "etiqueta": "Riesgo de rezago",
+      "indicador": "3",
+      "definicion": "No adoptar la IA se presenta como riesgo para el pais (rol secundario, dependencia). El dano se atribuye a la inaccion y no a la IA, por lo que 2.3 no lo recoge. Recurre en N16132 ('no vamos a estar preparados', 'no venga todo de afuera') y en N53610 (paises 'marginados' en olas tecnologicas previas).",
+      "origen": "A",
+      "alias": "N13326",
+      "cita": "De otro modo, el riesgo es convertirse en un actor de segundo plano que exporte talento y empresas emergentes para el crecimiento de otros países,"
+    },
+    {
+      "etiqueta": "IA como soberanía nacional",
+      "indicador": "2",
+      "definicion": "La IA se presenta como infraestructura estrategica cuyo control propio define la autonomia de los Estados frente a EE.UU. y China. Solapa en parte con 1.2.GEO (motor) pero el caracter de la IA como recurso de poder no esta codificado.",
+      "origen": "B",
+      "alias": "N53610",
+      "cita": "Para controlar sus destinos de inteligencia artificial en medio del dominio de EE.UU. y China, los países están construyendo su propia infraestructura informática."
+    },
+    {
+      "etiqueta": "Delegación de lo humano",
+      "indicador": "2",
+      "definicion": "La IA se construye como aquello a lo que los humanos entregan decisiones y rasgos propios (privacidad mental, decisiones, empleo), planteado como dilema de dominio humano-maquina; A lo dejo fuera de 2.3.HUM y solo lo recogio como 3.1.INC.",
+      "origen": "adjudicador",
+      "alias": "N16132",
+      "cita": "estamos entregando a máquinas cosas que antes decidían y hacían los humanos"
+    }
+  ],
+  "vacios_del_libro": [
+    "El umbral de 'condicion explicita' (v = C frente a A, y 2.4) no esta operacionalizado: en N16132 ('para el bien y para el mal', 'quien va a poder usarlas') y en N13326 ('la adopcion no es automatica: requiere de...') ambos codificadores dudaron, optaron por A y no codificaron 2.4; falta una lista de formulas validas.",
+    "No hay regla para un mismo codigo sustentado por varios fragmentos con v, voz o marca distintas: el formato implica una entrada por cod, y por eso A y B registran fragmentos distintos y divergen (N53610: 2.1.MER y 3.3.ADO).",
+    "3.3.ADO ('invertir') se solapa con 1.1.CORP, 1.1.EST y 2.1.MER: anuncios de inversion o inauguracion de infraestructura por parte de los propios impulsores (N90515, N88933, N53610) se codificaron como respuesta a la IA sin serlo, y 3.4 hereda el problema.",
+    "2.1.LIM incluye 'sesgos' como falla tecnica y 2.3.DES incluye 'sesgo o discriminacion' como dano: en N72715 ambos eligieron LIM, pero el libro no dice cuando un sesgo es falla del sistema y cuando es dano social (propuesta: LIM si se describe la falla, DES con g y resp si se describe la consecuencia sobre grupos).",
+    "No hay criterio de equivalencia cuando el texto dice 'la tecnologia' o 'las tecnologicas' en vez de IA: en N72715 se acepto como IA para 2.3.DES y 3.3.CON, pero A la rechazo para 2.3.DEM.",
+    "c1: 'central si aparece en el titular' choca con el Principio 6 (3 a 10 codigos): N15993 es central por titular pero produce 1 o 2 codigos y ambos codificadores dudaron entre central y secundaria; falta decidir si el criterio es el titular o la densidad de discurso sobre la IA."
+  ]
+}

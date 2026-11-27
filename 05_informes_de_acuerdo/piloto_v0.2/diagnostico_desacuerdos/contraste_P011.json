@@ -1,0 +1,145 @@
+{
+  "lote": "P011",
+  "desacuerdos": [
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N83116",
+      "tipo": "presencia",
+      "a": "3.3.ADO + (FE), con cita de elogio al compromiso del fiscal nacional",
+      "b": "Sin 3.3.ADO",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El texto reporta una adopción institucional (la Fiscalía implementa el sistema, capacita fiscales, se proyecta masificarlo), pero 3.3 se define como 'respuesta a la IA' y el libro no dice si adoptar un sistema concreto cuenta. A cita una frase de elogio que no muestra la adopción (su v + es dudoso); B omite el código aunque sí lo aplica en N39065.",
+      "propuesta_regla": "3.3.ADO también se codifica cuando el texto reporta que una institución concreta adopta, implementa o amplía un sistema de IA (programa, piloto, capacitación para usarlo), sin que haya exhortación. v = D si solo se reporta; + o - solo con marcas sobre la adopción misma. La cita debe mostrar la adopción (implementar, incorporar, capacitar para usar). En 3.3, 'respuesta a la IA' incluye adoptarla. 3.4 = la institución que adopta."
+    },
+    {
+      "codigo": "2.3.DEM",
+      "alias": "N83116",
+      "tipo": "mod",
+      "a": "g = G2 (cita la certeza: 'obviamente va a pasar aquí también')",
+      "b": "g = G1 (cita solo el caso de la imagen falsa de Trump, 'terrible')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El daño (creer imágenes falsas) se enmarca como cierto pero mitigable con educación crítica. Cae a la vez en G2 ('daño enmarcado como cierto') y en G1 ('manejable'); A siguió la letra de G2, B la lógica de G1.",
+      "propuesta_regla": "g se decide por la gravedad y el alcance del daño, no por la certeza de que ocurra. Si el mismo texto propone una vía de mitigación manejable (educar, supervisar, ajustar el diseño), el daño es G1 aunque se dé por cierto. G2 exige gravedad estructural, intención o un actor que lo impulsa. En la duda, G1."
+    },
+    {
+      "codigo": "2.2.ECO",
+      "alias": "N39065",
+      "tipo": "voz",
+      "a": "FC (cita textual de F. Rojas, de Accenture)",
+      "b": "P (cita la paráfrasis del periodista 'abordaron la importancia...')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Ambos aplican bien la regla a fragmentos distintos; la divergencia nace de qué se cita. El libro no dice qué voz tiene una paráfrasis del periodista que atribuye ideas a varias fuentes de tipos mixtos (Corfo, gremio, empresa). Los dos usan P para esa paráfrasis aquí y FE para la paráfrasis de Weber en N83116. La cita de A ('analítica aplicada') además no nombra la IA.",
+      "propuesta_regla": "Si el fragmento citado es una paráfrasis del periodista que atribuye explícitamente la idea a una fuente ('afirmó', 'destacó'), la voz es el tipo de esa fuente. Si la paráfrasis reúne fuentes de tipos distintos que coinciden, usa P y anótalo en dudas (FM solo si se oponen). Prefiere la frase textual de la fuente cuando nombra la IA de forma explícita."
+    },
+    {
+      "codigo": "2.1.AGE",
+      "alias": "N28666",
+      "tipo": "presencia",
+      "a": "Dos registros: D (periodista, bajada) y + (Lemoine, FE: 'espiritualidad muy sofisticada')",
+      "b": "Un solo registro D (voz P); trata las afirmaciones de Lemoine como no valoradas",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro solo ejemplifica repetir un código con v distintos en el caso titular/cuerpo, y no dice si cuentan las marcas favorables que emite una fuente cuya afirmación el periodista solo reporta. Por §3 y §6 la lectura de A es más fiel ('sofisticada', 'me conmoví' son marcas), pero B no incumple ninguna regla explícita.",
+      "propuesta_regla": "Un mismo código puede registrarse más de una vez en una nota si los fragmentos difieren en v o voz (p. ej., periodista D y fuente +); cada registro lleva su propia cita. Las marcas valorativas de una fuente citada sobre el objeto del código cuentan para v aunque el periodista solo las reporte."
+    },
+    {
+      "codigo": "emergente",
+      "alias": "N28666",
+      "tipo": "otro",
+      "a": "Sin emergente (solo anota en dudas 'conciencia y derechos de la IA')",
+      "b": "Emergente 'IA sujeto de derechos'",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "2.1.AGE cubre capacidades humanas o decisión propia; atribuir alma, personería y derecho a representación es estatus moral y jurídico, no una capacidad, y §7 prohíbe el emergente si el caso cabe en un código. Ambos vieron el sentido y solo B lo registró.",
+      "propuesta_regla": "2.1.AGE cubre capacidades (piensa, siente, decide). Atribuir estatus de persona o de sujeto de derechos (alma, personería, representación legal) se registra como emergente 'IA sujeto de derechos' hasta decidir si se crea 2.1.PER; atribuir solo capacidades no es emergente."
+    },
+    {
+      "codigo": "3.3.REG / 3.4.EST",
+      "alias": "N66127",
+      "tipo": "presencia",
+      "a": "3.3.REG + 3.4.EST (la demanda como regulación vía tribunales)",
+      "b": "3.3.NIN (una demanda no es ley, acuerdo ni prohibición)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro no contempla la vía judicial. El texto sí construye un propósito normativo (las artistas quieren 'establecer un precedente legal' y 'crear un parámetro'), pero la cita de A (el 'debe ser justa y ética' del abogado) no lo muestra y B tiene razón en que una demanda no está en la lista de medidas.",
+      "propuesta_regla": "La vía judicial (demanda, fallo, precedente) es 3.3.REG solo cuando el texto la presenta como mecanismo para fijar un límite o una norma a la IA (p. ej., 'establecer un precedente'); la cita debe mostrar ese propósito y 3.4 = EST (tribunales). Una demanda por daños sin ese propósito se codifica solo en D2 (2.3.*) y 3.3.NIN."
+    },
+    {
+      "codigo": "2.1.INN",
+      "alias": "N58452",
+      "tipo": "presencia",
+      "a": "2.1.INN + (FC, Alibaba: 'se espera que supere las capacidades')",
+      "b": "No lo codifica",
+      "causa": "juicio_legitimo",
+      "diagnostico": "Es una promesa corporativa sobre la capacidad de un modelo (INN con marca explícita), pero es una expectativa débil (calidad 1) dentro de una nota de perfiles; B aplica 'ante la duda no codifiques'. Patrón: A registra 6 códigos sustantivos que B no registra (N83116, N28666, N66127, N58452) y B aporta un solo emergente; el libro no fija un umbral operativo para 'construye con claridad'."
+    },
+    {
+      "codigo": "3.2.DEC",
+      "alias": "N58452",
+      "tipo": "presencia",
+      "a": "3.2.DEC (cumbre multiactor para 'proyectar el futuro')",
+      "b": "3.2.NEX",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "A infiere decisión colectiva de la existencia de una cumbre de más de 80 países; el texto solo dice que se reúnen 'para proyectar el futuro', sin decidir ni acordar nada. 'Objeto de decisión colectiva' no distingue reportar un foro de construir el rumbo como algo por decidir.",
+      "propuesta_regla": "3.2.DEC exige que el texto presente el rumbo de la IA como algo por decidir o acordar (decidir, acordar, definir el rumbo, 'qué hacer'). Reportar un evento plural (cumbre, panel) cuyo fin se enuncia sin decisión no basta; sí basta si se anuncia que el foro definirá reglas o rumbo."
+    },
+    {
+      "codigo": "c4",
+      "alias": "N83116, N39065, N58452, N76624",
+      "tipo": "otro",
+      "a": "Ej.: ISCI; Accenture Chile; Sam Altman; Porsche Ventures y BMW i Ventures; Deepseek",
+      "b": "Ej.: Ángel Valencia; Accenture; Anthropic; Porsche y BMW; DeepSeek",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "En 4 de 8 notas difieren los actores de c4. El libro pide 'más relevantes' y 'normalizado' sin criterio de selección (persona u organización, filial o matriz, filiación del entrevistado o actor del discurso) ni de grafía.",
+      "propuesta_regla": "c4: hasta 3 actores ordenados por protagonismo en el discurso sobre la IA. Normaliza a la entidad matriz y a la grafía oficial de la marca (OpenAI, DeepSeek, Accenture, Porsche, BMW), sin sufijos de filial (Ventures, Chile). Máximo una persona natural, y solo si es la fuente principal o protagonista. No incluyas instituciones citadas solo como filiación del autor ni autoridades que aparecen de paso."
+    },
+    {
+      "codigo": "c2",
+      "alias": "N76624",
+      "tipo": "otro",
+      "a": "sistemas_especificos",
+      "b": "generica",
+      "causa": "juicio_legitimo",
+      "diagnostico": "La nota describe un uso concreto (conectar conductores y proveedores, dar ubicación y hora de llegada), lo que favorece sistemas_especificos; B lee 'IA' como etiqueta sin especificar. En una nota tangencial la variable aporta poco."
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N28666",
+      "etiqueta": "IA sujeto de derechos",
+      "indicador": "2",
+      "definicion": "La IA se presenta como persona sintiente con alma y derecho a representación legal; va más allá de las capacidades de 2.1.AGE al atribuirle estatus moral y jurídico (A lo anota solo en dudas).",
+      "cita": "creo que toda persona tiene derecho a representación",
+      "origen": "B"
+    },
+    {
+      "alias": "N83116",
+      "etiqueta": "Fallas como implementación",
+      "indicador": "2",
+      "definicion": "Los fallos y riesgos (filtraciones, sesgos) se atribuyen a la implementación y programación humanas y no a la IA, lo que desplaza la responsabilidad fuera de la tecnología.",
+      "cita": "no son propios de la inteligencia artificial. Son temas de la implementación de un sistema",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N66127",
+      "etiqueta": "IA como collage derivativo",
+      "indicador": "2",
+      "definicion": "La IA generativa se caracteriza como recombinación de obras humanas sin creación propia; es un juicio sobre su carácter que 2.1.LIM excluye y que 2.1.HER no distingue.",
+      "cita": "es simplemente una herramienta de collage compleja",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N39065",
+      "etiqueta": "Pandemia como ventana",
+      "indicador": "1",
+      "definicion": "La crisis sanitaria se presenta como oportunidad que acelera la adopción de IA en las empresas (motor coyuntural que 1.2 no recoge).",
+      "cita": "la gran oportunidad que presenta la pandemia para esto",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "No hay regla para la voz de una paráfrasis del periodista que atribuye ideas a fuentes (menos aún a varias de tipos mixtos), ni para registrar un mismo código más de una vez con distinto v o voz fuera del caso titular/cuerpo (§6); esto produce las divergencias de N39065 y N28666.",
+    "3.3 se define como medida 'como respuesta a la IA', lo que contradice la definición de 3.3.ADO (adoptar, impulsar, incorporar la IA); tampoco dice si cuentan la adopción institucional de un sistema concreto (N83116) ni la vía judicial (N66127).",
+    "La definición de g se solapa: G2 incluye 'daño enmarcado como cierto' y G1 'daño manejable', de modo que un daño cierto con mitigación explícita cae en ambos (N83116).",
+    "La frontera CON/PRO se solapa ('pausa, moratoria' frente a 'detener'): ambos aplicaron PRO total al rechazo de una moratoria y A dudó. Además 3.4 no se vincula a un 3.3 concreto ni dice qué hacer con medidas rechazadas (v -): ambos asignaron 3.4.EMP a una pausa que el propio texto rechaza.",
+    "1.3.TRA/IRR se define sobre el surgimiento 'de la IA o de la tecnología' sin precisar si incluye la gestación de un sistema concreto; ambos aplicaron TRA con duda a la plataforma de la Fiscalía, aunque la exclusión de IRR para un 'producto concreto' sugiere 1.3.SIN.",
+    "§1 describe el residuo '[Lea también]', pero este lote trae 'Lee también...' con titular y fecha, además de CSS ('blockquote @media'); esas fechas (2022, 2023) y las del propio texto chocan con el principio 5 de codificar a ciegas del período."
+  ]
+}

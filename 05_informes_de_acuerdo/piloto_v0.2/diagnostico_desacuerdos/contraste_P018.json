@@ -1,0 +1,190 @@
+{
+  "lote": "P018",
+  "desacuerdos": [
+    {
+      "codigo": "c5",
+      "tipo": "otro",
+      "causa": "ambiguedad_libro",
+      "alias": "N14879 / N11495 / N54185 / N80878",
+      "a": "noticia / noticia / reportaje / noticia",
+      "b": "entrevista / entrevista / noticia / otro",
+      "diagnostico": "Desacuerdo en 4 de 8 notas. N14879 y N11495 son notas en tercera persona que resumen una conversación (sin formato pregunta-respuesta); N54185 es una nota larga con varias fuentes sobre una tendencia; N80878 es un listado de expositores. El libro define c5 solo 'por la forma del texto' y no da criterios para entrevista, reportaje ni otro.",
+      "propuesta_regla": "c5. entrevista: solo si el texto tiene estructura pregunta-respuesta o transcribe al entrevistado en primera persona; una nota en tercera persona que resume una conversación o declaraciones es noticia. reportaje: texto que integra tres o más fuentes o casos para explicar un fenómeno (no un hecho puntual), con contexto y estructura propios. noticia: informa un hecho reciente. otro: listados, fichas, programas o agendas de evento. Entre noticia y reportaje, ante la duda, noticia."
+    },
+    {
+      "codigo": "3.1.INC",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N54185 / N74357",
+      "a": "No registra 3.1.INC; solo 3.1.EST (N54185) y 3.1.CON (N74357).",
+      "b": "Agrega 3.1.INC con v=D: 'Es demasiado pronto para determinar cuánto impacto tendrán estas iniciativas' y 'No, no sabemos el alcance que pueda tener esta tecnología.'",
+      "diagnostico": "En ambas notas el texto declara de forma expresa una incertidumbre abierta, además de otra proyección. A probablemente leyó 3.1 como un único futuro por nota. El libro no fija la cardinalidad de 3.1 (en 3.2 sí dice 'pueden coexistir'). Se repite en dos notas, por eso es informativo.",
+      "propuesta_regla": "3.1 admite más de un código por nota cuando fragmentos distintos proyectan futuros distintos. 3.1.INC se registra además de CON, EST o RUP cuando el texto declara expresamente que el alcance o el impacto futuro se desconoce ('no sabemos el alcance', 'es demasiado pronto para determinar'); su v es D salvo que haya marcas valorativas (p. ej. 'especialmente urgente'). 3.1.NIN solo si no hay ningún otro 3.1."
+    },
+    {
+      "codigo": "2.2.OTR / 2.1.INN",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N45875 / N74357",
+      "a": "N45875: 2.1.INN + sobre 'potencial transformador' que 'puede impulsar el bienestar, la paz y la prosperidad'. N74357: no registra 2.2.",
+      "b": "N45875: 2.2.OTR + (etiqueta 'bienestar general') sobre la misma cita. N74357: 2.2.OTR + (etiqueta 'desarrollo humano') sobre 'cuál es el aporte de la inteligencia artificial al desarrollo humano? Es enorme.'",
+      "diagnostico": "El fragmento nombra un beneficio sin ámbito identificable (bienestar, desarrollo humano). 2.2 exige 'beneficio atribuido', pero el libro no dice qué hacer cuando ningún 2.2.* calza, ni si el mismo fragmento admite 2.1.INN y 2.2 a la vez. 'Potencial transformador' podría leerse además como 2.1.REV; las etiquetas OTR son libres y no comparables.",
+      "propuesta_regla": "2.2.OTR se aplica cuando el fragmento atribuye a la IA un beneficio nombrado (bienestar, prosperidad, 'aporte al desarrollo humano') que no cabe en ningún 2.2.* específico; la etiqueta va en mod.etiqueta con vocabulario cerrado ('bienestar general', 'desarrollo humano'). 'Potencial', 'capacidad' o 'impresionante' sin beneficio nombrado es 2.1.INN. Si un mismo fragmento contiene ambas cosas, se registran 2.1.INN y 2.2.OTR. 2.1.REV requiere 'revolución', 'cambio de época' o equivalente de cambio profundo."
+    },
+    {
+      "codigo": "2.3.CUL",
+      "tipo": "voz",
+      "causa": "ambiguedad_libro",
+      "alias": "N22815",
+      "a": "2.3.CUL v=A, voz=FM, una sola cita que une 'cumbre emotiva' y 'explotación'; no registra 2.2.CUL.",
+      "b": "2.3.CUL v=-, voz=P con la cita de la indignación; 2.2.CUL v=+, voz=P con 'cumbre emotiva, un acierto publicitario'.",
+      "diagnostico": "Chocan dos reglas: 3.1 ('v valora el objeto del código', aquí el daño) y FM (misma valoración, mismo objeto, signos opuestos, voces distintas). Además 'muchos' y 'hay quienes' son colectivos anónimos que no calzan en ninguna voz: A los llevó a FM y B a P. La salida de B respeta el objeto de cada código; la de A mete el polo favorable dentro de un 2.3.",
+      "propuesta_regla": "Si el polo favorable y el desfavorable recaen en objetos de códigos distintos (beneficio vs daño), cada uno se registra en su propio código (2.2.* y 2.3.*) con su v y su cita; no se usa v=A en un 2.3 para incluir el polo favorable. FM solo cuando una misma cita contiene dos posiciones opuestas de fuentes identificables con tipo definido. Las valoraciones de colectivos anónimos ('muchos', 'hay quienes', 'algunos') llevan voz P."
+    },
+    {
+      "codigo": "2.1.INN",
+      "tipo": "v",
+      "causa": "ambiguedad_libro",
+      "alias": "N22815",
+      "a": "v=+, cita 'Lo que hasta ahora está haciendo la inteligencia artificial con la música consigue al menos la reacción unánime del asombro, sí.'",
+      "b": "v=A, cita '¿Una proeza técnica o una banalidad?'",
+      "diagnostico": "El v depende del fragmento elegido: 'asombro' es una reacción de valencia incierta, mientras que la pregunta retórica trae ambos signos sin resolver. El libro pide el tramo mínimo que muestre 'el código y su valoración', pero no dice qué hacer cuando la nota valora el mismo objeto con ambos signos. Con 3.1 (ambos signos sin condición = A), la lectura de B es más fiel.",
+      "propuesta_regla": "Si en la nota el mismo código recibe marcas de ambos signos en fragmentos distintos, se registra una instancia por signo (cada una con su cita y su voz); v=A solo si una misma cita contiene ambas marcas (p. ej. una pregunta retórica dicotómica) y v=C si hay condición explícita. 'Asombro', 'sorpresa' y reacciones emocionales sin adjetivo valorativo son D."
+    },
+    {
+      "codigo": "2.3.DEM",
+      "tipo": "mod",
+      "causa": "ambiguedad_libro",
+      "alias": "N37130",
+      "a": "resp=RDI",
+      "b": "resp=RMA",
+      "diagnostico": "La frase 'La difusión de fotografías o vídeos falsos puso de relieve el peligro de manipulación de la opinión pública' no nombra autor ni intención. B infiere malicia del tipo de daño (falso, manipulación); A lo deja difuso. El libro define RMA como 'usos maliciosos' sin decir si la malicia puede inferirse del daño, y la regla general es no inferir.",
+      "propuesta_regla": "RMA solo si el texto nombra o describe un uso malicioso o un actor hostil ('mal uso', 'delincuentes', 'quienes manipulan'). Si el daño se enuncia sin autor ni intención (difusión de contenidos falsos), es RDI; si el sujeto del daño es la IA o el sistema ('la IA genera contenido engañoso'), es RTE. No se infiere malicia del tipo de daño."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N54185",
+      "a": "3.3.ADO v=D y 3.4.EST sobre 'El próximo mes, Canadá lanzará Charlie the Chatbot...'",
+      "b": "3.3.NIN (dudas: 'uso estatal de IA reportado sin prescripción').",
+      "diagnostico": "La nota reporta cómo gobiernos usan IA. El libro dice que constatar que la IA existe o crece no es 3.3, pero incluye como 3.3 'una medida adoptada' y ADO cubre 'incorporar'. No distingue el relato de uso corriente de un programa de adopción con actor y objetivo. Con el anuncio de Canadá la lectura de A es defendible; con el resto del texto (IRS, Brasil) la de B.",
+      "propuesta_regla": "3.3.ADO con v=D se registra cuando el texto presenta la adopción como decisión o programa concreto de un actor (anuncio, plan o lanzamiento con actor y objetivo, p. ej. 'Canadá lanzará un chatbot tributario'). El relato de uso corriente ('los gobiernos usan IA', 'el IRS rastrea datos') describe el carácter de la IA y va en D2 (2.2.*, 2.1.HER), no en 3.3; en ese caso se asigna 3.3.NIN."
+    },
+    {
+      "codigo": "3.3.GOB / 3.4.EMP",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N22815",
+      "a": "3.3.GOB v=D y 3.4.EMP sobre 'El caso está hoy siendo evaluado más formalmente por el Consejo Nacional de Autorregulación Publicitaria de Brasil.' (A lo marca como marginal).",
+      "b": "3.3.NIN.",
+      "diagnostico": "'Autorregulación' aparece literalmente en la definición de GOB, pero lo que ocurre es la evaluación de un caso puntual, no una norma, acuerdo o estándar para ordenar la IA; el principio 3 ('ante la duda, no codifiques') favorece a B. Además 3.4 no tiene categoría para organismos de autorregulación gremial (EMP, SOC o NES), por lo que A eligió EMP sin respaldo en el libro.",
+      "propuesta_regla": "3.3.GOB exige una norma, acuerdo o estándar de alcance general para ordenar la IA. La evaluación de un caso puntual ('está siendo evaluado por...') no es medida: 3.3.NIN. En 3.4, un organismo gremial de autorregulación empresarial (p. ej. CONAR) es 3.4.EMP; si no puede clasificarse, 3.4.NES."
+    },
+    {
+      "codigo": "2.4.USO",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N74357",
+      "a": "2.4.USO NA con 'Finalmente por ahora no va hacer nada más de que nosotros como seres humanos o como conglomerado estemos dispuestos que haga.'",
+      "b": "No lo registra.",
+      "diagnostico": "2.4 pide 'fórmula condicional explícita' con tres ejemplos cerrados. La frase expresa dependencia exclusiva de la voluntad humana sin usar ninguna de esas fórmulas. Ambos codificadores aceptaron en N54185 'solo serán tan buenas como las personas que las emplean', que tampoco está en la lista; el criterio de 'explícita' no está operacionalizado.",
+      "propuesta_regla": "2.4 se aplica con fórmula condicional explícita o su equivalente de dependencia exclusiva ('depende de', 'según cómo', 'siempre que', 'solo será tan buena como', 'no hará nada más que lo que nosotros queramos'). Un contraste herramienta/mal uso sin afirmar dependencia no basta."
+    },
+    {
+      "codigo": "2.5.ALA",
+      "tipo": "presencia",
+      "causa": "juicio_legitimo",
+      "alias": "N54185",
+      "a": "No registra 2.5; 3.1.EST + con marca implícita.",
+      "b": "2.5.ALA (voz FC) y 3.1.EST + con marca explícita, sobre 'El futuro del mundo fiscal se parece más a Iron Man que a The Terminator'.",
+      "diagnostico": "La comparación descarta el escenario distópico, pero sin verbo de cuestionamiento ('se exagera', 'no hay evidencia'). B la lee como cuestionamiento implícito del alarmismo; A la deja solo como proyección. Ambas lecturas son defendibles. La marca de una metáfora (explícita o implícita) tampoco está definida."
+    },
+    {
+      "codigo": "c4",
+      "tipo": "otro",
+      "causa": "error_codificador",
+      "alias": "N74357",
+      "a": "Eric Goles, Editorial Planeta, Universidad Adolfo Ibáñez",
+      "b": "Eric Goles",
+      "diagnostico": "La regla pide los actores más relevantes para el discurso sobre la IA. Planeta (editorial de la novela) y la UAI (filiación del entrevistado) son contexto biográfico, no actores del discurso sobre IA; A aplicó mal el criterio de relevancia y llenó los tres cupos. Aparte, la normalización de organizaciones no está especificada ('Clínica Revitamed' en A vs 'Revitamed' en B, N11495)."
+    },
+    {
+      "codigo": "2.3.OTR",
+      "tipo": "presencia",
+      "causa": "juicio_legitimo",
+      "alias": "N54185",
+      "a": "No lo registra.",
+      "b": "2.3.OTR - G1 RTE (etiqueta 'impersonalidad del servicio público') sobre 'confiar en la tecnología puede hacer que una agencia que ya es impersonal lo sea aún más'.",
+      "diagnostico": "Se atribuye un daño leve a la tecnología, por lo que B lo registra; A lo omite por 'ante la duda, no codifiques'. Ambas lecturas son defendibles. El ámbito (servicio público) cae en OTR porque 2.3 no tiene ámbito de Estado o servicios."
+    },
+    {
+      "codigo": "2.1.HER",
+      "tipo": "presencia",
+      "causa": "juicio_legitimo",
+      "alias": "N80878",
+      "a": "2.1.HER v=D, voz P, sobre 'las maneras en que la IA puede servir para hacer un diagnóstico de la información que creamos y el lenguaje.'",
+      "b": "No lo registra.",
+      "diagnostico": "'Puede servir para' presenta a la IA como medio al servicio de un fin, sin marcas valorativas (D). En una nota secundaria con IA en 2 de 15 perfiles, B se abstiene aplicando el principio 3; A aplica la definición de HER al pie de la letra. Ambos defendibles."
+    },
+    {
+      "codigo": "c3",
+      "tipo": "otro",
+      "causa": "juicio_legitimo",
+      "alias": "N80878",
+      "a": "salud_ciencia (el evento es científico).",
+      "b": "cultura_medios (la IA aparece ligada a información, fake news y brecha digital).",
+      "diagnostico": "Es un listado de 15 perfiles donde la IA aparece en dos, con temas de información, sesgos y brecha digital. La regla ('el ámbito donde la nota ubica a la IA', 'el predominante') no resuelve las notas misceláneas y c3 no tiene un ámbito para democracia o sociedad. Ambos codificadores dudaron entre secundaria y tangencial en c1."
+    }
+  ],
+  "emergentes": [
+    {
+      "etiqueta": "Perplejidad ética",
+      "indicador": "2",
+      "definicion": "La IA se construye como un campo donde prima la perplejidad moral: los juicios sobre sus usos son dispares y no se zanjan.",
+      "origen": "A",
+      "alias": "N22815",
+      "cita": "pero el de la IA es hoy un campo en el que todavía prima la perplejidad, y en ello radica precisamente parte de su trampa."
+    },
+    {
+      "etiqueta": "Nombre IA engañoso",
+      "indicador": "2",
+      "definicion": "Se objeta que 'inteligencia artificial' sugiera inteligencia o conciencia donde solo hay tecnología sofisticada.",
+      "origen": "B",
+      "alias": "N74357",
+      "cita": "“Yo pienso que la palabra inteligencia artificial además, está mal puesta, es muy ambigua, porque uno piensa que es inteligencia”,"
+    },
+    {
+      "etiqueta": "Autenticidad frente a impostura",
+      "indicador": "2",
+      "definicion": "La música generada con IA se construye como imitación cuya falta de autenticidad debe distinguirse de lo auténtico; es un juicio de autenticidad que 2.1.LIM excluye expresamente y que ambos codificadores forzaron en 3.1.EST.",
+      "origen": "adjudicador",
+      "alias": "N22815",
+      "cita": "Vendrá el día que hablemos de una “canción-canción” para diferenciarla de una impostura, como hoy con el “café-café”."
+    },
+    {
+      "etiqueta": "IA sin conciencia",
+      "indicador": "2",
+      "definicion": "Se niega a la IA conciencia y perversidad y se sitúa en los humanos el origen del mal; es lo opuesto a 2.1.AGE y a la pérdida de control (G3), y ambos codificadores lo forzaron en 2.1.LIM.",
+      "origen": "adjudicador",
+      "alias": "N74357",
+      "cita": "No hay conciencia. No hay perversidad en aquello."
+    },
+    {
+      "etiqueta": "IA como vigilancia fiscal",
+      "indicador": "2",
+      "definicion": "La IA se enuncia como dispositivo de vigilancia estatal que cerca al contribuyente, con tono de advertencia al infractor; no hay daño atribuido (2.3) ni propósito de diseño (1.2.CTR).",
+      "origen": "adjudicador",
+      "alias": "N54185",
+      "cita": "Irregularidades fiscales, cuidado: las máquinas están vigilando."
+    }
+  ],
+  "vacios_del_libro": [
+    "El principio 7 y 3.3 (registrar ambos si hay fragmentos distintos) chocan con la regla FM: no se dice cuándo duplicar un código con signos opuestos y cuándo usar v=A con voz FM; en N37130 ambos duplicaron 3.3.REG (+ y -) contra la letra de FM, y no hay voz para colectivos anónimos ('muchos', 'hay quienes').",
+    "3.1 no declara si admite más de un código por nota (3.2 sí dice 'pueden coexistir') ni cómo registrar una incertidumbre expresa junto a otra proyección (3.1.INC con v=D).",
+    "2.3 no tiene ámbito de salud (2.2.SAL sí existe) ni de Estado o servicios públicos: en el lote hubo 7 registros OTR (4 de 2.2.OTR y 3 de 2.3.OTR) con etiquetas libres no comparables ('salud del paciente' vs 'daño a la salud individual'), y mod.ambito de 3.1.EST también es libre ('cultura' vs 'cultura (música)').",
+    "resp: RMA se limita a 'usos maliciosos' y no hay criterio para el mal uso no malicioso o el error del usuario (N11495, donde ambos dudaron entre RTE y RDI) ni para daños enunciados sin autor (N37130).",
+    "c1 no da umbral para notas misceláneas o listados (IA en 2 de 15 perfiles, N80878: ambos dudaron entre secundaria y tangencial), y c5 no operacionaliza entrevista, reportaje ni otro (4 de 8 notas con desacuerdo).",
+    "2.1.LIM ('fallas técnicas') fue usado por ambos para 'no tiene ninguna conciencia, es una moledora de datos' (N74357), que niega agencia y no es una falla; además 1.3.TRA no precisa si basta la genealogía histórica de la computación (ambos marcaron evidencia débil) y 3.4 no ubica a la UE (EST o INT) ni a los organismos de autorregulación."
+  ]
+}

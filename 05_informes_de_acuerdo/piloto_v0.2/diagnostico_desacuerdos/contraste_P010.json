@@ -1,0 +1,128 @@
+{
+  "lote": "P010",
+  "desacuerdos": [
+    {
+      "codigo": "2.1.LIM",
+      "alias": "N48806",
+      "tipo": "presencia",
+      "a": "ausente",
+      "b": "presente (v -, voz P, marca explicita)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "B cita 'el fabricante no ha podido avanzar en el desarrollo de un vehiculo totalmente autonomo', que atribuye la falla a la empresa y a su programa, no a la IA; B mismo dudo del vinculo indirecto. El libro trata vehiculos autonomos como IA (c2) pero no dice si el fracaso de un producto basado en IA es una falla tecnica de la IA.",
+      "propuesta_regla": "2.1.LIM exige que el fragmento atribuya el error, limite o sesgo a la IA o a un sistema que el texto presenta como IA (el sujeto o la causa de la falla es el sistema). Un retraso, fracaso comercial o escrutinio regulatorio del producto o de la empresa, sin decir que hace mal el sistema, no se codifica."
+    },
+    {
+      "codigo": "c1",
+      "alias": "N48806",
+      "tipo": "c1",
+      "a": "tangencial",
+      "b": "secundaria",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La IA figura en la bajada ('depender exclusivamente de sus camaras e inteligencia artificial') y una vez en el cuerpo, como componente de un sistema de asistencia a la conduccion. Los juicios del texto recaen en los sensores, la empresa y el producto, no en la IA. La regla de c1 no dice que hacer cuando la bajada nombra la IA como componente y casi la caracteriza.",
+      "propuesta_regla": "c1 = tangencial cuando la IA es un componente mas de un producto, proyecto o sistema y las afirmaciones del texto (descripcion, criticas, escrutinio) recaen sobre el producto, la empresa o sus sensores y no sobre la IA, aunque figure en la bajada. Pasa a secundaria solo si algun fragmento atribuye a la IA misma una funcion, un limite o un efecto que el texto desarrolla."
+    },
+    {
+      "codigo": "1.1.CORP",
+      "alias": "N45174",
+      "tipo": "presencia",
+      "a": "presente (D, voz P, escala Chile, calidad 1)",
+      "b": "ausente",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "A cita 'Giuseppe (programa de IA de la compania)', que solo muestra propiedad. Pero la nota si narra que NotCo patento y licenciara su IA a terceros (difusion impulsada por la empresa). El libro excluye a la empresa solo usuaria, pero no dice si poseer o licenciar IA propia (foodtech, no Big Tech) cuenta como impulso.",
+      "propuesta_regla": "1.1.CORP aplica cuando el texto dice o implica que una empresa, de cualquier rubro, desarrolla, entrena, patenta, comercializa o licencia la IA (la impulsa o la difunde). No aplica si solo la usa o la compra. La mera posesion ('su programa de IA') no basta: cita la accion (p. ej. 'licenciar su tecnologia de Inteligencia Artificial (IA) patentada')."
+    },
+    {
+      "codigo": "3.1.EST / 3.1.CON",
+      "alias": "N27638",
+      "tipo": "otro",
+      "a": "3.1.EST (ambito trabajo), v D, calidad 2",
+      "b": "3.1.CON, v D, calidad 1",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Misma cita: 'El Covid solo ha acelerado el paso hacia un mundo caracterizado por el trabajo conjunto entre maquinas y humanos'. Combina aceleracion (CON, que el libro define como 'continuidad o aceleracion') con un estado de llegada distinto (EST). CON y EST se solapan en el termino 'aceleracion'.",
+      "propuesta_regla": "3.1.CON: el texto proyecta mas de lo mismo (crecer, extenderse, acelerarse) sin describir un ambito reorganizado. 3.1.EST: el texto describe el estado futuro como un orden distinto de un ambito ('un mundo caracterizado por...', 'el trabajo sera...'), aunque use el verbo 'acelerar'; anota el ambito en mod.ambito. Si hay ambas formulaciones en fragmentos distintos, aplica ambos."
+    },
+    {
+      "codigo": "2.1.INN / 2.2.CUL",
+      "alias": "N39017",
+      "tipo": "presencia",
+      "a": "2.2.CUL (+, calidad 1); sin 2.1.INN",
+      "b": "2.1.INN (+, calidad 1); sin 2.2.CUL",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Misma cita ('imaginarlo en la vida real es posible gracias a la inteligencia artificial'), dos lecturas: capacidad tecnologica (INN) o beneficio cultural recreativo (2.2.CUL). 2.2 exige un beneficio atribuido, y aqui solo hay 'posible gracias a', sin beneficio mas alla de la curiosidad. El libro no fija la frontera INN/2.2 ni el umbral de beneficio en usos recreativos.",
+      "propuesta_regla": "2.1.INN cuando el fragmento muestra que puede hacer la IA (capacidad, hito). 2.2.x solo cuando nombra un beneficio concreto para un ambito (ahorro, diagnostico, creatividad aplicada a un fin), no el mero hecho de que algo sea posible. Si el mismo fragmento cumple ambas condiciones, aplica ambos."
+    },
+    {
+      "codigo": "2.1.HER",
+      "alias": "N39017",
+      "tipo": "presencia",
+      "a": "presente (D, voz P, calidad 2)",
+      "b": "ausente",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "A cita 'la cual disena imagenes en tiempo real [...] lo que el usuario le solicita crear', una descripcion funcional de Copilot. HER no tiene umbral: casi toda descripcion de una IA generativa que responde a un usuario calza como 'medio al servicio de fines humanos' y, con v = D, no aporta senal. En N85434 y N27638 el HER de ambos se apoya en el lexema 'herramienta'.",
+      "propuesta_regla": "2.1.HER exige que el texto enuncie la IA como herramienta, asistente, apoyo o medio para un fin humano (lexico: 'herramienta', 'asistente', 'ayuda a', 'al servicio de', 'permite al medico...'). La mera descripcion de que produce o como opera la IA se registra, si procede, como 2.1.INN, no como HER."
+    },
+    {
+      "codigo": "2.1.INN",
+      "alias": "N85434",
+      "tipo": "voz",
+      "a": "voz FE (cita: 'Lo mas importante es su capacidad de detectar melanomas en proceso de formacion')",
+      "b": "voz P (cita: 'este nuevo desarrollo cientifico promete acortar el proceso a dos pasos')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Mismo codigo y mismo v (+); la discrepancia de voz nace de elegir fragmentos distintos, ambos validos. El libro no dice como elegir cuando varios fragmentos sustentan el mismo codigo con voces distintas, ni si el codigo puede repetirse. El mismo patron aparece en 1.2.NEC de N27638.",
+      "propuesta_regla": "Si varios fragmentos sostienen el mismo codigo con el mismo v, registra una sola entrada con el de mayor calidad y, en empate, el primero del texto (titular, bajada, cuerpo); la voz es la del fragmento citado. Repite el codigo solo si otro fragmento lo sostiene con v opuesto."
+    },
+    {
+      "codigo": "1.2.NEC",
+      "alias": "N27638",
+      "tipo": "otro",
+      "a": "cita de la bajada (crisis sanitaria puso la IA en el centro de las inversiones), calidad 1",
+      "b": "cita del cuerpo (confinamiento empujo a las personas a usar la tecnologia), calidad 1",
+      "causa": "juicio_legitimo",
+      "diagnostico": "Mismo codigo, v y voz; ambos fragmentos sostienen la lectura. La diferencia es de seleccion de cita. Mas importante: la pandemia aparece como choque externo que acelera la adopcion, no como 'necesidad social' atendida; por eso ambos dieron calidad 1 (ver emergente 'Crisis como acelerador')."
+    },
+    {
+      "codigo": "c2",
+      "alias": "N19836",
+      "tipo": "otro",
+      "a": "[generica]",
+      "b": "[generica, sistemas_especificos]",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El texto enumera 'conduccion autonoma, robotica avanzada e inteligencia artificial'. B suma sistemas_especificos por la conduccion autonoma (ejemplo literal del libro); A solo registra 'la IA' nombrada. El libro no dice si c2 recoge tecnologias vecinas listadas junto a la IA pero no presentadas como IA.",
+      "propuesta_regla": "c2 recoge solo referentes que el texto presenta como IA o describe con funciones de IA (reconocer, decidir, generar). Una simple enumeracion de tecnologias junto a 'inteligencia artificial' se registra como 'generica'. 'Sistemas_especificos' requiere que el texto describa que hace ese sistema."
+    }
+  ],
+  "emergentes": [
+    {
+      "etiqueta": "IA como juguete viral",
+      "indicador": "2",
+      "definicion": "La IA se presenta como entretencion o curiosidad cotidiana (probar que pasa si se le pide algo), sin beneficio ni riesgo; banaliza y normaliza su uso. Tambien en N60778.",
+      "cita": "casi 23 años después, la inteligencia artificial (IA) muestra cómo se vería este ogro verde en la vida real.",
+      "alias": "N39017",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "Crisis como acelerador",
+      "indicador": "1",
+      "definicion": "Un choque externo (la pandemia) se presenta como lo que impulsa la adopcion de la IA, sin que sea una necesidad social atendida ni una decision de agentes; no calza en 1.2.NEC.",
+      "cita": "la Inteligencia Artificial (IA) aparece como una de las beneficiadas dentro de la crisis sanitaria",
+      "alias": "N27638",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "Rezago nacional en adopcion",
+      "indicador": "3",
+      "definicion": "La adopcion de IA se mide contra otros paises y Chile aparece en deficit, lo que justifica invertir; frame de brecha de desarrollo, distinto de 1.2.GEO (rivalidad como motor de origen) y de 3.3.ADO.",
+      "cita": "todavía estamos al debe en comparación con otros países",
+      "alias": "N27638",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "c1 se contradice: define 'central' como IA que 'aparece en el titular', pero luego dice que la IA solo en titular o bajada es secundaria o tangencial segun construya sentido; faltan criterios para la IA como componente de un producto (N48806) y para notas virales 'segun la IA' (N60778 tangencial y N39017 secundaria, con el mismo patron de titular).",
+    "No se define cuanto vinculo con la IA debe tener la cita: en 2.1.LIM, 2.3 y 3.3 los codificadores dudaron de fragmentos sobre 'avance del cibercrimen' o un vehiculo autonomo que no nombran la IA (N48806 B; N52762 A y B); falta decir si la oracion previa puede establecer el vinculo.",
+    "3.4.NES figura en la seccion 4 como condicional ('solo si hay prescripcion sin sujeto') y en la seccion 5 como codigo por defecto con cita vacia, pero el principio 3 y el paso 5 del procedimiento no lo listan; ambos codificadores lo anadieron con cita vacia en N27638.",
+    "G2 incluye 'dano con un actor que lo impulsa', criterio que se solapa con resp (RCO, RMA, RES) y haria G2 casi automatico; B dudo entre G1 y G2 en N52762 ('eventual llegada' frente a 'se veran incrementados') y ambos dejaron G1 sin criterio explicito.",
+    "No hay regla para elegir la cita cuando varios fragmentos sustentan el mismo codigo con voces distintas, ni se dice si un codigo puede repetirse; genera divergencias de voz y cita sin desacuerdo conceptual (N85434, N27638). Tampoco hay umbrales para calidad 1 frente a 2 (difirieron en 3.1 de N27638 y 2.1.HER de N85434).",
+    "c5 depende de 'firma periodistica' y 'fuentes plurales', datos que el lote no entrega (solo seccion, titular, bajada, texto); notas de tono promocional con fuente unica y sin llamado comercial (N45174, en parte N27638) quedaron como noticia con duda declarada de ambos codificadores."
+  ]
+}

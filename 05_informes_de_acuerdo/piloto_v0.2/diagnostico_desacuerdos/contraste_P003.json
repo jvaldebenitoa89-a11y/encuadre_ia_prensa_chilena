@@ -1,0 +1,187 @@
+{
+  "lote": "P003",
+  "desacuerdos": [
+    {
+      "alias": "N29585",
+      "codigo": "c1",
+      "tipo": "c1",
+      "a": "secundaria",
+      "b": "central",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La IA esta en titular, bajada y todo el cuerpo (salidas de Gemini), pero el tema es el partido y no hay discurso sobre la IA. La definicion de central ('aparece en el titular o articula el argumento') choca con 'es el tema de la nota' y con la regla de titular/bajada; segun cual se lea sale central o tangencial.",
+      "propuesta_regla": "Central solo si la nota trata de la IA misma (la describe, evalua, regula o discute sus usos o efectos). Si la IA es instrumento o gancho de otro tema (p. ej. un chatbot hace un pronostico deportivo), es secundaria cuando el texto le atribuye acciones, dichos o cualidades, y tangencial cuando solo se nombra. Aparecer en el titular no basta para central."
+    },
+    {
+      "alias": "N73151",
+      "codigo": "c3",
+      "tipo": "otro",
+      "a": "salud_ciencia",
+      "b": "trabajo_economia",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Nota multitema (Covid, teletrabajo, charla de IA). c3 pide el ambito donde la nota ubica a la IA, pero no dice que pasaje manda. El unico pasaje con IA explicita es el de Rothblatt (mentes digitales), que no es claramente salud ni trabajo; el pasaje de West no nombra la IA.",
+      "propuesta_regla": "En notas multitema, c3 se decide por los pasajes donde la IA aparece nombrada, no por el tema general de la nota ni por pasajes que solo hablan de 'tecnologia' o 'maquinas'. Si esos pasajes remiten a ambitos distintos, usa el del pasaje con mas texto; si no hay predominio, usa 'otro'."
+    },
+    {
+      "alias": "N73151",
+      "codigo": "2.2.LAB / 2.3.DES",
+      "tipo": "presencia",
+      "a": "no codifica (West habla de 'maquinas' y 'nuevas tecnologias' sin IA explicita)",
+      "b": "2.2.LAB + y 2.3.DES - G1/RDI con calidad 1",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "West habla de teletrabajo, 'maquinas' y 'nuevas tecnologias'; la IA solo figura en el titulo de su libro. B la vinculo por inferencia; A lo descarto. El libro no dice si un fragmento sin la palabra IA ni un sistema de IA concreto puede codificarse.",
+      "propuesta_regla": "Codifica un fragmento solo si nombra la IA (o un sistema de IA concreto) o si el mismo parrafo lo identifica sin ambiguedad como IA. 'Tecnologia', 'maquinas', 'automatizacion' o 'datos' sin vinculo explicito con IA no se codifican; anotalo en dudas."
+    },
+    {
+      "alias": "N23172",
+      "codigo": "3.2.INE",
+      "tipo": "presencia",
+      "a": "3.2.INE (voz P) por 'llego para quedarse'",
+      "b": "3.2.NEX",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "'Llego para quedarse' refiere a la metodologia de analisis de datos, no a la IA (el sujeto de la frase es 'la recopilacion, el analisis y la toma de decisiones'). El libro no exige que los codigos de D3 se refieran a la IA, de modo que A aplico la formula literal y B el sentido.",
+      "propuesta_regla": "Los codigos de D3 (3.1, 3.2, 3.3) deben referirse a la IA o a su adopcion. Si la formula ('llego para quedarse', 'seguira creciendo') califica datos, analitica u otra tecnologia sin vincularla en el mismo fragmento con la IA, no se codifica."
+    },
+    {
+      "alias": "N53009",
+      "codigo": "3.2.INE",
+      "tipo": "presencia",
+      "a": "3.2.INE sobre 'solo continuara creciendo'",
+      "b": "3.2.NEX",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "'Solo continuara creciendo' es una proyeccion de continuidad (3.1.CON, que ambos codifican); A la duplico como irreversibilidad. 3.1.CON y 3.2.INE se solapan porque ninguno fija marcas de irreversibilidad.",
+      "propuesta_regla": "3.2.INE exige una formula explicita de irreversibilidad o permanencia ('llego para quedarse', 'no hay vuelta atras', 'ya no se puede prescindir'). Una proyeccion de crecimiento o continuidad ('seguira creciendo') es solo 3.1.CON."
+    },
+    {
+      "alias": "N13484",
+      "codigo": "2.5.HYP vs 2.1.LIM",
+      "tipo": "presencia",
+      "a": "2.5.HYP (v NA, FE)",
+      "b": "2.1.LIM (v -, FE)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Misma cita ('la mayoria de los expertos creen que la industria esta muy lejos de la sensibilidad informatica'). A la leyo como cuestionamiento de una promesa, B como limite de la tecnologia. El libro no dice como codificar la negacion de una capacidad que otra voz atribuye a la IA; LIM esta definida con fallas tecnicas ('alucina') y HYP con una narrativa dominante, y aqui lo cuestionado es la afirmacion de un solo ingeniero.",
+      "propuesta_regla": "Cuando una fuente niega una capacidad que otra voz atribuye a la IA (conciencia, comprension), codifica 2.5.HYP (v=NA) con la voz de quien niega. 2.1.LIM solo si se describen errores o limites tecnicos observables del sistema. Pueden coexistir si el fragmento hace ambas cosas."
+    },
+    {
+      "alias": "N13484",
+      "codigo": "2.3.DES",
+      "tipo": "presencia",
+      "a": "no codifica (periferica)",
+      "b": "2.3.DES - G2/RCO, calidad 1",
+      "causa": "juicio_legitimo",
+      "diagnostico": "La alegacion de Lemoine de que 'Google y su tecnologia practicaban discriminacion religiosa' es un solo inciso, atribuye el dano a la empresa mas que a la IA y no se desarrolla. Es defendible codificarla con la voz de la fuente (seccion 6) o descartarla por periferica y por el principio de duda.",
+      "propuesta_regla": ""
+    },
+    {
+      "alias": "N25686",
+      "codigo": "3.4",
+      "tipo": "presencia",
+      "a": "3.4.SOC + 3.4.EMP",
+      "b": "3.4.SOC (elegido por el liderazgo de Fundacion Cruzando)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La iniciativa la ejecutan fundaciones y empresas (Platzi, Fundacion Telefonica). El libro habla de 'el actor' en singular y no dice si 3.4 admite varios codigos, por lo que B escogio uno y A registro ambos.",
+      "propuesta_regla": "3.4 admite mas de un codigo cuando el texto nombra ejecutores de tipos distintos; registra uno por tipo con su cita. No elijas un solo tipo por 'liderazgo' ni por orden de mencion."
+    },
+    {
+      "alias": "N25686",
+      "codigo": "2.1.INN",
+      "tipo": "presencia",
+      "a": "no codifica",
+      "b": "2.1.INN + sobre 'docentes que deseen estar a la vanguardia y que conoceran el uso y progreso de tecnologias de IA'",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "'Vanguardia' califica a los docentes y 'progreso' es generico; el texto no caracteriza a la IA como novedad. La definicion de INN ('avance, hito, innovacion o capacidad') no fija umbral, asi que casi cualquier mencion la satisface y se sobrecodifica.",
+      "propuesta_regla": "2.1.INN exige que el fragmento califique a la IA o a un sistema concreto como novedad, avance o capacidad (p. ej. 'innovadora herramienta', 'permite predecir con precision'). Mencionar que se ensena, usa o 'progresa' la IA, o que las personas esten 'a la vanguardia', no basta."
+    },
+    {
+      "alias": "N92551",
+      "codigo": "3.3.ADO + 3.4.NES",
+      "tipo": "presencia",
+      "a": "no codifica (lo anota en dudas)",
+      "b": "3.3.ADO + (FC, calidad 1) y 3.4.NES",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "SICPA, empresa que ofrece soluciones con IA, dice que 'es super importante que se le de cabida a ese tipo de soluciones': juicio de importancia en pasiva, sin verbo exhortativo, medida ni ejecutor. El libro no fija el umbral de 'exhortar', y A aplico 'ante la duda no codifiques' mientras B lo registro como ADO debil.",
+      "propuesta_regla": "3.3 requiere una accion concreta pedida o adoptada (invertir, incorporar, capacitar, programa, norma) con verbo o formula exhortativa ('debe', 'hay que', 'es necesario que'). Un juicio de importancia de una fuente interesada sin accion concreta ni ejecutor no se codifica; anotalo en dudas."
+    },
+    {
+      "alias": "N99470",
+      "codigo": "3.3.CON",
+      "tipo": "presencia",
+      "a": "3.3.REG + 3.3.CON (v D) por evaluar y mitigar riesgos, auditorias y acceso de investigadores",
+      "b": "solo 3.3.REG (v D)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El texto detalla las obligaciones de la DSA. A las codifico como CON ademas de REG; B solo REG. El libro no declara que REG/GOB/LIB (instrumento) y CON/PRO (contenido restrictivo) sean ejes distintos ni si pueden co-ocurrir.",
+      "propuesta_regla": "REG/GOB/LIB codifican el tipo de instrumento; CON/PRO el contenido restrictivo. Si una norma vinculante impone limites, supervision, auditorias o prohibiciones que el texto detalla, aplica REG y tambien CON (o PRO); si solo se nombra la norma sin su contenido, solo REG."
+    },
+    {
+      "alias": "N99470",
+      "codigo": "3.3.REG (segundo registro, FM)",
+      "tipo": "voz",
+      "a": "segundo 3.3.REG con v=A y voz FM por la disputa EE.UU.-UE sobre la DSA",
+      "b": "no codifica",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La controversia es sobre la DSA y la DMA en general, no sobre la IA (A lo anoto en dudas). El libro no dice que v corresponde a FM ni si un mismo codigo puede repetirse en una nota cuando la medida es general y solo parte de ella toca a la IA.",
+      "propuesta_regla": "Una norma general de plataformas es 3.3 solo en lo que el texto aplica explicitamente a la IA; la disputa politica sobre la norma en general no se codifica. Si dos voces valoran en sentido opuesto la misma medida aplicada a la IA, registra un solo codigo con voz=FM y v=A."
+    },
+    {
+      "alias": "N99470",
+      "codigo": "3.4.INT / 3.4.EST / 3.4.EMP",
+      "tipo": "presencia",
+      "a": "3.4.INT + 3.4.EST + 3.4.EMP",
+      "b": "3.4.INT (duda si seria EST)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La Comision Europea es supranacional y no cabe de forma obvia en INT ni en EST (B lo dudo). A sumo EST (regulador irlandes) y EMP (plataformas que deben evaluar y mitigar), coherente con 'quien debe ejecutar'; B no, en linea con no haber codificado CON.",
+      "propuesta_regla": "3.4.INT incluye organismos supranacionales o multilaterales (UE, Comision Europea, ONU, OCDE); 3.4.EST solo autoridades de un Estado-nacion (p. ej. el regulador irlandes). Registra un 3.4 por cada tipo de ejecutor nombrado, incluidas las empresas obligadas por la norma."
+    },
+    {
+      "alias": "N53009",
+      "codigo": "1.2.NEC (mod.escala)",
+      "tipo": "mod",
+      "a": "mod vacio",
+      "b": "mod escala=Chile",
+      "causa": "error_codificador",
+      "diagnostico": "El libro define el modificador `escala` solo para 1.1.* (excepto 1.1.DIF); B lo agrego a 1.2.NEC. Regla clara, aplicacion erronea; no afecta la presencia del codigo.",
+      "propuesta_regla": ""
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N29585",
+      "indicador": "2",
+      "etiqueta": "IA como oraculo",
+      "definicion": "La IA se presenta como instancia a la que se consulta para anticipar eventos inciertos, con autoridad de pronostico (tambien en N53009: 'predecir con precision el exito de sus campanas').",
+      "cita": "Le consultamos a Gemini, la IA de Google, sobre cómo le podría ir a La Roja frente al conjunto altiplánico y entregó su predicción.",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N73151",
+      "indicador": "3",
+      "etiqueta": "Inmortalidad digital",
+      "definicion": "La IA avanzada se proyecta como via para preservar mentes y hacer volver a los muertos en forma digital; 3.1.RUP recoge la ruptura pero no este significado de supervivencia.",
+      "cita": "para que nuestros ancestros puedan volver a la vida en una forma digital",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N99470",
+      "indicador": "2",
+      "etiqueta": "IA como plataforma",
+      "definicion": "El chatbot se equipara a una plataforma o buscador de gran escala sujeto al regimen de las big tech; ni 2.1.MER ni 2.1.HER recogen esta naturalizacion como plataforma.",
+      "cita": "La Comisión Europea designó este lunes a ChatGPT como \"motor de búsqueda de muy gran tamaño\"",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N13484",
+      "indicador": "2",
+      "etiqueta": "IA como imitación",
+      "definicion": "La IA se define como simulacro que imita la conversacion humana sin conciencia; es el reverso de 2.1.AGE y no es una falla tecnica (2.1.LIM).",
+      "cita": "La empresa sostiene que sus sistemas imitan intercambios conversacionales y pueden hablar sobre diferentes temas, pero no tienen consciencia.",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "3.4.NES es contradictoria: la seccion 4 la define como condicional ('solo si hay prescripcion sin sujeto') pero la seccion 5 la lista entre los codigos por defecto con cita vacia, el principio 3 no la incluye entre los obligatorios y no se dice si va cuando no hay 3.3.",
+    "La definicion de c1 central ('aparece en el titular o articula el argumento') se contradice con 'es el tema de la nota' y con la regla de titular/bajada; no hay criterio para la IA usada como gancho o instrumento (N29585) ni para notas multitema (N73151, N92551), y tampoco se dice si el campo `seccion` del lote puede usarse para c5 pese a la ceguera del medio (ambos codificadores lo usaron en N23172).",
+    "No se define el referente: si un fragmento habla de datos, analitica, automatizacion, 'maquinas' o 'nuevas tecnologias' sin nombrar la IA, no esta claro si se codifica en ningun indicador (N23172, N73151).",
+    "Los umbrales de D2.1 son vagos: 2.1.INN no exige que el texto califique a la IA como novedad (N25686), 2.1.AGE no dice si cuentan los verbos de habla aplicados a chatbots ('Gemini afirmo', 'advierte'; N29585) y 2.1.REV pide 'alcance general' pero ambos codificaron un 'cambio de paradigma' solo en negocios y datos (N23172).",
+    "2.3 no tiene ambito para salud publica, bienestar mental o adiccion en menores (N99470 forzo OTR con etiquetas mezcladas) y no dice si una alegacion reportada (demanda, denuncia de un ingeniero) cuenta como dano atribuido ni que g/resp asignar.",
+    "En D3 no se declara si REG/GOB/LIB y CON/PRO son ejes distintos que pueden co-ocurrir, si un mismo codigo puede repetirse en una nota, que v corresponde a FM, ni donde cae la UE entre 3.4.INT y 3.4.EST; 3.1.CON y 3.2.INE se solapan sin marcas lexicas de irreversibilidad."
+  ]
+}

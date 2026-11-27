@@ -1,0 +1,154 @@
+{
+  "lote": "P014",
+  "desacuerdos": [
+    {
+      "codigo": "3.3.GOB",
+      "alias": "N52238",
+      "tipo": "v",
+      "a": "+ (explicita, P)",
+      "b": "D (na, P)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El fragmento solo reporta el propósito declarado del congreso ('buscarán acordar lineamientos... que protejan del mal uso'); no hay juicio sobre la medida, pero 'proteger' y 'mal uso' invitan a leer adhesión. El libro dice 'exigirla o defenderla +, solo reportarla D' sin precisar cuándo un propósito declarado cuenta como defensa.",
+      "propuesta_regla": "En 3.3, v = D cuando la medida aparece como propósito, agenda o tema de un evento o actor ('buscarán acordar', 'se debatirá') y no hay adjetivo, verbo de urgencia o juicio sobre la medida misma; la valencia de su finalidad ('proteger del mal uso') no cuenta. Es + o - solo si P o una fuente exige, defiende o critica la medida."
+    },
+    {
+      "codigo": "2.3.HUM",
+      "alias": "N52238",
+      "tipo": "presencia",
+      "a": "ausente",
+      "b": "2.3.HUM, v=A, G2, RDI (P)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La frase solo anuncia que 'oportunidades y amenazas' serán debatidas: no atribuye ningún daño concreto (2.3 'requiere un daño atribuido'). B aplica además v=A a un fragmento cuyo objeto en 2.3 es el daño (las 'oportunidades' son de 2.2) y asigna G2 solo por la palabra 'amenaza'.",
+      "propuesta_regla": "2.2 y 2.3 exigen un beneficio o daño afirmado o descrito (aunque sea posible). Nombrar 'riesgos', 'amenazas', 'peligros' u 'oportunidades' como tema de un panel, debate o pregunta, sin decir cuál, no se codifica. Si se codifica, v valora solo el objeto del código; 'oportunidades y amenazas' en una misma frase no produce A en un único código sino, como mucho, un 2.2 y un 2.3."
+    },
+    {
+      "codigo": "2.3.OTR",
+      "alias": "N46049",
+      "tipo": "presencia",
+      "a": "2.3.OTR, v=-, G1, RTE, etiqueta 'peligros no especificados' (P)",
+      "b": "ausente (dudas: el peligro aparece solo en una pregunta)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El 'peligro' solo existe como presuposición de una pregunta formulada por la réplica generada por IA; el texto no lo desarrolla ni Putin lo responde. A reconoce que no hay daño específico (etiqueta 'no especificados'), lo que contradice 'requiere un daño atribuido'. Es el mismo patrón que 2.3.HUM en N52238, con signos invertidos entre codificadores.",
+      "propuesta_regla": "No se codifica 2.3 cuando el peligro aparece solo como presuposición de una pregunta, tema de un debate o mención sin daño nombrado. 2.3.OTR exige un daño con contenido identificable que pueda escribirse en mod.etiqueta; 'peligros no especificados' no es una etiqueta válida."
+    },
+    {
+      "codigo": "2.1.INN / 2.1.HER",
+      "alias": "N71302",
+      "tipo": "presencia",
+      "a": "2.1.INN + (P)",
+      "b": "2.1.HER + (P)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La misma cita dice 'herramienta' y 'de última generación', así que ambas lecturas se sostienen. El libro no separa HER de INN ni aclara si pueden coexistir sobre un mismo fragmento; cada codificador eligió una y descartó la otra.",
+      "propuesta_regla": "2.1.HER: el fragmento enuncia la IA o la app como medio al servicio del usuario o de fines humanos (herramienta, asistente, 'ayuda a', 'sácale provecho'). 2.1.INN: el foco es la novedad o el salto técnico ('última generación', 'hito', 'avance'). Si un mismo fragmento trae ambos rasgos, registra ambos con la misma cita; no sustituyas uno por otro."
+    },
+    {
+      "codigo": "2.1.INN",
+      "alias": "N46049",
+      "tipo": "voz",
+      "a": "P (cita narrativa del medio: 'se enfrentó a una versión de sí mismo generada por inteligencia artificial')",
+      "b": "FG (cita de Putin: 'Veo que puedes parecerte a mí y hablar con mi voz')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Dos fragmentos distintos sustentan el mismo código y la voz cambia con la cita elegida. El libro no dice si un código se registra una sola vez por nota ni qué fragmento escoger cuando hay varios. Ambas voces son defendibles según el tramo citado.",
+      "propuesta_regla": "Un código aparece una sola vez por nota. Si varios fragmentos lo sustentan, cita el que lleve la marca valorativa más clara y toma la voz de ese fragmento; si ninguno la lleva, cita el primero en orden de aparición. Anota en dudas que existen otros fragmentos."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N40321",
+      "tipo": "otro",
+      "a": "Cita de Zamora sobre el centro tecnológico que pondrá la IA 'a la altura del desafío' (FE)",
+      "b": "Cita de Yáñez 'el utilizar o no utilizar IA ya no es una opción' (FE), reusada también para 3.2.INE",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Coinciden en el código pero lo anclan en fragmentos distintos. A usa una medida concreta (convenio y centro tecnológico), que encaja con 'medida adoptada como respuesta'. B usa una constatación de inevitabilidad, propia de 3.2.INE, y duplica la cita. El libro dice 'constatar que la IA existe o crece no es 3.3', pero no si 'ya no es una opción' es exhortación a adoptar. La frase sobre 'capacidades para aprender' podría apuntar a 3.3.ADA y ninguno la codificó.",
+      "propuesta_regla": "3.3.ADO exige una medida (convenio, programa, inversión) o un verbo exhortativo (hay que, deben, impulsar). Una frase de inevitabilidad ('ya no es una opción', 'llegó para quedarse') se codifica como 3.2.INE y no sustenta 3.3 salvo que además llame a actuar. Si dos fragmentos distintos sustentan ADO, cita el que presenta la medida."
+    },
+    {
+      "codigo": "3.4.EMP",
+      "alias": "N40321",
+      "tipo": "otro",
+      "a": "3.4.EMP con cita de Zamora ('Estamos trabajando con diferentes proveedores'); duda EMP vs ACA para Fundación Chile",
+      "b": "3.4.EMP con cita de Yáñez ('quienes tengamos las capacidades para aprender y trabajar con ella'); el actor se infiere del contexto minero",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Mismo código con evidencias distintas y ambos dudan. El libro define 3.4 como 'quien debe ejecutar', pero no dice si el actor puede inferirse del sector ni qué categoría corresponde a una fundación tecnológica sin fines de lucro. La cita de B apunta más a individuos o profesionales que a empresas.",
+      "propuesta_regla": "3.4 se asigna al actor que el fragmento citado nombra como ejecutor; no se infiere del sector ni del contexto. Si la exhortación no tiene sujeto o usa un 'nosotros' genérico, usa 3.4.NES con la cita de la prescripción. Fundaciones o centros tecnológicos: ACA si el fragmento destaca investigación o conocimiento; EMP si destaca servicios a la industria."
+    },
+    {
+      "codigo": "c3",
+      "alias": "N65340",
+      "tipo": "otro",
+      "a": "otro",
+      "b": "trabajo_economia",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La nota es una lista de diez tendencias tecnológicas en que la IA ocupa un apartado sobre interpretar datos (con alusión a salud y consumo). 'El predominante' es ambiguo cuando el predominio de la nota y el del apartado de IA difieren, y la lista de valores no tiene una categoría para tecnología general.",
+      "propuesta_regla": "En notas que enumeran varios temas o tendencias, c3 se decide por el apartado donde aparece la IA, no por el ámbito de la nota entera. Si ese apartado no la ubica en un ámbito de la lista, usa 'otro'."
+    },
+    {
+      "codigo": "c2 (sistemas_especificos)",
+      "alias": "N40321",
+      "tipo": "otro",
+      "a": "generica + sistemas_especificos",
+      "b": "generica",
+      "causa": "juicio_legitimo",
+      "diagnostico": "El texto menciona 'herramientas predictivas' y 'simulación de actividades' en faena, que cumplen la definición de aprendizaje automático aplicado a un fin concreto, pero apenas se desarrollan y el eje es la IA en general. Ambas lecturas son defendibles."
+    },
+    {
+      "codigo": "calidad",
+      "alias": "N24377, N65340, N40321",
+      "tipo": "otro",
+      "a": "2 en las tres citas idénticas (2.1.INN, 3.1.CON, 3.2.INE)",
+      "b": "1 en las mismas tres citas",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Con citas idénticas, B baja a 1 cuando el fragmento se reutiliza para un segundo código o cuando el objeto es el contrato de chips y no la IA; A asigna 2. El libro define 1 como 'débil o ambigua' sin criterios observables y no dice si reutilizar la cita la degrada.",
+      "propuesta_regla": "calidad 2 si la cita sostiene el código y su v sin necesidad de inferencia, aunque se reutilice para otro código. calidad 1 si hay que inferir el objeto, la valoración o el sujeto, o si la cita solo sostiene el código de forma tangencial. calidad 3 solo si es citable tal cual como ejemplo del indicador. Reutilizar una cita no la rebaja por sí sola."
+    }
+  ],
+  "emergentes": [
+    {
+      "etiqueta": "Infraestructura de cómputo",
+      "indicador": "1",
+      "definicion": "La IA se construye como dependiente de capacidad de procesamiento, chips y cadenas de suministro, con la dependencia de un solo proveedor como tensión; no es solo CORP ni ECO.",
+      "cita": "la capacidad de procesamiento necesaria para alcanzar todo el potencial de la IA",
+      "alias": "N24377",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "Paquete digital convergente",
+      "indicador": "2",
+      "definicion": "La IA se presenta como un componente más del 'mundo digital' junto a metaverso, plataformas y neuroderechos, sin carácter propio diferenciado.",
+      "cita": "Congreso Internacional de Inteligencia Artificial, Neuroderechos, Plataformas Digitales y Metaverso",
+      "alias": "N52238",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "Brecha de capacidades",
+      "indicador": "3",
+      "definicion": "La IA se presenta como disponible para todos, de modo que la diferencia competitiva la hace la capacidad de aprender a usarla, con una región rezagada.",
+      "cita": "La gran diferencia la vamos a generar quienes tengamos las capacidades para aprender y trabajar con ella, y ahí, Latinoamérica actualmente está fuertemente desafiada",
+      "alias": "N40321",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "Moda viral",
+      "indicador": "2",
+      "definicion": "La IA se construye como tendencia de consumo cultural que se difunde por la exposición de famosos en redes sociales, sin que la masividad se presente como causa de su expansión (no es 1.1.USU).",
+      "cita": "En distintas redes sociales, famosos y personas a las que quizás sigas han compartido imágenes de ellos mismos ilustradas con una app de inteligencia artificial.",
+      "alias": "N34720",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "Réplica de identidad",
+      "indicador": "2",
+      "definicion": "La IA se construye como capaz de duplicar la apariencia y la voz de una persona, y la respuesta de Putin la trata como asunto de identidad única, sin atribuir daño explícito.",
+      "cita": "Veo que puedes parecerte a mí y hablar con mi voz. Pero lo he pensado y decidido que sólo una persona debe ser como yo y hablar con mi voz, y ese seré yo",
+      "alias": "N46049",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "Falta una regla de selección de cita cuando varios fragmentos sustentan un mismo código (si se registra una vez por nota y cuál se cita), y de ella dependen voz, calidad y la coincidencia entre codificadores (N46049 2.1.INN, N40321 3.3.ADO y 3.4.EMP).",
+    "No hay frontera entre 2.1.HER y 2.1.INN ni se dice si pueden coexistir sobre la misma cita, y el principio 'v valora el objeto del código' choca con aplicar v=A a un fragmento que nombra a la vez oportunidades y amenazas.",
+    "2.2 y 2.3 no aclaran si basta nombrar 'riesgos', 'amenazas' u 'oportunidades' como tema de un debate o una pregunta, y 2.3.OTR carece de criterio para peligros sin contenido; A y B aplicaron esto de forma opuesta en N52238 y N46049.",
+    "3.3 exige una medida 'como respuesta a la IA', pero no dice qué hacer cuando la medida se refiere a lo digital en general (N52238: A y B codificaron 3.3.GOB sobre 'herramientas tecnológicas' y ninguno codificó 3.2.DEC), ni si una alianza corporativa de inversión (AMD-OpenAI) o un convenio de centro tecnológico (Expomin) cuentan como 3.3.ADO (A codificó el segundo, ninguno el primero).",
+    "3.4.NES se contradice: la sección 4 lo limita a prescripción sin sujeto, la sección 5 lo lista como código por defecto con cita vacía y el principio 3 no lo incluye entre los defectos; tampoco se dice si el actor puede inferirse del contexto.",
+    "C1 no tiene criterio para notas de negocios o eventos donde la IA es el sector o el instrumento (AMD-OpenAI: ambos 'central' y ambos dudan; Putin: ambos 'secundaria'); además N34720 llegó con solo_titular_bajada=false aunque el texto es la bajada duplicada, y solo B lo anotó en dudas."
+  ]
+}

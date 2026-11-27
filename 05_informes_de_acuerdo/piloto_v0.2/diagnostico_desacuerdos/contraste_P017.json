@@ -1,0 +1,185 @@
+{
+  "lote": "P017",
+  "desacuerdos": [
+    {
+      "codigo": "c1",
+      "alias": "N27382",
+      "tipo": "c1",
+      "a": "central",
+      "b": "secundaria",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El titular usa 'con IA' como atributo del producto (criterio de tangencial), pero hay un apartado propio sobre 'Las ventajas de la inteligencia artificial' (criterio de central: aparece en el titular y articula parte del argumento). El libro no dice cuál prevalece en productos 'con IA'.",
+      "propuesta_regla": "En productos o eventos 'con IA': central si el titular nombra la IA y el texto dedica un tramo propio (párrafo o apartado) a lo que la IA hace, promete o provoca; secundaria si hay discurso sobre la IA pero breve o subordinado a describir el producto (hardware, precio, ventas); tangencial si solo figura como adjetivo ('con IA') sin discurso. Aplicado aquí: central."
+    },
+    {
+      "codigo": "3.1.EST",
+      "alias": "N56616",
+      "tipo": "v",
+      "a": "v=C (cita con 'no lúgubre' + 'quien no sepa usar la IA será absolutamente prescindible')",
+      "b": "v=+ (cita cortada antes de la valencia negativa y de la condición)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El mismo pasaje mezcla valencia favorable y desfavorable bajo una condición explícita, lo que por el procedimiento 3.1 lleva a C. B llegó a + al recortar la cita por la regla de 'tramo mínimo' (sección 5): v depende del recorte y el libro no ordena esa tensión. Además C duplica 2.4.USO, que ambos codificaron.",
+      "propuesta_regla": "Para v=C la cita debe contener las dos valencias y la condición, aunque llegue a 50 palabras (excepción a 'tramo mínimo'). C valora la proyección y 2.4 registra de qué depende; pueden coexistir sobre el mismo pasaje. Con esta regla corresponde C."
+    },
+    {
+      "codigo": "3.1.INC",
+      "alias": "N64005",
+      "tipo": "v",
+      "a": "v=D (cita solo 'hay muchos futuros compitiendo de forma paralela, unos mejores que otros')",
+      "b": "v=C (cita añade 'El que exista un futuro depende de nosotros')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Misma mecánica que en N56616: A recortó antes de la condición y no vio marcas; B incluyó la condición explícita y asignó C. Además la frase de Girardi habla de 'futuros' en general; ambos la tomaron como horizonte de la IA sin regla que lo autorice.",
+      "propuesta_regla": "Aplicar la regla de v=C del caso N56616 (cita con ambas valencias y la condición). Añadir en 3.1: una proyección sobre 'el futuro' sin sujeto IA solo se codifica si el mismo párrafo o el evento citado se define por la IA (aquí, Congreso Futuro sobre IA); anotarlo en dudas."
+    },
+    {
+      "codigo": "2.1.HER",
+      "alias": "N75287",
+      "tipo": "v",
+      "a": "v=D, marca=na",
+      "b": "v=+, marca=explicita (misma cita: 'guiarlos para que hagan ejercicios de respiración, contarles una historia o ayudarlos a resolver un problema matemático')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El fragmento solo enumera funciones del asistente. B toma 'ayudarlos' como verbo favorable; A exige un juicio adicional. El libro no dice si el verbo que define el código (ayudar/asistir en HER) cuenta como marca valorativa.",
+      "propuesta_regla": "El verbo o rasgo que define el código (ayudar, asistir en 2.1.HER; presentar, lanzar en 2.1.INN) no es marca valorativa. v=+ o - exige un adjetivo, adverbio o juicio adicional sobre ese objeto ('gran herramienta', 'asombrosa'); si solo se describen funciones, v=D y marca=na."
+    },
+    {
+      "codigo": "2.1.HER / 2.1.INN",
+      "alias": "N54903",
+      "tipo": "presencia",
+      "a": "2.1.HER D (cita 'aprovechar la inteligencia artificial y el deep learning para aplicar realistas animaciones a fotografías')",
+      "b": "2.1.INN + explicita (misma cita ampliada con 'se volvió todo un fenómeno viral')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La frontera HER/INN no está operacionalizada para productos de consumo con IA; ambas lecturas caben. B además asigna + por 'fenómeno viral', que califica a la app y no a la IA (v valora el objeto del código).",
+      "propuesta_regla": "2.1.HER: la IA se enuncia por lo que permite hacer a un usuario o fin ('para', 'permite', 'ayuda a'). 2.1.INN: se destaca la novedad, el hito o la capacidad técnica en sí ('nuevo', 'realistas', 'por primera vez'). Si el fragmento hace ambas cosas, registrar ambos con la misma cita. El éxito comercial o viral de un producto no valora la IA y no sustenta v=+."
+    },
+    {
+      "codigo": "2.1.INN",
+      "alias": "N27382",
+      "tipo": "presencia",
+      "a": "N27382: 2.1.INN D (recuerda conversaciones, genera selfies). N94964: sin INN",
+      "b": "N27382: sin INN. N94964: 2.1.INN D ('es capaz de simular los procedimientos de pensamiento humano')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "INN con v=D no tiene umbral: cada codificador lo aplica en una nota y lo omite en la otra con fragmentos equivalentes. Como v puede ser D, el código se vuelve casi automático ante cualquier 'la IA hace X' y rompe el principio de no sobrecodificar.",
+      "propuesta_regla": "2.1.INN (incluso con v=D) solo cuando el fragmento presenta una capacidad como nueva, diferencial o sorprendente ('nuevo', 'por primera vez', 'es capaz de', 'va más allá'). La descripción rutinaria de funciones no es INN (si sirve a un fin del usuario, es 2.1.HER D)."
+    },
+    {
+      "codigo": "1.2.NEC",
+      "alias": "N27382",
+      "tipo": "presencia",
+      "a": "1.2.NEC D, voz FC ('fue diseñado para enfrentar la creciente crisis global de la soledad, afirman')",
+      "b": "no codifica",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "D1 trata la génesis de la IA; aquí es el propósito de diseño de un producto concreto (la muñeca), que ambos ya registran como beneficio en 2.2.CUL. El libro no dice si 1.1/1.2 operan a nivel de producto.",
+      "propuesta_regla": "1.1 y 1.2 aplican al surgimiento o impulso de la IA como tecnología o de una familia de sistemas, no al propósito de diseño de un producto concreto: ese 'para qué' va en 2.2. Excepción: el texto presenta el lanzamiento como parte de la expansión de la IA ('la empresa que lanzó la revolución...')."
+    },
+    {
+      "codigo": "2.4.REG",
+      "alias": "N64005",
+      "tipo": "presencia",
+      "a": "no codifica 2.4",
+      "b": "2.4.REG ('Tomando los debidos resguardos, la IA va a ser una gran herramienta para Chile...')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Condicional en gerundio sin tipo de condición. 2.4 exige 'fórmula condicional explícita' con ejemplos de conjunción; no dice si el gerundio cuenta ni qué tipo asignar cuando la condición no se especifica. B misma duda del tipo y REG es arbitrario.",
+      "propuesta_regla": "Cuentan como fórmula condicional también gerundios y subordinadas ('tomando los debidos resguardos', 'con los cuidados necesarios'). El tipo se asigna por el sujeto de la condición; si no se especifica, 2.4.CTX (nunca REG por defecto)."
+    },
+    {
+      "codigo": "2.2.SAL / 2.2.OTR",
+      "alias": "N64005",
+      "tipo": "presencia",
+      "a": "2.2.SAL (medicina e incendios); sin ámbito ambiental",
+      "b": "2.2.OTR etiqueta medioambiente; sin SAL",
+      "causa": "error_codificador",
+      "diagnostico": "Dos fragmentos distintos sustentan beneficios en dos ámbitos y el principio 7 manda aplicar ambos; cada codificador registró solo uno (omisión simétrica). La mera enumeración 'industria, transporte, educación' no cuenta, porque 2.2 exige beneficio atribuido."
+    },
+    {
+      "codigo": "3.3.ADA",
+      "alias": "N94964",
+      "tipo": "presencia",
+      "a": "3.3.ADA + ('anima a evaluar si los sistemas de protección social, educación y fiscalidad son adecuados y lo suficientemente flexibles')",
+      "b": "no codifica",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Hay una exhortación clara del FMI, pero ADA se define con ejemplos sobre personas (capacitar, reconvertir, alfabetizar) y REG exige norma vinculante: el libro no tiene lugar explícito para adaptar sistemas e instituciones.",
+      "propuesta_regla": "3.3.ADA incluye adaptar sistemas e instituciones (protección social, educación, seguro de desempleo) para absorber el impacto de la IA, siempre que la medida no sea una norma vinculante (REG). Su 3.4 es EST si el destinatario son los gobiernos."
+    },
+    {
+      "codigo": "3.4",
+      "alias": "N56616",
+      "tipo": "presencia",
+      "a": "3.4.ACA (cita de Rozas: 'Incluimos capacitaciones en herramientas generativas...'), con v=+ implicita en el 3.3.ADA",
+      "b": "3.4.IND (cita de Bravo: 'El profesional debe, en cada paso, no solo saber escribir buenos prompts')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Ambos fragmentos sustentan 3.3.ADA con actores distintos (universidad y profesional) y cada codificador registró uno; el libro no dice si un 3.3 admite más de un 3.4. Además A pone + en una medida solo reportada ('Incluimos capacitaciones'), que por 3.3 sería D.",
+      "propuesta_regla": "3.4 se registra una vez por cada actor distinto que debe ejecutar un 3.3 en la nota (máximo 2), cada uno con su propia cita aunque compartan el 3.3. Una medida que una institución reporta haber adoptado, sin juicio, es v=D."
+    },
+    {
+      "codigo": "c3",
+      "alias": "N75287",
+      "tipo": "otro",
+      "a": "trabajo_economia",
+      "b": "otro",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Lanzamiento de un producto de consumo (asistente de voz gratuito) sin ámbito de aplicación claro; ninguna categoría de c3 lo recoge y cada codificador eligió distinto. Ambos anotaron la duda.",
+      "propuesta_regla": "Lanzamientos de productos y noticias de la industria tecnológica sin ámbito de aplicación específico: trabajo_economia (mercado e industria). Si el texto ubica el uso en vida cotidiana o entretenimiento: cultura_medios. 'otro' solo si ningún ámbito aplica y no es noticia de industria."
+    },
+    {
+      "codigo": "marca (2.2.CUL)",
+      "alias": "N54903",
+      "tipo": "otro",
+      "a": "2.2.CUL v=+, marca=implicita",
+      "b": "2.2.CUL v=+, marca=explicita",
+      "causa": "juicio_legitimo",
+      "diagnostico": "'ofreciendo la posibilidad ... darle vida a imágenes de sus familiares' es promesa verbalizada para B y beneficio inferido de la descripción para A; ambas son defendibles y de bajo impacto analítico. En N56616 (3.3.ADA) reaparece la diferencia de marca, aunque allí las citas difieren."
+    },
+    {
+      "codigo": "c4",
+      "alias": "N64005",
+      "tipo": "otro",
+      "a": "Gabriel Boric, Congreso Futuro, Aisén Etcheverry",
+      "b": "Gabriel Boric, Aisén Etcheverry, Guido Girardi",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "c4 difiere en 3 de 8 notas (N64005: evento vs. Girardi; N27382: Engadget solo en A; N94964: OpenAI solo en A) por falta de criterio sobre quién es 'relevante': eventos, medios que originan la información y empresas citadas solo como ejemplo.",
+      "propuesta_regla": "c4: personas e instituciones que enuncian, deciden o reciben la acción sobre la IA, normalizadas. Excluir eventos o programas (Congreso Futuro), medios o sitios citados solo como origen de la información (Engadget) y empresas nombradas solo como ejemplo de producto (OpenAI en N94964), salvo que la nota trate de ellas. Orden: de mayor a menor peso en el discurso sobre la IA."
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N56616",
+      "indicador": "3",
+      "etiqueta": "Ajuste como responsabilidad individual",
+      "definicion": "El riesgo laboral se reencuadra como asunto de competencia personal: quien se capacita prospera y quien no, queda 'prescindible', sin agente colectivo ni responsabilidad estatal o empresarial. 2.4.USO y 3.3.ADA recogen la mecánica, no este sentido.",
+      "cita": "quien no sepa usar la IA será absolutamente prescindible",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N56616",
+      "indicador": "2",
+      "etiqueta": "Excepcionalismo humano",
+      "definicion": "La IA se define por lo que no puede (criterio, pensamiento crítico, comprensión cultural) y lo humano se presenta como superior e insustituible; va más allá de 2.1.HER (subordinación instrumental) y de 2.1.LIM (falla técnica).",
+      "cita": "se confirme la superioridad del ser humano por sobre las respuestas automáticas",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N27382",
+      "indicador": "2",
+      "etiqueta": "IA compañía afectiva",
+      "definicion": "La IA aparece como sustituto o remedio tecnológico de vínculos humanos (soledad, nostalgia); no es 2.1.AGE (atribución de rasgos) ni 2.2.CUL (beneficio cotidiano). Paralelo en N54903 ('fotos de seres queridos que ya no están').",
+      "cita": "este robot, al que describen como una “compañera”, fue diseñado para enfrentar la creciente crisis global de la soledad",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N20174",
+      "indicador": "2",
+      "etiqueta": "Creadora mide su impacto",
+      "definicion": "La empresa que desarrolla la IA aparece como la autoridad que cuantifica el daño laboral de su propia tecnología ('exposición' en %); no es 1.1.CORP (impulso) ni 2.3 con resp RCO. Se repite en N56616.",
+      "cita": "OpenAI, empresa responsable de ChatGPT , realizó una lista con las profesiones que están con más amenazas en eficiencia, rapidez e impacto general por la IA.",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "1.3.IRR se contradice: los ejemplos incluyen 'irrumpió', pero la exclusión exige narrar de dónde viene la IA; en N56616 'irrupción' (4 veces) describe llegada, no origen, y ambos codificaron IRR con calidad 1 y dudas. Tampoco hay regla de coexistencia con 1.1.DIF, que recoge la misma expresión.",
+    "1.1 y 1.2 no dicen si aplican al origen de la IA o también al de un producto concreto (muñeca, GPT-4o, app); y 1.1.CORP no tiene umbral: ni A ni B lo aplicaron a 'OpenAI, empresa responsable de ChatGPT' (N20174, N56616, N94964), pero sí a 'la empresa que lanzó la revolución' (N75287).",
+    "v=C en 3.1 exige ver ambas valencias y la condición, pero la sección 5 pide el 'tramo mínimo', así que v cambia según el recorte (N56616, N64005); además C y 2.4 registran la misma condición sin regla de coexistencia.",
+    "2.1.HER, 2.1.INN, 2.1.REV y 2.1.AGE se traslapan sin criterio, y 2.1.REV con 3.1.EST ('cambio a gran escala' en N56616 se codificó solo como 3.1.EST); 2.1.INN admite v=D sin umbral; no se dice si el verbo que define un código (ayudar, presentar) es marca valorativa.",
+    "3.3.ADA se define con ejemplos sobre personas y no cubre adaptar instituciones; 3.3.LIB se define como rechazo a 'regulación' y no dice si un impuesto cuenta (N94964: 3.3.LIB y 3.3.REG para política fiscal general, con dudas de ambos codificadores); no se dice si un 3.3 admite varios 3.4.",
+    "2.3: 'G2 amenaza' coincide con el léxico 'amenazadas' que la prensa usa para meras exposiciones (N20174, N56616, ambos G1), y 2.3.DES en N94964 se codificó por un daño mediado por la política fiscal (ambos con dudas), sin regla para el vínculo explícito con la IA ni para asignar resp (RES vs RDI)."
+  ]
+}

@@ -1,0 +1,921 @@
+mod,valor,0
+g,G1,1118
+escala,global,1021
+resp,RTE,914
+g,G2,575
+resp,RMA,286
+resp,RDI,248
+resp,RCO,222
+g,G3,208
+escala,Chile,208
+resp,RUS,172
+ambito,trabajo_economia,136
+alcance,parcial,125
+etiqueta,bienestar general,86
+resp,RES,59
+ambito,otro,53
+escala,no_especificada,44
+ambito,consumo_cotidiano,32
+ambito,salud_ciencia,27
+ambito,cultura_medios,23
+ambito,educacion,15
+ambito,politica_estado,12
+etiqueta,deporte,12
+alcance,total,8
+objeto,ChatGPT,7
+objeto,ChatGPT de OpenAI,7
+ambito,seguridad_justicia,5
+etiqueta,riesgo financiero,4
+etiqueta,disrupción económica,4
+etiqueta,deshumanización,4
+objeto,ralentizar el desarrollo de la IA,3
+objeto,Bard,3
+objeto,DeepSeek,3
+etiqueta,alza de precios,3
+etiqueta,daño reputacional,3
+etiqueta,fragilidad financiera,2
+objeto,Gemini,2
+objeto,limites a las aplicaciones de la IA,2
+etiqueta,inclusión social,2
+objeto,obligación de notificar sistemas de IA de riesgo (EE.UU.),2
+objeto,Consejo Regional de Etica de IA,2
+objeto,regulacion de la IA,2
+objeto,regulacion humana del desarrollo tecnologico,2
+objeto,Bard de Google,2
+objeto,alucinaciones,2
+etiqueta,natalidad,2
+objeto,bloqueo de ChatGPT en Italia,2
+etiqueta,privacidad,2
+objeto,desaceleración coordinada del desarrollo,2
+objeto,transparencia ambiental de la industria,2
+objeto,desacelerar el desarrollo de la IA,2
+objeto,financiación de la UE y Francia,2
+objeto,educacion del publico para consumir contenido de IA,2
+objeto,consumo de agua,2
+objeto,respuestas incorrectas,2
+objeto,ChatGPT y DALL-E,2
+objeto,voz de fallecidos en Alexa (Amazon),2
+objeto,ChatGPT (OpenAI),2
+objeto,principios en el diseno e implementacion de IA,2
+objeto,modelo Qwen2.5-Max de Alibaba,2
+objeto,Doctorado en IA,2
+objeto,incorporar IA en recursos naturales y energia renovable,2
+objeto,Stargate de Estados Unidos,2
+objeto,ChatGPT / OpenAI,2
+objeto,modelo R1 de DeepSeek,2
+objeto,educar en IA para no profundizar brechas,2
+objeto,nuevas metodologías de evaluación,1
+objeto,opacidad de los algoritmos,1
+objeto,nuevos marcos jurídicos y mecanismos de protección,1
+objeto,orden de bloqueo en Italia,1
+objeto,obligaciones de transparencia y derechos de autor en IA generativa,1
+objeto,orden del gobierno que suspende el acceso,1
+objeto,obligaciones de transparencia y derechos de autor para IA generativa,1
+objeto,opacidad caja negra,1
+objeto,observadores independientes en empresas,1
+objeto,obligaciones de modelos de riesgo sistémico,1
+objeto,monitoreo de cultivos en agricultura,1
+objeto,moratoria condicionada de la mejora recursiva autónoma,1
+objeto,moratoria de seis meses,1
+objeto,moratoria de seis meses en sistemas más potentes que GPT-4,1
+objeto,moratoria del desarrollo de la IA,1
+objeto,moratoria en el desarrollo de sistemas que amenazan libertades,1
+objeto,moratoria hasta que el regulador fije reglas,1
+objeto,moratoria parcial,1
+objeto,máquina de Habermas,1
+objeto,médicos de atención primaria realizan tareas especializadas,1
+objeto,nacionalización de laboratorios y persecución penal de desarrolladores irresponsables,1
+objeto,narrativas creadas por IA que nadie puede comprender ni regular,1
+objeto,nivel creativo discreto,1
+objeto,nivel de desarrollo de la IA generativa,1
+objeto,no pagar regalías por música íntegramente de IA,1
+objeto,no desplegar sistemas de misión crítica con IA por ahora,1
+objeto,no detecta cirugias plasticas,1
+objeto,no inducir dependencia emocional,1
+objeto,no lanzamiento de Mythos por Anthropic,1
+objeto,no liberación del modelo por sus riesgos,1
+objeto,orden ejecutiva de Biden sobre seguridad de la IA,1
+objeto,no revelar informacion sensible a ChatGPT,1
+objeto,nombramiento de Diella como ministra,1
+objeto,norma china de revision de modelos de IA generativa,1
+objeto,norma china sobre rotulado de deepfakes,1
+objeto,norma nacional obligatoria china sobre seguridad de agentes de IA,1
+objeto,normas federales de autorización y seguridad pedidas por Altman,1
+objeto,nueva versión de ChatGPT,1
+objeto,nuevas leyes y derechos para la IA,1
+objeto,nivelación y reducción de costos del microemprendedor,1
+objeto,plan para moderar el ritmo de mejora de los modelos,1
+objeto,plan piloto de IA del Minvu para las DOM,1
+objeto,planes estratégicos con la IA como eje,1
+objeto,planificación nacional de IA con recursos,1
+objeto,plataforma ADA de la UNAB,1
+objeto,plataforma Open Agent Safety de Nvidia,1
+objeto,plataforma de agentes de OpenAI,1
+objeto,plataformas de IA compartidas por clúster industrial,1
+objeto,plataformas de IA de Anthropic,1
+objeto,politica de Medios Manipulados de Meta,1
+objeto,política pública de capacitación permanente,1
+objeto,pornografía deepfake,1
+objeto,precision de operaciones y reduccion de errores,1
+objeto,monitoreo de la CMF con industrias supervisadas y ciberseguridad,1
+objeto,predicción de exacerbaciones de EPOC,1
+objeto,preparacion de la ciudadania,1
+objeto,principios de Google sobre IA,1
+objeto,principios de IBM sobre regulación de precisión de la IA,1
+objeto,principios para una IA responsable,1
+objeto,"principios y directrices eticas (EEUU, OCDE, FEM)",1
+objeto,prioridad del Ministerio de Ciencia a la IA,1
+objeto,prioridad ministerial al desarrollo de IA,1
+objeto,privacidad en las llamadas,1
+objeto,privacidad por control local de la IA,1
+objeto,probar controles ante escenarios de amenaza con IA,1
+objeto,procesamiento ágil de datos y documentos en operaciones gubernamentales,1
+objeto,proceso creativo,1
+objeto,predicción de epidemias,1
+objeto,orden ejecutiva de Estados Unidos,1
+objeto,orden ejecutiva que restringe el uso a extranjeros,1
+objeto,organismo asesor de alto nivel sobre gobernanza de la IA,1
+objeto,organismo multilateral regional de IA,1
+objeto,orientar esfuerzos a formar competencias en IA,1
+objeto,pacto global para proteger a la infancia,1
+objeto,pago de licencias a creadores por el uso de contenido en sistemas de IA,1
+objeto,palabra clave familiar,1
+objeto,parejas virtuales a menores,1
+objeto,parámetros y activadores diseñados por el gobierno,1
+objeto,patente de chatbots con fallecidos (Microsoft),1
+objeto,pausa de la IA,1
+objeto,pausa de seis meses de experimentos con IA más potente que GPT-4,1
+objeto,plan nacional de liderazgo en IA,1
+objeto,pausa de seis meses en el entrenamiento de sistemas más poderosos,1
+objeto,pausa del desarrollo hasta regular su seguridad,1
+objeto,pausa del entrenamiento de modelos avanzados,1
+objeto,pausa en la carrera de IA,1
+objeto,pausa en los avances de la IA,1
+objeto,pausar o regular el ritmo de despliegue,1
+objeto,pautas de uso para empleados,1
+objeto,piloto de IA en lugar de profesores,1
+objeto,pilotos de IA en el Estado,1
+objeto,pisar el freno al desarrollo de la IA,1
+objeto,plagio y fraude académico,1
+objeto,plan chino de adopcion amplia y responsable,1
+objeto,plan de trabajo de IA del Gobierno,1
+objeto,pausa de seis meses en el entrenamiento,1
+objeto,investigación de la FTC a OpenAI y GPT-4,1
+objeto,investigación de las autoridades de la UE sobre ChatGPT,1
+objeto,investigación espacial,1
+objeto,jugar con la creatividad,1
+objeto,lanzamiento restringido,1
+objeto,legislación británica contra pornografía generada con IA,1
+objeto,legislación específica sobre deepfakes,1
+objeto,legislación nacional e internacional contra deepfakes,1
+objeto,legislación que promueva el uso responsable de la IA,1
+objeto,legislación sobre IA en Chile,1
+objeto,ley de IA de la Unión Europea,1
+objeto,ley francesa de videovigilancia algorítmica,1
+objeto,modelo Claude (Anthropic),1
+objeto,ley que regula sistemas de IA,1
+objeto,leyes estatales contra falsificaciones electorales,1
+objeto,leyes japonesas para frenar la IA,1
+objeto,licencias de EE.UU. para computacion de IA a clientes chinos,1
+objeto,liderazgo y seguridad global,1
+objeto,limitación de la edición de imágenes de Grok,1
+objeto,limitar el acceso a las cuentas,1
+objeto,limitar la edición de imágenes a usuarios de pago,1
+objeto,limitar la generación de imágenes a suscriptores,1
+objeto,limites a IA generativa en tribunales,1
+objeto,llamadas automáticas con voces generadas por IA,1
+objeto,límite a la IA: sin strikes y apelación de creadores,1
+objeto,ley italiana sobre contenido generado con IA,1
+objeto,impuesto al uso de IA y robots,1
+objeto,incluir el uso de IA en el programa de un curso,1
+objeto,incrementar inversión en infraestructura de IA,1
+objeto,indicación de compensación monetaria a creadores,1
+objeto,infiltración autónoma de un agente de IA en sistemas públicos,1
+objeto,influencia del comportamiento humano a gran escala,1
+objeto,informar que el contenido sintetico es falso,1
+objeto,iniciativa IA Plus,1
+objeto,iniciativa IA de interés general,1
+objeto,inspeccion y restricciones por organismo internacional,1
+objeto,instituciones educativas reconvierten perfiles y competencias,1
+objeto,instrucciones de Claude para señalar errores,1
+objeto,investigación de la FTC a OpenAI por ChatGPT,1
+objeto,integrar IA en el proyecto educativo,1
+objeto,integrar la IA en las empresas,1
+objeto,integrar la IA en un sistema unificado,1
+objeto,intervención humana antes de publicar contenido con IA,1
+objeto,introducción gradual de los sistemas de IA,1
+objeto,"invenciones, datos sin respaldo y sesgos",1
+objeto,inventario de alimentos del refrigerador,1
+objeto,inversión de Japón en computación de IA nacional,1
+objeto,inversión en Stargate,1
+objeto,invertir en IA cuando la competencia ya la usa,1
+objeto,invertir en talento e infraestructura de IA,1
+objeto,invertir y desarrollar estrategias de IA,1
+objeto,investigación de la FTC a OpenAI,1
+objeto,integrar ChatGPT en tareas docentes,1
+objeto,medidas corporativas y capacitación,1
+objeto,medidas de Deezer contra fraude y dilución de pagos,1
+objeto,medidas de seguridad del chatbot de OpenAI,1
+objeto,medidas de seguridad y control de Runway,1
+objeto,medidas de transparencia de uso de IA para artistas,1
+objeto,mejora de la atención de salud,1
+objeto,mejorar nivel de tratamiento,1
+objeto,menor corrupción política,1
+objeto,mercado coreano de productos de IA,1
+objeto,microsegmentación condiciona libertad del voto,1
+objeto,minería: anticipar fallas y reducir detenciones,1
+objeto,mision de beneficiar a la humanidad,1
+objeto,límite de lectura de ChatGPT,1
+objeto,modelo Gemini de Google,1
+objeto,modelo GenCast de DeepMind,1
+objeto,modelo Qwen,1
+objeto,modelo competidor de DeepSeek,1
+objeto,modelo de DeepSeek,1
+objeto,modelo de detección de cáncer de Alibaba,1
+objeto,modelo de lenguaje de Twitter,1
+objeto,modelos de DeepSeek,1
+objeto,modelos de predicción de incendios de Microsoft,1
+objeto,moderar el ritmo de avance de los modelos,1
+objeto,moderar el ritmo de desarrollo con evaluadores externos (plan de Amodei),1
+objeto,moderar el uso de los juguetes con IA,1
+objeto,modernización del Ministerio Público con IA,1
+objeto,productividad,1
+objeto,límites al uso de ChatGPT en 2023,1
+objeto,límites de Anthropic a vigilancia masiva y armas autónomas,1
+objeto,límites generales a la IA,1
+objeto,límites significativos a la IA,1
+objeto,límites y pago por el acceso de la IA a la información periodística,1
+objeto,mala calidad de textos literarios generados,1
+objeto,malware y phishing,1
+objeto,manipulación informativa en elecciones,1
+objeto,mantener restricciones a la exportacion de chips de IA a China,1
+objeto,marcas de agua en contenido manipulado,1
+objeto,marcas de agua y monitoreo,1
+objeto,marco de OpenAI para rastrear y divulgar desalineación,1
+objeto,medidas contra la discriminación,1
+objeto,marco interno de OpenAI para detectar y revisar incidentes de desalineamiento,1
+objeto,marco legal y fiscal atractivo para el sector de IA,1
+objeto,marco regulatorio de IA bien diseñado,1
+objeto,marco regulatorio global,1
+objeto,marcos antes de decisiones relevantes,1
+objeto,marcos legales para regular chatbots,1
+objeto,marcos regulatorios para Chile,1
+objeto,mas informacion diagnostica de las imagenes,1
+objeto,mas tiempo con el paciente,1
+objeto,mayor adopción de IA en empresas,1
+objeto,mayor precisión y rapidez en la revisión de denuncias,1
+objeto,mayor supervisión externa del desarrollo de la IA,1
+objeto,mecanismos para desacelerar el desarrollo,1
+objeto,marco internacional entre gobiernos,1
+objeto,sesgos de género en datos y modelos,1
+objeto,sesgos en la información,1
+objeto,sesgos ideologicos,1
+objeto,sesgos que afectan a la sociedad,1
+objeto,sin reconocimiento facial en videovigilancia olímpica,1
+objeto,sintiencia de los modelos,1
+objeto,sistema de IA en el SACFI,1
+objeto,sistema de gobernanza global de la IA,1
+objeto,sistema de rescate de chinchilla,1
+objeto,sistema de videoanalitica con IA en estaciones,1
+objeto,sistema interno de OpenAI,1
+objeto,sistemas de alto riesgo,1
+objeto,protecciones a nivel de modelo,1
+objeto,software malicioso en dispositivos,1
+objeto,startup de IA generativa de Musk,1
+objeto,subordinación de derechos a intereses comerciales,1
+objeto,sumarse a la revolucion de la IA,1
+objeto,supervigilancia estatal con reconocimiento facial,1
+objeto,supervision independiente,1
+objeto,supervision por un ente publico,1
+objeto,supervision y controles a la IA avanzada,1
+objeto,supervision y eliminacion de ataques de jailbreak,1
+objeto,supervisión humana de las conversaciones del chatbot,1
+objeto,supervisión humana y reglas biométricas en uso policial,1
+objeto,supervisión y límites al uso,1
+objeto,supervisión y transparencia de la investigación automatizada,1
+objeto,sistemas de gobierno con auditoría y supervisión,1
+objeto,revisiones de seguridad de modelos,1
+objeto,revisión de seguridad voluntaria del gobierno de EE.UU.,1
+objeto,revisión humana para contenido no recomendado,1
+objeto,revolucionar la búsqueda de vida extraterrestre,1
+objeto,riesgo militar de sistemas chinos sin salvaguardas,1
+objeto,riesgo para la seguridad nacional,1
+objeto,ritmo más lento de la industria,1
+objeto,ritmo más lento para la industria de IA,1
+objeto,robot humanoide con IA,1
+objeto,rutas con Google Maps,1
+objeto,régimen de auditorías obligatorias,1
+objeto,salvaguardas técnicas para agentes automatizados en plataformas públicas,1
+objeto,sesgos,1
+objeto,satisfaccion y retencion de clientes,1
+objeto,seguridad de productos y cumplimiento de leyes,1
+objeto,seguridad previa para menores,1
+objeto,sesgo algorítmico,1
+objeto,sesgo algorítmico en acceso a servicios,1
+objeto,sesgo contra mujeres y minorias en decisiones automatizadas,1
+objeto,sesgo de modelos dominantes,1
+objeto,sesgo de resultados,1
+objeto,sesgo en imágenes,1
+objeto,sesgo en las respuestas,1
+objeto,sesgo político,1
+objeto,sesgo político de centro-izquierda,1
+objeto,sesgo y decisiones discriminatorias,1
+objeto,salvar la vida de niños,1
+objeto,uso de datos de consumidores por empresas,1
+objeto,uso de plataformas de IA para actos ilícitos,1
+objeto,uso del trabajo de intérpretes sin permiso ni compensación,1
+objeto,uso malicioso de la IA para estafar y armar,1
+objeto,"uso malicioso humano de la IA (estafa, manipulacion, arma)",1
+objeto,uso sin saber programar,1
+objeto,"usos vedados (puntuacion social, manipulacion)",1
+objeto,utilizar la IA en las escuelas,1
+objeto,valor bursátil de la industria IA,1
+objeto,valor de la IA según liderazgo directivo,1
+objeto,valorización bursátil de la industria de IA,1
+objeto,"vender más, ahorrar tiempo y decidir mejor",1
+objeto,suplantacion de identidad con audios y videos falsos,1
+objeto,verificar con guardabosques y no confiar solo en la IA,1
+objeto,verificar las fuentes de las respuestas,1
+objeto,verificar llamadas dudosas,1
+objeto,veto a la venta de chips avanzados a China,1
+objeto,vicerrectoría de innovación digital,1
+objeto,video a partir de fotos,1
+objeto,vigilancia especial de modelos de vanguardia en China,1
+objeto,vigilancia masiva en tiempo real,1
+objeto,vigilancia policial predictiva y ciclos de retroalimentacion,1
+etiqueta,bienestar animal,1
+etiqueta,ayuda humanitaria,1
+etiqueta,atrofia cognitiva,1
+etiqueta,acción humanitaria,1
+objeto,verificación independiente de seguridad,1
+objeto,suspensión de ChatGPT pedida en Estados Unidos,1
+objeto,suspensión de herramientas IAG por Meta,1
+objeto,tecnología núcleo de Maven (Palantir),1
+objeto,textos generados por Wrizzle sin personalidad,1
+objeto,tiempo de asignación de stock internacional,1
+objeto,tiempo de trabajadores sanitarios,1
+objeto,toma de control de internet por un enjambre de agentes autonomos,1
+objeto,toma de decisiones mejor fundamentadas,1
+objeto,tope al poder computacional de entrenamiento,1
+objeto,trabajar con la IA en la enseñanza,1
+objeto,traducción automática,1
+objeto,transacción más eficiente y transparente,1
+objeto,uso de contenidos sin compensación,1
+objeto,transparencia de empresas y Estados,1
+objeto,transparencia de las plataformas,1
+objeto,transparencia en el diseño y desarrollo de la IA,1
+objeto,transparencia sobre uso de obras con derechos de autor,1
+objeto,transparencia y etiquetado de contenido generado (norma china),1
+objeto,tratado de control de armas en la ONU,1
+objeto,tratamiento personalizado con gemelo digital,1
+objeto,trazabilidad de contactos COVID,1
+objeto,trámites públicos más simples,1
+objeto,universidades ofrecen cursos de IA a estudiantes de filosofía,1
+objeto,universidades y empresas orientan talento hacia aplicaciones de IA,1
+etiqueta,brecha digital,1
+objeto,uso de IA para investigaciones de armas biologicas,1
+objeto,transparencia ambiental de las empresas,1
+objeto,pruebas obligatorias de terceros antes del lanzamiento,1
+objeto,pánico ante la IA,1
+objeto,pérdida de conexión humana en el arte,1
+objeto,pérdida de tráfico e ingresos,1
+objeto,pérdida de tráfico e ingresos de los medios,1
+objeto,radioterapia adaptativa,1
+objeto,ralentizacion unilateral de OpenAI,1
+objeto,ralentizar coordinadamente el desarrollo de la IA,1
+objeto,ralentizar desarrollo de modelos de IA,1
+objeto,ralentizar el desarrollo de modelos avanzados,1
+objeto,ralentizar el desarrollo si es necesario,1
+objeto,ralentizar el ritmo de avance de la IA,1
+objeto,retorno de la inversion en IA,1
+objeto,rapidez y calidad del trabajo,1
+objeto,realismo de Midjourney,1
+objeto,rechazo estatal a las restricciones de uso militar impuestas por la empresa,1
+objeto,recopilacion de datos y privacidad,1
+objeto,recurso emergente de prevencion del suicidio en la app,1
+objeto,"recursos estatales para investigación, desarrollo e implementación de IA",1
+objeto,rediseñar las evaluaciones,1
+objeto,rediseño de Grok con límites éticos,1
+objeto,reduccion de costos de inspeccion de postes,1
+objeto,reducción de brechas,1
+objeto,reducción de delitos,1
+objeto,reducción del tiempo de preparación de litigios,1
+objeto,reducir desigualdades de salud en países de ingresos bajos y medianos,1
+objeto,rapidez en logística,1
+objeto,productividad e ingresos bancarios,1
+objeto,productividad global,1
+objeto,programa Hazlo con IA,1
+objeto,programa Hazlo con IA de capacitacion masiva,1
+objeto,programas de formación del BID para la adopción empresarial,1
+objeto,programas de formación en IA,1
+objeto,programas de formación en IA para colaboradores,1
+objeto,programas de reskilling para los empleados,1
+objeto,prohibicion de imagenes sexuales generadas con IA,1
+objeto,prohibicion de usos inaceptables (UE),1
+objeto,prohibir la IA en el ingreso de escritos judiciales,1
+objeto,prohibir la IA en las escuelas,1
+objeto,pruebas cruzadas entre competidores antes del lanzamiento,1
+objeto,promover el uso de IA midiendo valor generado,1
+objeto,promover la adopción de la IA de forma regional,1
+objeto,propuestas legislativas de gobernanza federal,1
+objeto,proteccion de artistas frente a la IA,1
+objeto,proteccion de atletas frente a abusos en linea,1
+objeto,identificación y eliminación de más cuentas de menores,1
+objeto,protección del empleo,1
+objeto,proyecto de IA de la Fiscalia financiado por el GORE,1
+objeto,proyecto de ley chileno de regulación de IA,1
+objeto,proyecto de ley chileno de sello,1
+objeto,proyecto de ley chileno de uso de obras,1
+objeto,proyecto de ley que regula los sistemas de IA,1
+objeto,proyectos Licitabot y asistentes de permisos,1
+objeto,promoción de la salud mental y el bienestar,1
+objeto,renta básica universal,1
+objeto,rentabilidad del código abierto,1
+objeto,replantear enseñanza y evaluación universitaria para usar IA,1
+objeto,requisitos para IA de alto riesgo,1
+objeto,requisitos para sistemas de IA de alto riesgo,1
+objeto,resolución de la ONU sobre IA,1
+objeto,"resolver condiciones de base (infraestructura, datos, talento)",1
+objeto,resolver misterios científicos de la Tierra,1
+objeto,resonancias magneticas en cinco minutos,1
+objeto,respeto de valores socialistas y ética,1
+objeto,respeto y compensación por el uso de imagen,1
+objeto,responsabilidad de las empresas por la seguridad de sus sistemas,1
+objeto,reducir el ritmo de desarrollo de capacidades,1
+objeto,responsabilidad legal de los desarrolladores,1
+objeto,responsabilidad monetaria de empresas por daños,1
+objeto,respuesta más rápida ante delitos,1
+objeto,respuestas incoherentes de modelos fundacionales,1
+objeto,respuestas médicas en el buscador,1
+objeto,restriccion del uso por algunas empresas,1
+objeto,restricciones de Anthropic a su modelo en vigilancia masiva y armas autónomas,1
+objeto,"restricciones de uso de Claude (decisiones letales sin supervisión, vigilancia masiva)",1
+objeto,restricción de Grok y retiro de contenido,1
+objeto,restricción de Mythos a un consorcio por riesgo de ciberataques,1
+objeto,retiro de canciones creadas íntegramente con IA en Spotify,1
+objeto,retiro de contenido y suspensión de cuentas,1
+objeto,retorno de inversion del mercado chino de IA,1
+objeto,responsabilidad humana indelegable,1
+objeto,reducir el ritmo del desarrollo,1
+objeto,reducir el ritmo del desarrollo de la IA,1
+objeto,reducir la brecha técnica del Estado,1
+objeto,reducir la velocidad del desarrollo con pruebas y auditorías,1
+objeto,reemplazo de personas por la IA,1
+objeto,reforma de derechos de autor con exclusion voluntaria,1
+objeto,reforma y aplazamiento de la ley de IA,1
+objeto,registro público de algoritmos,1
+objeto,reglamento de la UE,1
+objeto,reglamento del Parlamento Europeo,1
+objeto,reglamento europeo sobre IA,1
+objeto,reglas generales para que los beneficios superen los inconvenientes,1
+objeto,regulacion que incentive el uso,1
+objeto,rendimiento de LatamGPT,1
+objeto,regulaciones razonables para la IA,1
+objeto,regulación china de algoritmos y deepfakes,1
+objeto,regulación de la IA (llamados),1
+objeto,regulación de la IA al servicio de las personas,1
+objeto,regulación de la Unión Europea,1
+objeto,regulación del desarrollo de la IA,1
+objeto,regulación estatal de los sistemas de IA,1
+objeto,regulación general de la IA que reclama Girardi,1
+objeto,regulación justa e inclusiva exigida por Lula,1
+objeto,regulación nacional de IA,1
+objeto,regulación pública de la IA,1
+objeto,regulación y evaluación gubernamental de la IA,1
+objeto,renacimiento de innovación y ciencia,1
+objeto,regulacion y pruebas de IA sanitarias,1
+objeto,agencia estatal al estilo FDA,1
+objeto,agencia internacional de vigilancia tipo OIEA,1
+objeto,agentes autonomos que escapan y atacan sistemas,1
+objeto,agravamiento de la desigualdad,1
+objeto,agravante penal por uso de IA en delitos,1
+objeto,ahorro de costos y margenes de empresas S&P500,1
+objeto,ahorro de tiempo en investigación,1
+objeto,ahorro en compras públicas,1
+objeto,ahorro en licencias médicas fraudulentas,1
+objeto,ahorro en minería,1
+objeto,aislamiento de los datos de salud,1
+objeto,alarma de IA fuera de control,1
+objeto,funciones de Google,1
+objeto,alfabetización en IA para la ciudadanía,1
+objeto,algoritmo central de los LLM,1
+objeto,alianza para impulsar el uso de IA en gobiernos,1
+objeto,alto indefinido y mundial al desarrollo de la IA,1
+objeto,alucinaciones de la IA generativa,1
+objeto,ampliacion de la herramienta Revi a mas municipios,1
+objeto,ampliación del programa SitIA,1
+objeto,ampliar margen terapéutico,1
+objeto,animar a jóvenes a familiarizarse con la IA,1
+objeto,anticiparse y capacitarse las personas ante la IA,1
+objeto,análisis de documentos judiciales,1
+objeto,análisis de imágenes médicas,1
+objeto,"apoyo al diagnóstico (radiología, patología)",1
+objeto,alfabetización crítica,1
+objeto,Theodora Intelligence,1
+objeto,Vidu,1
+objeto,abaratar costos en salud,1
+objeto,accesibilidad para personas con discapacidad visual,1
+objeto,acceso a medicamentos y mejores precios,1
+objeto,acceso al mercado accionario sin costo de asesor,1
+objeto,acceso en varios idiomas,1
+objeto,acceso restringido a datos de SitIA,1
+objeto,acciones destructivas atribuidas al chatbot de Bing,1
+objeto,aceleración del análisis criminal,1
+objeto,aclarar responsabilidades por los daños del chatbot,1
+objeto,acompañamiento académico estudiantil,1
+objeto,advertencias de riesgo descalificadas por Trump,1
+objeto,actualizar y financiar estrategias nacionales de IA,1
+objeto,acuerdo OpenAI-Departamento de Defensa para redes clasificadas,1
+objeto,acuerdos globales con potencias,1
+objeto,acuerdos y políticas para impulsar la IA,1
+objeto,adaptación y capacitación de empresas,1
+objeto,adaptar política de privacidad para excluir datos de entrenamiento,1
+objeto,adopcion masiva de la IA (Ministerio de Ciencia),1
+objeto,adopción de Heredia por la Fiscalía,1
+objeto,adopción de IA en las empresas,1
+objeto,adopción de IA por la industria,1
+objeto,adopción inmediata de herramientas de IA generativa,1
+objeto,adoptar la IA como aliado en las empresas,1
+objeto,adquirir conocimientos del mundo digital,1
+objeto,acompañamiento de adultos mayores y personas vulnerables,1
+objeto,bloqueo de edición de imágenes de personas reales con ropa reveladora para todos los usuarios,1
+objeto,borrador europeo de regulación de la IA,1
+objeto,borrar conversaciones y usar chat temporal,1
+objeto,brechas tecnológicas,1
+objeto,buscadores y compras en línea,1
+objeto,busqueda de personas por imagen y reconocimiento facial,1
+objeto,calidad de la fotografía,1
+objeto,calidad de procesos,1
+objeto,cambio en la forma de evaluar,1
+objeto,cambio generalizado de la sociedad,1
+objeto,cambio súbito,1
+objeto,canal de comunicacion EEUU-China sobre emergencias de IA,1
+objeto,apoyo al trabajo docente,1
+objeto,capacidad institucional de IA en la UNAB (ADA),1
+objeto,capacidad técnica propia y formación de talento,1
+objeto,capacidades exageradas por empresas,1
+objeto,capacitacion docente HumanIA,1
+objeto,capacitación en IA,1
+objeto,capacitación masiva en uso de IA,1
+objeto,capacitar a 65.000 trabajadores (aporte de Google.org),1
+objeto,carece de contexto largo,1
+objeto,catástrofes de ciberseguridad por automejora recursiva,1
+objeto,censura política,1
+objeto,centros de supercómputo financiados por CORFO,1
+objeto,certificación de perfiles laborales en IA,1
+objeto,chatbot Pi,1
+objeto,cancelacion del lanzamiento de GPT-6.1 Astra,1
+objeto,apoyo y capacitación a trabajadores en la transición,1
+objeto,aprendizaje adaptativo,1
+objeto,aprendizaje personalizado y apoyo pedagógico,1
+objeto,aprovechar la IA como apoyo en la formación,1
+objeto,artículo 71T de la megarreforma,1
+objeto,artículo 8 del proyecto: excepción de propiedad intelectual a favor de empresas de IA,1
+objeto,artículo que permite a la IA usar obras sin autorización ni pago,1
+objeto,asistencia con chatbots,1
+objeto,asistente Diia.AI en servicios publicos,1
+objeto,asociaciones público-privadas europeas para comprar chips de IA,1
+objeto,atención de consultas del subsidio eléctrico,1
+objeto,"atención de salud más accesible, personalizada y humana",1
+objeto,bienestar emocional de los usuarios,1
+objeto,auditorias externas independientes,1
+objeto,auditoría externa independiente,1
+objeto,auditorías independientes de los sistemas,1
+objeto,auditorías y etiquetado de contenidos,1
+objeto,aumentar impuesto a las rentas del capital,1
+objeto,aumento de ganancias,1
+objeto,autentificación más rigurosa en plataformas de intercambio de imágenes,1
+objeto,autorización judicial y ley nacional para biometría remota (UE),1
+objeto,autorregulación y detención por parte de los laboratorios,1
+objeto,aviso al usuario de interacción con máquina o contenido manipulado,1
+objeto,aviso obligatorio de contenido sintético en YouTube,1
+objeto,aviso para personas con pensamientos suicidas,1
+objeto,bajar costos y estandarizar la calidad,1
+objeto,auditoria de algoritmos publicos (Plataforma Algoritmos Publicos),1
+etiqueta,habilidades cognitivas,1
+etiqueta,inclusión de género,1
+etiqueta,inclusión femenina,1
+etiqueta,inestabilidad financiera,1
+etiqueta,inestabilidad social,1
+etiqueta,información incorrecta,1
+etiqueta,ingresos periodísticos,1
+etiqueta,integridad física,1
+etiqueta,integridad judicial,1
+etiqueta,juicio humano,1
+etiqueta,libre competencia,1
+etiqueta,menores expuestos,1
+objeto,Stargate,1
+etiqueta,participación cívica,1
+etiqueta,privacidad de datos,1
+etiqueta,protección de menores,1
+etiqueta,pérdida patrimonial,1
+etiqueta,pérdida tráfico medios,1
+etiqueta,pérdidas empresariales,1
+etiqueta,riesgo empresarial,1
+etiqueta,riesgo reputacional,1
+etiqueta,sanciones legales,1
+etiqueta,seguridad vial,1
+etiqueta,sostenibilidad medios,1
+etiqueta,transporte urbano,1
+etiqueta,vínculos familiares,1
+etiqueta,moderación contenidos,1
+objeto,uso de ChatGPT en China,1
+etiqueta,decisiones injustas,1
+objeto,uso militar de la IA,1
+objeto,sustitución del personal de salud,1
+etiqueta,cobros excesivos,1
+etiqueta,comunicación política,1
+etiqueta,corrosión moral,1
+etiqueta,costo consumidor,1
+etiqueta,costos económicos,1
+etiqueta,decisiones imparciales,1
+etiqueta,ciencia y ética,1
+etiqueta,decisiones productivas,1
+etiqueta,estancamiento productivo,1
+etiqueta,dependencia tecnológica,1
+etiqueta,derechos humanos,1
+etiqueta,desajuste estratégico,1
+etiqueta,desarrollo sostenible,1
+etiqueta,descarga cognitiva,1
+etiqueta,desplazamiento humano,1
+etiqueta,detención errónea,1
+etiqueta,diálogo democrático,1
+etiqueta,escasez de chips,1
+etiqueta,escasez de hardware,1
+etiqueta,escasez de insumos,1
+etiqueta,espiritualidad,1
+etiqueta,estabilidad financiera,1
+etiqueta,deliberación democrática,1
+objeto,IA generativa,1
+objeto,IA que decide acabar con la humanidad,1
+objeto,IBM deja de ofrecer reconocimiento facial de uso general,1
+objeto,IPS recordatorio de cobro de beneficios,1
+objeto,Iniciativa de Transparencia Ambiental sobre la IA,1
+objeto,KPI de consumo de tokens de IA,1
+objeto,Ley Europea de IA,1
+objeto,Ley de IA de la UE,1
+objeto,Ley de IA de la Unión Europea,1
+objeto,Ministerio de IA de Emiratos Árabes Unidos,1
+objeto,Mistral Large,1
+objeto,Neo: precio y preventa,1
+etiqueta,vínculos humanos,1
+objeto,"Oculus, sistema de IA de Roskomnadzor contra contenido prohibido",1
+objeto,OpenAI abandona el lanzamiento de GPT-6.1 Astra,1
+objeto,PIB de la ASEAN,1
+objeto,PettiChat,1
+objeto,Plan de Acción de China sobre gobernanza global de la IA,1
+objeto,Plan de Acción de IA con inversión pública,1
+objeto,Política Nacional de IA,1
+objeto,Política Nacional de IA (fomento y capacidades),1
+objeto,Principios de IA de Google,1
+objeto,Proyecto Starline,1
+objeto,Quillbot altera el significado de oraciones,1
+objeto,SB 53 de California,1
+objeto,Siri renovada de Apple,1
+objeto,Observatorio Global de la IAG y coordinación liderada por la ONU,1
+etiqueta,capacidades humanas,1
+etiqueta,capacidad cognitiva,1
+etiqueta,burbuja financiera,1
+objeto,"AI Act europeo, art. 50",1
+objeto,AI Pin,1
+objeto,AlphaFold,1
+objeto,Carta de Derechos de la IA y evaluacion publica,1
+objeto,Character AI,1
+objeto,Claude,1
+objeto,Claude / Anthropic,1
+objeto,Claude Mythos,1
+objeto,Claude Opus 5,1
+objeto,Consejo Regional de IA,1
+objeto,IA en el diseño de políticas sociales,1
+objeto,Declaración de Bletchley,1
+objeto,Directrices IA+ del Consejo de Estado,1
+objeto,Fabrica de IA nacional,1
+objeto,Foxconn: servidores de IA y ventas,1
+objeto,GPT-4,1
+objeto,GPT-5 de OpenAI,1
+objeto,Gemini 1.5,1
+objeto,Grok 4 de xAI,1
+objeto,Grok-3 de xAI,1
+objeto,IA Hub UAI,1
+objeto,IA como lider de partido en Japon,1
+objeto,IA de proteínas de EvolutionaryScale,1
+objeto,IA descontrolada y peligro existencial,1
+objeto,Copilot (Microsoft),1
+objeto,escrutinio y certificación de modelos de IA,1
+objeto,estafas y fraudes con IA,1
+objeto,estereotipos sexistas en asistentes de voz,1
+objeto,estrategia empresarial de rediseño de puestos y capacitación,1
+objeto,estrategia nacional de IA para Chile,1
+objeto,estrategias de seguridad por diseño obligatorias,1
+objeto,estricto control humano de la IA,1
+objeto,estructura legal para corporaciones no humanas,1
+objeto,estudiantes se dedican a la filosofía de la IA,1
+objeto,estándares comunes de seguridad entre empresas,1
+objeto,estándares comunes entre empresas,1
+objeto,estándares de transparencia y auditoría de modelos,1
+objeto,chatbot R1 de Deepseek,1
+objeto,etiquetado de contenido generado con IA,1
+objeto,etiquetado de contenido generado por IA,1
+objeto,etiquetado de contenido generado por IA en redes sociales,1
+objeto,etiquetado de imágenes IA en Meta,1
+objeto,etiquetado de títulos generados por IA,1
+objeto,etiquetado obligatorio de imágenes creadas con IA,1
+objeto,evaluaciones clínicas previas al despliegue,1
+objeto,evaluaciones de impacto antes de desplegar sistemas de IA,1
+objeto,evaluaciones externas independientes,1
+objeto,evaluaciones externas independientes con acceso permanente,1
+objeto,evaluaciones independientes y participación del Gobierno,1
+objeto,evaluaciones independientes y rol del Gobierno,1
+objeto,evaluación ciega en la investigación,1
+objeto,etiquetado de contenido de IA en YouTube,1
+objeto,diversidad de modelos,1
+objeto,divulgación de IA en anuncios políticos de Meta,1
+objeto,doble modelo para proteger el modelo principal,1
+objeto,documentar material con derechos de autor usado en el entrenamiento,1
+objeto,documento BRICS sobre regulación global de la IA,1
+objeto,educación,1
+objeto,educación formal sobre IA,1
+objeto,educación para adultos,1
+objeto,educar y estar alerta ante el uso de IA por jovenes,1
+objeto,eficiencia cadena de suministro,1
+objeto,eficiencia energetica y renovables ante demanda de IA,1
+objeto,eficiencia y ahorro de costos,1
+objeto,escalar sistemas de IA en seguridad y justicia,1
+objeto,elevar la esperanza de vida,1
+objeto,eliminar lista de espera hospitalaria,1
+objeto,empleos reservados a personas,1
+objeto,encíclica Magnifica Humanitas,1
+objeto,endurecer controles de uso de Claude,1
+objeto,enseñar uso ético de la IA en los currículos,1
+objeto,entender y predecir la miopía,1
+objeto,entrenar habilidades digitales de trabajadores,1
+objeto,equidad,1
+objeto,equilibrio democrático global,1
+objeto,errores de Bard,1
+objeto,errores e imprecisiones,1
+objeto,errores factuales,1
+objeto,eficiencias en distribución a sucursales en Chile,1
+objeto,formación de talento y colaboración I+D,1
+objeto,formación de talentos y carreras de IA,1
+objeto,formación sindical en algoritmos,1
+objeto,formar a docentes y estudiantes en uso ético,1
+objeto,formar especialistas en IA,1
+objeto,formar talento especializado en IA,1
+objeto,fortalecer habilidades humanas,1
+objeto,fotografia nocturna,1
+objeto,fragilidad de las redes neuronales,1
+objeto,fraude academico con IA,1
+objeto,gestion clinica y monitoreo de pacientes cronicos,1
+objeto,gestión de inventario,1
+objeto,evaluación externa continua en Anthropic,1
+objeto,giro hacia modelos más pequeños y sostenibles,1
+objeto,grupo de trabajo / Proceso de Hiroshima sobre IA,1
+objeto,guia docente de uso de ChatGPT,1
+objeto,guía de recomendaciones de HubSpot,1
+objeto,guía del Colegio de Abogados sobre uso de IA,1
+objeto,guía del Ministerio de Educación para docentes,1
+objeto,herramienta de IA del DOGE para eliminar regulaciones,1
+objeto,herramienta de Meta AI,1
+objeto,herramientas de OpenAI para detectar angustia y sugerir pausas,1
+objeto,herramientas de deteccion de IA generativa,1
+objeto,herramientas de detección de contenido engañoso con IA,1
+objeto,herramientas para detectar y eliminar sesgo,1
+objeto,identificación biométrica remota en tiempo real en espacios públicos,1
+objeto,giro a modelos de IA mas pequenos y sostenibles,1
+objeto,evaluación independiente de la seguridad de los modelos,1
+objeto,evaluación positiva y menor tiempo de respuesta en Koko,1
+objeto,evaluadores externos con acceso a los sistemas,1
+objeto,evaluadores externos permanentes en los laboratorios,1
+objeto,"evaluar sistemas de protección social, educación y fiscalidad",1
+objeto,evitar concentración corporativa,1
+objeto,evitar la IA en crisis agudas de salud mental,1
+objeto,excepción de propiedad intelectual para el uso de obras por sistemas de IA (megarreforma),1
+objeto,exención antimonopolio para compartir información de seguridad,1
+objeto,experiencia del usuario,1
+objeto,explicabilidad de los sistemas de IA,1
+objeto,explotación autónoma de vulnerabilidades por un modelo de IA,1
+objeto,facilitar el día a día,1
+objeto,formación de talento en IA,1
+objeto,fake news y deepfakes como amenaza a la democracia,1
+objeto,fallas de IA agéntica en infraestructuras críticas,1
+objeto,fallas de seguridad en la implementación de OpenClaw,1
+objeto,fast track para data centers de cómputo,1
+objeto,fijación de precios,1
+objeto,filtros de contenido de los fabricantes,1
+objeto,filtros de seguridad de Gemini,1
+objeto,fluidez del juego,1
+objeto,fomentar colaboración y desarrollar soluciones de IA competitivas,1
+objeto,fomentar el uso de la IA,1
+objeto,fomento estatal: becas y financiamiento de investigación,1
+objeto,fondo de Google.org para capacitar trabajadores,1
+objeto,formación de docentes en uso correcto de la IA,1
+objeto,facultad de bloquear despliegues inseguros por proceso legal,1
+objeto,consulta a profesionales de bioseguridad,1
+objeto,consumo de agua y energia de centros de datos,1
+objeto,consumo eléctrico,1
+objeto,"contenido de las reglas: transparencia, supervisión humana, seguridad",1
+objeto,contenido inapropiado para niños,1
+objeto,contrastar la misma consulta en varios chatbots,1
+objeto,control de artistas sobre el uso de sus obras para entrenar IA,1
+objeto,control de familias y herederos sobre la imagen de figuras históricas,1
+objeto,control humano de la IA (propuesta de China),1
+objeto,control humano de los modelos de Microsoft,1
+objeto,control humano y entidades supervisoras,1
+objeto,controles a la exportacion y leyes humanitarias vigentes,1
+objeto,discriminación en decisiones de alto riesgo,1
+objeto,controles de OpenAI sobre uso de figuras públicas y personajes con derechos,1
+objeto,controles parentales de OpenAI en ChatGPT,1
+objeto,controles parentales de la empresa,1
+objeto,controles rigurosos en la implementación y uso de la IA,1
+objeto,controles sobre los datos de entrenamiento,1
+objeto,convenio con la Universidad de Chile (Fiscal Heredia),1
+objeto,coordinacion sectorial para ralentizar,1
+objeto,correos falsos creados con IA,1
+objeto,costo de entrenamiento de V3,1
+objeto,costo de generar video con Vidu 2.0,1
+objeto,creación de empleo,1
+objeto,creación de empleos,1
+objeto,crear IA en Chile,1
+objeto,controles de Anthropic sobre Claude,1
+objeto,chatbot de Character,1
+objeto,chatbot persuasor,1
+objeto,chatbots con fallecidos (Microsoft),1
+objeto,chatbots de xAI (Grok),1
+objeto,ciberataque de agentes autónomos y daños económicos,1
+objeto,ciberataques delictivos con IA (portonazos digitales),1
+objeto,ciberseguridad del evento,1
+objeto,circular de uso responsable de IA en servicios públicos,1
+objeto,clases de IA en educación obligatoria,1
+objeto,clases personalizadas,1
+objeto,cláusulas del contrato de OpenAI contra armas autónomas y vigilancia,1
+objeto,coalición internacional IA sostenible,1
+objeto,consejos para traficar droga,1
+objeto,comisión vaticana sobre IA,1
+objeto,compañero de entretenimiento en el hogar,1
+objeto,compañeros virtuales,1
+objeto,compensación a medios por el uso de su contenido,1
+objeto,competitividad de la industria alimentaria,1
+objeto,comunidad de infociudadanos que entienda la desinformación con IA,1
+objeto,concentracion de decisiones sobre la IA,1
+objeto,concentracion de poder en grandes actores tecnologicos,1
+objeto,concentración de poder tecnológico,1
+objeto,concentración del mercado de IA generativa,1
+objeto,conciencia de la IA,1
+objeto,condiciones para sistemas de alto riesgo,1
+objeto,confusión en conversaciones largas,1
+objeto,"colaboracion entre municipios, academia y sector privado",1
+objeto,descifrar la biología del olfato,1
+objeto,desconfiar de llamadas desde números desconocidos,1
+objeto,desconfiar de medicos creados con IA,1
+objeto,describir y clasificar obras de forma automática,1
+objeto,descubrimiento de fármacos,1
+objeto,desigualdad,1
+objeto,desplazamiento del conocimiento centrado en el ser humano,1
+objeto,desvío de la atención de los temas relevantes,1
+objeto,deteccion de emociones extremas e intervencion,1
+objeto,deteccion de enfermedad con vision por computador,1
+objeto,detección de covid-19 por voz,1
+objeto,detección de cáncer en Hospital Barros Luco,1
+objeto,crecimiento del comercio minorista,1
+objeto,detección temprana de cáncer de páncreas,1
+objeto,detección temprana de enfermedades raras,1
+objeto,detención de banda delictiva,1
+objeto,detener la IA,1
+objeto,detener la carrera de desarrollo entre empresas,1
+objeto,diagnostico temprano de cancer,1
+objeto,diagnosticos mas precisos y eficiencia,1
+objeto,diagnóstico de Covid-19,1
+objeto,diagnóstico de enfermedades a partir de olores,1
+objeto,diagnóstico médico,1
+objeto,diagnósticos y tratamientos más precisos,1
+objeto,dieta personalizada,1
+objeto,directrices para agencias federales,1
+objeto,detección de productos sin certificación,1
+objeto,cuota de mercado de la IA generativa,1
+objeto,cámaras detectoras de humo de Pano AI,1
+objeto,código moral y ético,1
+objeto,datos incorrectos,1
+objeto,datos sensibles de usuarios,1
+objeto,debilitamiento cognitivo y perdida de comprension,1
+objeto,decisiones de inversión objetivas y eficientes,1
+objeto,decisiones financieras en administración,1
+objeto,declaracion obligatoria del nivel de uso de IA con sellos de colores,1
+objeto,declaración conjunta de países,1
+objeto,decreto de Biden,1
+objeto,deepfakes y ruptura de la confianza,1
+objeto,dejar de leer articulos academicos y confiar en la IA,1
+objeto,desarrollo socioemocional y vínculo con el juguete,1
+objeto,demanda eléctrica de centros de datos,1
+objeto,demostrar reduccion de riesgos y revision de expertos,1
+objeto,dependencia cognitiva,1
+objeto,dependencia excesiva de personas vulnerables,1
+objeto,dependencia tecnológica,1
+objeto,derecho a una explicación de la Unión Europea,1
+objeto,derivación a ayuda profesional adecuada,1
+objeto,desaceleracion del desarrollo de modelos avanzados,1
+objeto,desaceleración del ritmo de mejora de capacidades,1
+objeto,desacelerar el desarrollo de los sistemas avanzados,1
+objeto,desacelerar el ritmo de desarrollo de los modelos,1
+objeto,desarmar la IA de la logica competitiva,1
+objeto,desarrollo de herramientas especializadas,1
+objeto,demanda de perfiles humanistas,1

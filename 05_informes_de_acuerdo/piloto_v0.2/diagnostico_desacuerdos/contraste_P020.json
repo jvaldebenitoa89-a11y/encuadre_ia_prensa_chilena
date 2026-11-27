@@ -1,0 +1,144 @@
+{
+  "lote": "P020",
+  "desacuerdos": [
+    {
+      "codigo": "3.1.CON",
+      "alias": "N22574",
+      "tipo": "presencia",
+      "a": "ausente (3.1.NIN por defecto)",
+      "b": "3.1.CON, v=-, FS (misma cita que 1.2.GEO)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Cameron proyecta que la carrera armamentista 'se intensificará' (aceleración), pero la regla 'Daño futuro es D2, no D3' empuja a dejarlo solo en 2.3.SEG y 1.2.GEO. A aplica el desempate; B duplica la misma cita en D1 y D3. El libro no dice cuándo un daño proyectado activa además 3.1. Con la regla propuesta se mantiene 3.1.CON.",
+      "propuesta_regla": "Un daño futuro se codifica en D2 (2.3) con su `g`. Se agrega 3.1 solo si algún fragmento enuncia además una trayectoria de la IA o de su ámbito (continuidad, aceleración, transformación, ruptura, incertidumbre) y se cita ese tramo. Un daño solo posible ('podría', 'puede llevar a') no activa 3.1. 'La carrera se intensificará' enuncia aceleración y sí es 3.1.CON."
+    },
+    {
+      "codigo": "3.3.PRO",
+      "alias": "N10028",
+      "tipo": "presencia",
+      "a": "ausente (3.3.NIN; sin 3.4)",
+      "b": "3.3.PRO v=D alcance parcial + 3.4.EMP (YouTube)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "YouTube retiró los videos por reclamos de derecho de autor de Sony, no como respuesta a la IA. 3.3 pide una medida 'como respuesta a la IA', pero el libro no aclara si la moderación de una plataforma sobre contenido hecho con IA cuenta. Por la letra, A tiene razón; B lee el retiro como prohibición de un uso de IA.",
+      "propuesta_regla": "3.3 se codifica solo si la medida se presenta como respuesta a la IA o a un uso de IA en cuanto tal (prohibir un modelo, exigir etiquetado, limitar deepfakes). El retiro o bloqueo de contenido por motivos ajenos a la IA (derechos de autor, términos de servicio) no es 3.3 aunque el contenido haya sido generado con IA. 3.4 sigue a 3.3 y no se codifica sin él."
+    },
+    {
+      "codigo": "2.3.CUL",
+      "alias": "N10028",
+      "tipo": "presencia",
+      "a": "2.3.CUL v=D, G1, RDI",
+      "b": "ausente ('solo descriptivo')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "2.3 'requiere un daño atribuido a la IA' pero admite v=D, y su E solo excluye hechos sin vínculo explícito con la IA. Aquí el vínculo es explícito (la versión hecha con IA fue retirada por infringir derechos de autor y 2.3.CUL incluye 'autoría'), pero el texto no califica la infracción como daño. El argumento de B ('solo descriptivo') no excluye según el libro, porque D es un valor válido. Ambas lecturas caben en la regla actual.",
+      "propuesta_regla": "Una infracción o perjuicio informado como consecuencia del uso de IA (por ejemplo, infringir derechos de autor al clonar una voz) se codifica 2.3 con v=D, g=G1 y resp según a quién el texto atribuya el origen (RDI si a nadie). Si el fragmento solo informa una decisión de un tercero sin nombrar infracción ni perjuicio, no es 2.3."
+    },
+    {
+      "codigo": "2.5.HYP",
+      "alias": "N22574",
+      "tipo": "presencia",
+      "a": "2.5.HYP (cita parafraseada por el periodista, voz FS)",
+      "b": "ausente (duda HYP/ALA)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Cameron 'no cree que la IA reemplazará a los escritores en el corto plazo'. Puede leerse como cuestionar la promesa de capacidad creativa (HYP) o el reemplazo como amenaza (ALA), y no hay contraste explícito con una narrativa dominante ('se exagera'). Ambos dudaron; el libro no define la frontera HYP/ALA para enunciados del tipo 'no reemplazará'.",
+      "propuesta_regla": "2.5 exige que el fragmento cuestione una afirmación atribuida a otros mediante negación o contraste explícito. Si lo cuestionado es una capacidad o beneficio prometido: 2.5.HYP; si es un daño o amenaza anunciada (reemplazo de empleos o de autores): 2.5.ALA; si ambos: 2.5.AMB. Una creencia personal sobre el futuro sin referencia a una narrativa que se discute ('no creo que X ocurra pronto') no es 2.5."
+    },
+    {
+      "codigo": "c1",
+      "alias": "N40415",
+      "tipo": "c1",
+      "a": "secundaria",
+      "b": "central",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El titular no nombra la IA; la bajada la presenta como la técnica de ALeRCE y el cuerpo explica que el sistema clasifica eventos con machine learning. La regla ('en el titular o articula el argumento') no resuelve el caso de un proyecto cuyo núcleo funcional es IA pero cuyo marco temático es otro (astronomía). Con la regla propuesta quedaría central.",
+      "propuesta_regla": "Si el objeto de la nota es un sistema o proyecto cuya función central es de IA o aprendizaje automático, c1 es `central` cuando la bajada o el texto explican qué hace la IA en él (clasifica, predice, detecta). Es `secundaria` cuando la IA se menciona solo como método dentro de un tema más amplio sin explicar su función, o como recurso de una campaña o evento; `tangencial` si solo se nombra."
+    },
+    {
+      "codigo": "2.1.HER",
+      "alias": "N14774",
+      "tipo": "voz",
+      "a": "voz FG (dicho de SeLegue sobre la fatiga del personal)",
+      "b": "voz P (cita del titular)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Ambos aplican 2.1.HER con v=+ pero citan fragmentos distintos, y la voz sale del fragmento. El libro no dice qué fragmento escoger cuando varios sustentan el mismo código con voces distintas. Es un desacuerdo espurio de procedimiento, no de lectura.",
+      "propuesta_regla": "Cuando varios fragmentos sustentan el mismo código con la misma `v`, registra el código una sola vez y cita el de mayor calidad; a igual calidad, prefiere el fragmento atribuido a una fuente (FE, FC, FG, FS, FI) sobre el titular o la voz del periodista. Registra un segundo fragmento del mismo código solo si su `v` difiere (regla de titular alarmista) o si su voz es FM."
+    },
+    {
+      "codigo": "2.1.HER",
+      "alias": "N40415",
+      "tipo": "v",
+      "a": "v=D, voz P, marca na (descripción de la función)",
+      "b": "v=+, voz FE, marca explícita ('ayudamos a hacer ciencia')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "De nuevo fragmentos distintos, pero además queda sin regla si un verbo de función (ayudar, permitir, optimizar) es marca valorativa: B lo toma como favorable explícito y A como descripción. La sección 3.1 habla de 'adjetivos, verbos, advertencias, promesas' sin distinguir verbos de función de verbos de beneficio.",
+      "propuesta_regla": "Un verbo de función que solo describe qué hace el sistema (detecta, clasifica, ayuda a, permite) es `D`. Es `+` cuando el fragmento afirma un beneficio o cualidad: efecto cuantificado o comparativo (reduce, acelera, 'más rápido'), adjetivo o superlativo (eficaz, esencial) o promesa. 'Ayudamos a hacer ciencia' es D; 'ayuda a reducir la fatiga' es +."
+    },
+    {
+      "codigo": "2.1.REV",
+      "alias": "N14774",
+      "tipo": "presencia",
+      "a": "2.1.REV v=A, calidad 1",
+      "b": "ausente",
+      "causa": "juicio_legitimo",
+      "diagnostico": "'Su potencial para transformar la vida' tiene alcance general, pero es potencial y de pasada, y 'tanto miedo como entusiasmo' atribuye emociones a públicos sin valorar el objeto. A lo codifica con calidad 1 y v=A; B aplica 'ante la duda, no codifiques'. Ambas lecturas son defendibles."
+    },
+    {
+      "codigo": "calidad",
+      "alias": "N10028 (también N71060, N14774, N40415)",
+      "tipo": "otro",
+      "a": "calidad 1 en 2.2.CUL de N10028; 2 en 1.1.CIE de N40415",
+      "b": "calidad 2 en 2.2.CUL de N10028; 1 en 1.1.CIE de N40415",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Con la misma cita o citas casi idénticas, A y B asignan calidades distintas, y el signo de la diferencia cambia entre notas (N10028, N71060, N14774 en 1.2.NEC y 3.3.ADO, N40415). La escala 1/2/3 no tiene anclas operativas y depende del criterio personal.",
+      "propuesta_regla": "calidad=1 si la cita sola no basta para inferir el código o su `v` sin leer el contexto, o si mezcla más de una idea; calidad=2 si la cita sola sustenta el código y su `v`; calidad=3 solo si además es breve (hasta 25 palabras), sin ruido y apta para ilustrar el código en el informe."
+    }
+  ],
+  "emergentes": [
+    {
+      "etiqueta": "IA sin experiencia vivida",
+      "alias": "N22574",
+      "indicador": "2",
+      "definicion": "La IA se caracteriza como 'mente incorpórea' que solo recombina lo ya dicho, sin experiencia encarnada (amor, miedo, mortalidad). Es un juicio de autenticidad que 2.1.LIM excluye expresamente y que ningún otro código recoge.",
+      "cita": "una mente incorpórea que simplemente regurgite lo que han dicho otras mentes encarnadas",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "Ficción distópica como advertencia",
+      "alias": "N22574",
+      "indicador": "3",
+      "definicion": "El horizonte de la IA se encuadra con una película de ciencia ficción (Terminator, Skynet): la ficción como profecía cumplida a medias ('se los advertí') y el riesgo medido contra el apocalipsis cinematográfico.",
+      "cita": "claro que no aún al punto apocalíptico de Terminator",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "IA recrea identidades",
+      "alias": "N10028",
+      "indicador": "2",
+      "definicion": "La IA se presenta como capaz de reproducir la voz y el estilo de una persona, incluso fallecida, con fascinación ('resucita', 'sorprendente') y conflicto de titularidad. No es 2.1.INN genérico ni 2.3, porque el texto no lo valora como daño.",
+      "cita": "una que trae de regreso al fallecido Michael Jackson",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "Humano en el circuito",
+      "alias": "N14774",
+      "indicador": "2",
+      "definicion": "La IA se enuncia como alerta subordinada a la confirmación humana final. Marca límites de autonomía sin ser una falla técnica (2.1.LIM) ni una prescripción de supervisión (3.3.CON).",
+      "cita": "todavía se necesitan humanos para verificar que la tecnología sea precisa",
+      "origen": "adjudicador"
+    },
+    {
+      "etiqueta": "IA como bien compartido",
+      "alias": "N40415",
+      "indicador": "2",
+      "definicion": "La IA se presenta como infraestructura o servicio abierto a una comunidad (científica), no como mercancía (2.1.MER) ni solo como herramienta (2.1.HER). También aparece en N14774 ('herramienta de código abierto').",
+      "cita": "le entregamos este servicio a la comunidad astronómica del mundo",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "Contradicción sobre 3.4.NES: la sección 5 la lista entre los códigos por defecto con cita vacía, pero la sección 4 dice que 3.4 solo se codifica si hay un 3.3 distinto de NIN y 3.4.NES solo con prescripción sin sujeto (el principio 3 tampoco la incluye).",
+    "`voz` no tiene categoría para figuras públicas, artistas ni usuarios-creadores individuales: A y B usaron FS 'por aproximación' para James Cameron y para el autor del video de N10028, aunque FS se define como sociedad civil, trabajadores y gremios.",
+    "Columnas firmadas por directivos de empresas con interés comercial directo (N58404): la regla 'columna firmada = P' choca con FC y con c5 `contenido_patrocinado`; ambos dudaron y el libro no da criterio.",
+    "Reglas en tensión: 'Daño futuro es D2' frente a 3.1.CON (aceleración) y 'Una misma frase, varios objetos'; no queda claro cuándo un daño proyectado activa además 3.1 (N22574).",
+    "3.3 se define como medida 'como respuesta a la IA', pero no separa la política sobre la IA de su uso o adopción descriptiva por una organización (ambos codificaron 3.3.ADO + 3.4.EST en N14774 por una agencia que prueba un sistema) ni de la moderación de contenido por terceros (N10028); choca con 'constatar que la IA crece no es 3.3'.",
+    "2.1.LIM excluye el juicio de autenticidad ('ensalada de palabras', 'mente incorpórea') sin indicar su destino, y ni A ni B registraron emergentes en las 8 notas pese a significados sin código; el umbral 'con claridad' y el máximo por nota parecen desalentar su uso."
+  ]
+}

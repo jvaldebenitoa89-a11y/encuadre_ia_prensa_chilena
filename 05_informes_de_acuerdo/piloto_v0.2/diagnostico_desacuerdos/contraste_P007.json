@@ -1,0 +1,165 @@
+{
+  "lote": "P007",
+  "desacuerdos": [
+    {
+      "codigo": "3.3.CON",
+      "tipo": "v",
+      "causa": "ambiguedad_libro",
+      "alias": "N42418",
+      "a": "v=+, voz=FC; cita la exhortación textual de Microsoft: 'cualquier sistema que no pueda estar bajo control humano debe ser rechazado'.",
+      "b": "v=D, voz=P; cita el titular que reporta: 'Microsoft se comprometió a mantener sus futuros modelos de IA bajo control humano'.",
+      "diagnostico": "Ambos fragmentos sostienen CON, pero uno exhorta (+) y otro solo reporta (D). El libro no dice cuál citar ni si un código puede registrarse dos veces con v distinto (la sección 6 sugiere dos entradas; el formato de la sección 8, una). B es coherente consigo mismo: en N78737 asignó + a 'ha pedido bajar el ritmo' (exhortación de una fuente) y D al reporte del periodista.",
+      "propuesta_regla": "Un código se registra una sola vez por nota. Si aparece en varios fragmentos con v distinto, se cita el fragmento de marca explícita y prima la valoración explícita sobre D (exigir, defender o criticar la medida prima sobre solo reportarla). Si hay valoraciones opuestas (+ y -) sobre la misma medida, una sola entrada con v=A o C según 3.1. Reescribir en consecuencia la regla «Titular alarmista, cuerpo descriptivo» de la sección 6."
+    },
+    {
+      "codigo": "3.3.CON / 2.3.SEG",
+      "tipo": "voz",
+      "causa": "ambiguedad_libro",
+      "alias": "N42418",
+      "a": "3.3.CON con voz FC (cita textual de la compañía) y 2.3.SEG con voz FC ('Microsoft agregó que quiere evitar...').",
+      "b": "3.3.CON con voz P (titular) y 2.3.SEG con voz P (frase 'Prohibió que sus nuevos proyectos ayuden a fabricar armas...').",
+      "diagnostico": "La definición de voz ('quién enuncia el fragmento') no resuelve el estilo indirecto, donde el periodista narra lo que dijo, pidió o prometió una fuente. Ambos codificadores asignan FC a 'ha pedido bajar el ritmo' (N78737) pero P a 'Microsoft se comprometió...' y 'Microsoft publicó...' (N42418).",
+      "propuesta_regla": "Si el fragmento atribuye un dicho, compromiso o petición a una fuente mediante un verbo de habla o compromiso (dijo, afirmó, pidió, acusó, advirtió, se comprometió), voz = tipo de esa fuente. P se reserva para hechos narrados sin atribuir un dicho (publicó, prohibió, retiró) y para la valoración propia del medio."
+    },
+    {
+      "codigo": "2.3.SEG",
+      "tipo": "mod",
+      "causa": "ambiguedad_libro",
+      "alias": "N42418",
+      "a": "G3/RTE, voz FC; cita la comunicación 'incomprensible' de agentes que accedieron a sistemas (incidente de OpenAI).",
+      "b": "G1/RTE, voz P, calidad 1; cita la lista de prohibiciones (armas, sustancias peligrosas, contenidos violentos).",
+      "diagnostico": "Mismo ámbito, fragmentos distintos e intensidades distintas. El texto contiene un proceso fuera de control (G3, lectura de A) y una mitigación de usos indebidos (G1, lectura de B). En B el daño solo se infiere de una medida (3.3.PRO) y el origen es el uso humano (RMA) más que la tecnología. El libro no dice qué hacer con un ámbito repetido ni si una medida restrictiva basta para codificar 2.3.",
+      "propuesta_regla": "2.3 exige que el fragmento nombre el daño; una lista de prohibiciones (3.3) no basta por sí sola. Si un mismo ámbito aparece en fragmentos de distinta intensidad, se registra una entrada con el fragmento de mayor g (G3 > G2 > G1) y el otro se menciona en dudas."
+    },
+    {
+      "codigo": "2.3.HUM",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N42418",
+      "a": "No codifica HUM.",
+      "b": "2.3.HUM G3/RCO, voz FC; cita 'Ambos han advertido de los riesgos asociados a una carrera hacia sistemas cada vez más autónomos'.",
+      "diagnostico": "El fragmento habla de 'riesgos' sin nombrar daño ni ámbito; B infiere HUM desde 'autónomos', que es la definición de G3 (intensidad), no un ámbito. El libro no indica qué hacer con una advertencia sin daño nombrado y por eso B duda entre ámbitos y entre RTE y RCO.",
+      "propuesta_regla": "El ámbito de 2.3 se decide por el daño nombrado en el fragmento. Una advertencia de «riesgos» sin daño nombrado se registra como 2.3.OTR con etiqueta «riesgo no especificado» (g según el verbo) o no se codifica. HUM exige mención explícita de supervivencia, extinción, catástrofe global o pérdida de control de la tecnología; la mera «autonomía» fija g (G3), no el ámbito."
+    },
+    {
+      "codigo": "1.2.GEO",
+      "tipo": "presencia",
+      "causa": "juicio_legitimo",
+      "alias": "N42418",
+      "a": "1.2.GEO v=D, voz FG, marca na; cita 'rechazó las peticiones para ralentizar el desarrollo de la IA y defendió que Estados Unidos debe mantener su liderazgo tecnológico frente a China'.",
+      "b": "No codifica 1.2.GEO.",
+      "diagnostico": "La rivalidad con China aparece como razón para no frenar, lo que se lee como motor de la expansión (A) o como mera justificación de una postura (B, que aplica «ante la duda, no codifiques»). Ambas lecturas son defendibles. Hay una inconsistencia interna en A: v=D con marca na pese al verbo «defendió». Además, A dudó de 1.2.ECO para la «carrera» entre OpenAI y Anthropic y ninguno la codificó; la frontera entre 1.1.CORP y 1.2.ECO para «carrera» o «competencia» no está explicada."
+    },
+    {
+      "codigo": "2.1.AGE",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N42418",
+      "a": "No codifica AGE.",
+      "b": "2.1.AGE v=-, voz FC; cita 'El código señala que sus modelos tienen que \"evitar desarrollar metas propias\" y \"comportamientos destinados a ocultar errores...\"'.",
+      "diagnostico": "El código de Microsoft construye a la IA como capaz de tener metas propias y de ocultar errores, pero como posibilidad a prevenir, no como atributo afirmado. La definición de AGE ('piensa', 'decide', 'quiere') no dice si cuenta la agencia hipotética ni qué valora v en este código.",
+      "propuesta_regla": "2.1.AGE se codifica también cuando el fragmento presenta como posibilidad real que el sistema desarrolle metas, intenciones o conductas propias (aunque sea para prevenirlo); v valora esa capacidad atribuida (- si se presenta como riesgo). No se codifica la mera mención de autonomía operativa («agentes autónomos») sin atribución de voluntad o motivación."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N42418",
+      "a": "3.3.ADO v=+, voz FG; Trump rechaza ralentizar y defiende mantener el liderazgo frente a China.",
+      "b": "No codifica 3.3.ADO ni LIB.",
+      "diagnostico": "El fragmento rechaza explícitamente una pausa y exhorta a mantener el liderazgo. El libro solo tiene LIB para el rechazo de la regulación; rechazar otra restricción (pausa, moratoria) no tiene casilla, y ADO ('invertir, impulsar') es la más cercana. En N78737, donde Trump solo desacredita el riesgo, ninguno codificó 3.3, de modo coherente.",
+      "propuesta_regla": "El rechazo explícito de una restricción (regulación, pausa, moratoria) se codifica 3.3.LIB; ampliar su definición a «se rechaza o descarta explícitamente regular o limitar la IA». Si el fragmento además exhorta a impulsar o acelerar («mantener el liderazgo»), agregar 3.3.ADO. Desacreditar un riesgo (2.5.ALA) sin pronunciarse sobre qué hacer no es 3.3."
+    },
+    {
+      "codigo": "3.3.PRO",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N74294",
+      "a": "3.3.PRO v=D, voz FC, alcance parcial; cita 'Amazon ha confirmado que ha retirado los títulos que \"violan nuestras normas de publicación\"'. Además codifica GOB.",
+      "b": "Solo 3.3.GOB con la política de Amazon sobre contenido generado por IA.",
+      "diagnostico": "Retirar títulos concretos es un acto de aplicación sobre un caso, motivado por desinformación y por violar normas, no una prohibición dirigida a la IA. La política general ya está recogida en GOB por ambos. El libro no distingue entre norma o política (codificable) y acto puntual de aplicación.",
+      "propuesta_regla": "Un acto de aplicación sobre un caso concreto (retirar, bloquear o sancionar un título, cuenta o usuario) no es 3.3.PRO; PRO exige una prohibición presentada como regla o medida general sobre un uso de la IA. La política que fundamenta el acto se codifica como GOB, CON o PRO según su contenido."
+    },
+    {
+      "codigo": "2.3.HUM / 2.3.SEG",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N78737",
+      "a": "Una sola entrada 2.3.SEG (G3, RTE, FC) para toda la enumeración de Amodei.",
+      "b": "2.3.HUM (G3, RTE) por «perder el control» y 2.3.SEG (G2, RMA, calidad 1) por ataques informáticos y bioterrorismo, con la misma cita.",
+      "diagnostico": "La frase enumera daños de ámbitos distintos (pérdida de control, ataques informáticos, bioterrorismo, problemas económicos). A los comprime en un SEG G3/RTE que mezcla la intensidad de la pérdida de control con un ámbito de uso malicioso; B desagrega, lo que refleja mejor el texto pero obliga a repetir cita. La sección 6 autoriza varios objetos en una frase solo para D1 y D2.",
+      "propuesta_regla": "Cuando una misma frase nombra daños de ámbitos distintos, se registra un 2.3 por ámbito, cada uno con su g y resp, reutilizando la cita (máximo 3 por frase). «Perder el control» explícito se codifica 2.3.HUM con G3 (resp RTE o la que corresponda); ataques informáticos y bioterrorismo, 2.3.SEG con resp RMA."
+    },
+    {
+      "codigo": "3.4.NES / 3.4.EMP",
+      "tipo": "otro",
+      "causa": "ambiguedad_libro",
+      "alias": "N78737",
+      "a": "3.4.NES, voz na, cita vacía (nadie nombrado para «bajar el ritmo»).",
+      "b": "3.4.EMP, voz FC, calidad 1; cita 'ha pedido “bajar el ritmo” de desarrollo de las capacidades de los modelos de IA'.",
+      "diagnostico": "El ejecutor no se nombra, pero la acción (frenar el desarrollo de modelos) apunta a quienes los desarrollan. El libro define NES como «prescripción sin sujeto» y a la vez lo lista como código por defecto con cita vacía (sección 5); no dice si el ejecutor puede inferirse de la acción o de quien la pide.",
+      "propuesta_regla": "3.4 se codifica con el actor que la acción nombrada implica necesariamente cuando el fragmento lo permite (desarrollar modelos = EMP; legislar = EST). 3.4.NES solo cuando ni el fragmento ni el verbo identifican al ejecutor. No se infiere el actor desde la identidad de quien emite la petición. 3.4.NES lleva cita del fragmento prescriptivo y deja de ser código por defecto (corregir principio 3 y sección 5)."
+    },
+    {
+      "codigo": "2.1.HER",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "alias": "N87943",
+      "a": "No codifica HER; solo 2.1.INN v=+ (calidad 2).",
+      "b": "2.1.HER v=D, voz P, con 'Una nueva iniciativa utiliza la inteligencia artificial y las secuencias de vídeo reales para traer de vuelta a la vida...'; 2.1.INN v=+ calidad 1 con duda.",
+      "diagnostico": "La bajada construye una relación instrumental clara (la IA como medio para un fin humano), pero el libro no dice si basta la sintaxis instrumental ('utiliza... para') ni cómo se separa HER de INN cuando el fragmento destaca una capacidad. B duda de INN con razón: «marivollosa» califica la obra, no la IA, y por 3.1 v valora el objeto del código.",
+      "propuesta_regla": "2.1.HER se codifica cuando el fragmento presenta la IA como medio para un fin humano mediante verbos o giros instrumentales («utiliza», «emplea», «se apoya en», «para») o términos como herramienta o asistente; sin valoración, v=D. Si el mismo fragmento destaca una capacidad o hito de la IA, agregar 2.1.INN. Un adjetivo que califica el producto (la obra) y no la IA no fija v en INN: v=D."
+    },
+    {
+      "codigo": "c2",
+      "tipo": "otro",
+      "causa": "juicio_legitimo",
+      "alias": "N77893",
+      "a": "c2 = generica.",
+      "b": "c2 = sistemas_especificos.",
+      "diagnostico": "La única mención sustantiva es 'plataforma que usa IA para licitaciones' (aplicación concreta, que favorece sistemas_especificos), mientras el titular habla de «inteligencia artificial» sin especificar (generica). Ambas lecturas son defendibles y el impacto es bajo, porque la nota es tangencial."
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N42418",
+      "etiqueta": "IA humanista subordinada",
+      "indicador": "2",
+      "definicion": "El carácter deseable de la IA se fija como primacía humana: las personas valen más que la IA y todo sistema fuera de control humano debe descartarse; es un criterio normativo, más que la instrumentalidad de HER.",
+      "cita": "Las personas importan más que la IA",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N42418",
+      "etiqueta": "Opacidad y engaño de sistemas",
+      "indicador": "2",
+      "definicion": "Se construye que los sistemas pueden comunicarse de modo incomprensible o encubrir sus errores (opacidad o engaño autónomo); no es falla técnica (LIM), ni antropomorfización (AGE), ni un ámbito de daño.",
+      "cita": "comportamientos destinados a ocultar errores o conductas indebidas de los sistemas",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N78737",
+      "etiqueta": "Alarma como operación política",
+      "indicador": "2",
+      "definicion": "El riesgo de la IA se presenta como bulo fabricado por actores políticos con intereses ajenos, equiparado al cambio climático o a la injerencia rusa; va más allá de cuestionar el alarmismo (2.5.ALA) al deslegitimar a quienes advierten.",
+      "cita": "trabajan para gente que no tiene los intereses de Estados Unidos en su cabeza",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N87943",
+      "etiqueta": "Resurrección digital del legado",
+      "indicador": "2",
+      "definicion": "La IA se presenta como medio para reanimar a una persona fallecida y su obra, construyendo continuidad cultural más allá del beneficio genérico de 2.2.CUL.",
+      "cita": "traer de vuelta a la vida al legendario pintor chino Li Kuchan",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "La sección 5 lista 3.4.NES como código por defecto con cita vacía, pero el principio 3 y la sección 4 lo excluyen de los defaults y lo condicionan a «prescripción sin sujeto»; tampoco se dice si los códigos con v=NA (3.4) llevan voz: A y B ponen P o FC en 3.4.EMP y «na» en 3.4.NES.",
+    "No hay regla para un código que aparece en varios fragmentos con v, voz o g distintos: la sección 6 manda registrar ambos fragmentos, pero el formato de la sección 8 muestra una entrada por código, y A y B lo resolvieron de forma opuesta en 3.3.CON y 2.3.SEG (N42418).",
+    "La definición de voz ('quién enuncia el fragmento') no cubre el estilo indirecto con verbos de habla o compromiso («se comprometió», «ha pedido», «agregó»), de modo que la misma construcción recibe P en un caso y FC en otro.",
+    "La regla de c1 se contradice: central es 'aparece en el titular o articula el argumento', pero secundaria es 'elemento importante, no el eje'. En N74294 (eje: desinformación sobre el rey) ambos codificadores dudaron entre central y secundaria y aplicaron «aparece en el titular».",
+    "3.3 mezcla dos ejes, el instrumento (REG/GOB) y el contenido de la restricción (CON/PRO): una misma medida (el código de Microsoft) recibe GOB+CON+PRO de ambos sin que el libro diga si es lo esperado, y B duda entre GOB y CON para la política de Amazon. Faltan además una casilla para el rechazo explícito de una pausa (LIB cubre solo regulación) y la distinción entre política general y acto puntual de aplicación.",
+    "c5 y seccion: contenido_patrocinado exige empresa y llamado comercial, por lo que un texto promocional anónimo de una iniciativa cultural o institucional (N87943, sección 'corporativo') no tiene casilla clara y ambos lo dejaron como noticia con duda; tampoco se aclara si el campo seccion del lote puede usarse, dado el principio 5 (ciego al medio)."
+  ]
+}

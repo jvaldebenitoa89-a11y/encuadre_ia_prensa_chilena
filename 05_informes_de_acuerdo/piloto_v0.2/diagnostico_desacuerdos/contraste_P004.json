@@ -1,0 +1,136 @@
+{
+  "lote": "P004",
+  "desacuerdos": [
+    {
+      "alias": "N70138",
+      "codigo": "3.3.ADA",
+      "tipo": "presencia",
+      "a": "3.3.NIN (alertar es el objetivo del evento, no una prescripción)",
+      "b": "3.3.ADA v + (más 3.4.NES)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Girardi dice que el objetivo del debate es 'alertar sobre todos estos aspectos para que sean las oportunidades las que ganen'. 3.3 pide exhortar una acción o presentar una medida, y ADA solo ejemplifica capacitar, reconvertir, alfabetizar; el libro no dice si sensibilizar o alertar cuenta como alfabetizar. B tomó la lectura amplia (y la declara como inferencia); A aplicó 'ante la duda, no codifiques'.",
+      "propuesta_regla": "3.3 exige una acción identificable (qué se hace o se debe hacer). Alertar, sensibilizar, debatir o 'plantear temas' como propósito de un evento o charla no es 3.3.ADA; solo lo es si la nota prescribe capacitar, alfabetizar o reconvertir a un grupo concreto. En caso contrario, 3.3.NIN (y sin 3.4)."
+    },
+    {
+      "alias": "N70138",
+      "codigo": "3.2.DEC",
+      "tipo": "presencia",
+      "a": "3.2.DEC (calidad 1)",
+      "b": "3.2.NEX",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "DEC se define como 'la dirección se presenta como objeto de decisión colectiva' sin ancla textual. A lo aplicó a 'alertar... para que ganen las oportunidades' y también a un congreso en N11667 (su duda admite 'sin posición sobre la IA'). B lo aplicó solo en N11667, donde hay 'acordar lineamientos'. Con la regla actual, DEC se dispara con cualquier evento o charla.",
+      "propuesta_regla": "3.2.DEC requiere una fórmula que presente la dirección o el uso de la IA como algo por decidir, acordar o definir colectivamente ('acordar lineamientos', 'debemos decidir cómo', 'depende de nosotros'). Que exista un evento, charla o debate sobre la IA no basta. Sin fórmula, 3.2.NEX."
+    },
+    {
+      "alias": "N19790",
+      "codigo": "1.1.CIE",
+      "tipo": "presencia",
+      "a": "No codifica (los investigadores usan la IA, no la impulsan)",
+      "b": "1.1.CIE v + escala global (calidad 1)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El equipo emplea modelos de lenguaje existentes y 'busca crear un sistema' para reconocer caracteres: es usuario y creador de una aplicación. La exclusión 'ser usuaria no es impulsora' existe solo en 1.1.CORP, y D1 habla del origen de la IA, no de aplicaciones. Ambas lecturas son defendibles con el texto del libro.",
+      "propuesta_regla": "D1 trata del origen o avance de la IA como tecnología. 1.1.CIE, CORP y EST solo si el texto atribuye al agente el surgimiento o avance de la tecnología, o de una capacidad presentada como avance de la IA misma. Crear, entrenar o lanzar una aplicación o producto con IA ya existente (proyecto de investigación, startup, función de un producto) no basta. La exclusión rige para los tres códigos."
+    },
+    {
+      "alias": "N43824",
+      "codigo": "1.1.CORP",
+      "tipo": "presencia",
+      "a": "No codifica",
+      "b": "1.1.CORP v D escala global (calidad 1, 'lectura mínima')",
+      "causa": "error_codificador",
+      "diagnostico": "'Apple estrenó resúmenes de noticias creados por inteligencia artificial' reporta el lanzamiento de una función; no atribuye a Apple el desarrollo ni el impulso de la IA. El libro ya separa producto de origen (E de 1.3.IRR) y excluye a la usuaria de IA en CORP. B tampoco aplicó CORP a la startup Pignus (N26818), así que además es inconsistente consigo misma."
+    },
+    {
+      "alias": "N13784",
+      "codigo": "2.3.DEM",
+      "tipo": "mod",
+      "a": "resp RCO (G1)",
+      "b": "resp RTE (G1)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El daño tiene tres causas candidatas: la tecnología hiperrealista, los creadores (artistas, sin intención maliciosa) y la plataforma que no retira el video. 'resp' no da precedencia ni dice dónde cae un uso artístico. El titular citado nombra 'las políticas de Facebook', lo que favorece RCO; B lo leyó como propiedad de la tecnología.",
+      "propuesta_regla": "'resp' se decide con el fragmento citado: RMA si un actor usa la IA para dañar con intención (un uso artístico o experimental no lo es); RCO si el daño se atribuye a decisiones, políticas u omisiones de una empresa o plataforma; RES si a la falta de regulación; RTE solo si atribuye el daño a una propiedad de la tecnología (realismo, autonomía, errores) y el fragmento no nombra actor alguno; RDI si no hay atribución."
+    },
+    {
+      "alias": "N19790",
+      "codigo": "2.2.CUL",
+      "tipo": "voz",
+      "a": "voz P (cita de la frase del periodista: 'Este avance... podría tener implicaciones...')",
+      "b": "voz FE (cita de Shi Xiaodong: 'La inteligencia artificial tiene el potencial de transformar...')",
+      "causa": "juicio_legitimo",
+      "diagnostico": "Ambos fragmentos sostienen la oportunidad cultural; la voz difiere solo porque cada codificador eligió otro tramo (A y B intercambiaron además las citas de 2.1.INN y 2.2.CUL). Como se permite una sola cita por código y no se ordena la prioridad, las dos elecciones son defendibles.",
+      "propuesta_regla": "Opcional: si dos fragmentos sustentan con claridad el mismo código con voces distintas (fuente atribuida y periodista), registra dos entradas del mismo código, una por voz."
+    },
+    {
+      "alias": "N73960,N13784,N26818,N70138",
+      "codigo": "calidad",
+      "tipo": "otro",
+      "a": "calidad 2 en casi todas las citas",
+      "b": "calidad 1 con la misma cita (N73960 2.3.SEG, N13784 2.3.DEM, N26818 2.2.LAB; también 1.1.DIF y 2.2.OTR en N70138)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro define 1 'débil o ambigua' y 2 'clara' sin criterio observable. En N73960 la cita (el titular) no nombra la IA, y en N26818 habla de 'vida cotidiana' sin llegar al trabajo: B puntúa con más rigor. A usa 2 casi siempre, por lo que la variable no discrimina.",
+      "propuesta_regla": "calidad 1: leída sola, la cita no basta (no nombra la IA o el objeto, o el código depende de otra frase de la nota). 2: leída sola muestra el objeto y el sentido del código. 3: además es autosuficiente, no admite otra lectura y es la formulación más clara de la nota (como máximo una por nota)."
+    },
+    {
+      "alias": "N11667,N26818,N13784",
+      "codigo": "c4",
+      "tipo": "otro",
+      "a": "UNESCO; Sernageomin; Instagram",
+      "b": "Guido Girardi; Corfo; Mark Zuckerberg",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "'Actores más relevantes para el discurso sobre la IA' no distingue entre quien habla, quien actúa y quien solo aparece como patrocinador, proveedor de datos o financista (UNESCO, Sernageomin, Corfo). Tampoco dice si una plataforma, su matriz y su dueño cuentan por separado (Instagram, Facebook, Zuckerberg). El tercer cupo difiere en 3 de 8 notas.",
+      "propuesta_regla": "c4: hasta 3 actores, priorizando (1) quien desarrolla, usa, regula o sufre la IA según la nota y (2) la fuente cuya valoración sustenta códigos. Excluye patrocinadores, sedes, financistas y proveedores de datos. No repitas una plataforma y su matriz o dueño; usa el nombre con que la nota la trata. Deja vacío el cupo si no hay otro actor relevante."
+    },
+    {
+      "alias": "N19790",
+      "codigo": "3.1.EST",
+      "tipo": "mod",
+      "a": "ambito: 'comprensión histórica y humanidades'",
+      "b": "ambito: 'cultura e historia'",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "mod.ambito (y mod.etiqueta en 2.2.OTR) es texto libre sin vocabulario, así que dos codificadores que leen lo mismo producen etiquetas no comparables. La presencia y la valoración coinciden.",
+      "propuesta_regla": "mod.ambito toma uno de los valores de c3 (educacion, trabajo_economia, politica_estado, salud_ciencia, seguridad_justicia, cultura_medios, otro). mod.etiqueta solo en 2.2.OTR y 2.3.OTR, máximo 3 palabras en minúsculas."
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N43824",
+      "etiqueta": "Alineamiento político-corporativo",
+      "indicador": "1",
+      "definicion": "Los movimientos de las tecnológicas, incluidos lanzamientos con IA (chatbots en WhatsApp, resúmenes de Apple), se explican por la cercanía al poder político y no por mercado, ciencia ni necesidad social.",
+      "cita": "tendrían que ver con una sola cosa: el regreso de Donald Trump a la Casa Blanca.",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N26818",
+      "etiqueta": "Evaluación conductual del trabajador",
+      "indicador": "2",
+      "definicion": "La IA se presenta como dispositivo para medir y corregir las conductas del trabajador ('capital humano', 'brechas conductuales'), con la vigilancia laboral normalizada y sin tensión.",
+      "cita": "diseñados para analizar el comportamiento de la persona, evaluar las competencias y conductas que todo trabajador debe poseer",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N70138",
+      "etiqueta": "Humanismo y autonomía",
+      "indicador": "3",
+      "definicion": "El debate sobre la IA se formula como defensa de lo humano y del derecho de decisión del usuario, no como regulación de una tecnología. Se solapa en parte con 2.3.PRI y 2.3.HUM, pero aquí es el criterio de horizonte, no un riesgo.",
+      "cita": "es una discusión profundamente humanista en el objetivo de preservar al ser humano y proteger su derecho de decisión como usuario",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N19790",
+      "etiqueta": "IA como rescatista cultural",
+      "indicador": "2",
+      "definicion": "La IA aparece como salvadora de un patrimonio ilegible y reveladora de 'conocimiento oculto', con retórica heroica. Excede la herramienta (2.1.HER) y podría absorberse en 2.1.AGE si se admiten metáforas de agencia. Confianza media.",
+      "cita": "La inteligencia artificial al rescate de los antiguos escritos chinos",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "D1 define el origen de la IA como tecnología, pero las notas tratan de aplicaciones y productos (Pignus, función de Apple, proyecto de Xiamen). El libro no dice si crear o lanzar una aplicación cuenta como impulso (1.1), ni si el propósito de un producto ('evitar accidentes', 'aumentar la productividad') es motor 1.2.NEC o 2.2.ECO; ambos codificadores lo omitieron en N26818.",
+    "3.3 no aclara si la acción debe dirigirse a la IA o basta con que responda a un fenómeno donde la IA es el medio. Ambos descartaron las acciones de la PDI (N73960) y la educación financiera (N12591), pero ambos codificaron 3.3.GOB para la política de Instagram contra la desinformación en general (N13784), sin criterio común.",
+    "2.2 no tiene categoría para una oportunidad general sin ámbito (ambos usaron 2.2.OTR 'oportunidad general' en N70138). Además, 'g' mezcla gravedad y modalidad: 'riesgos existenciales' es G1 por el sustantivo 'riesgo' y por 'reducir los riesgos', y G2 por gravedad; ambos eligieron G2 y B lo marcó como duda.",
+    "No está dicho si un mismo código puede repetirse con fragmentos de voz o intensidad distintas. La sección 6 lo sugiere (titular vs. cuerpo), pero los principios y la sección 8 no lo permiten ni lo prohíben; afecta a N43824 (frase de P con G2 y advertencias de expertos con G1) y a N19790 (voz P vs. FE).",
+    "El modificador 'escala' de 1.1 no tiene definición. B marcó 'global' para una universidad china y no queda claro si describe la ubicación del agente o el alcance del fenómeno; mod.ambito y mod.etiqueta son texto libre sin vocabulario.",
+    "La regla de c1 para la IA solo en la bajada no dice qué cita usar cuando el titular no nombra la IA ni cómo tratar textos del scraper con frases desordenadas (N73960: el texto no nombra la IA y ambos citaron un titular sin ella). A y B no registraron emergentes en este lote, así que no hay información sobre su umbral."
+  ]
+}

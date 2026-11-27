@@ -1,0 +1,163 @@
+{
+  "lote": "P012",
+  "desacuerdos": [
+    {
+      "codigo": "2.3.DEM",
+      "alias": "N14406",
+      "tipo": "mod",
+      "causa": "ambiguedad_libro",
+      "a": "resp=RMA",
+      "b": "resp=RDI",
+      "diagnostico": "El texto habla de 'posibles engaños o difamación' y de la facilidad para expandir noticias falsas, sin nombrar a quien engaña. El libro define RMA como 'usos maliciosos' y RDI como 'difuso', pero no dice si basta un uso malicioso implícito; ambos codificadores lo anotaron como duda.",
+      "propuesta_regla": "RMA solo si el fragmento nombra o describe a quien usa la IA con intención dañina (delincuentes, estafadores, actores hostiles). Si el daño surge de la facilidad técnica o de engaños posibles sin agente descrito, codifica RDI."
+    },
+    {
+      "codigo": "2.1.INN",
+      "alias": "N14406",
+      "tipo": "v",
+      "causa": "ambiguedad_libro",
+      "a": "v=D (cita definicional: 'inteligencia artificial sofisticada')",
+      "b": "v=+ (cita: 'bastante realista')",
+      "diagnostico": "Mismo código con fragmentos distintos. A tomó la definición, donde 'sofisticada' es un adjetivo incidental; B tomó un juicio explícito de desempeño. El libro dice que los adjetivos son marca valorativa (3.1) pero no distingue el adjetivo incidental del juicio sobre la capacidad, ni qué hacer cuando un código tiene fragmentos con v distinta.",
+      "propuesta_regla": "Cada código aparece una sola vez por nota. Si varios fragmentos sustentan el mismo código con distinta v, la entrada usa el fragmento con marca explícita (adjetivo o verbo de logro aplicado a la capacidad de la IA); un adjetivo dentro de una definición técnica no cuenta como marca. D solo si ningún fragmento tiene marca."
+    },
+    {
+      "codigo": "1.1.DIF",
+      "alias": "N32378",
+      "tipo": "presencia",
+      "causa": "error_codificador",
+      "a": "no codificado (por duda)",
+      "b": "1.1.DIF, v=D",
+      "diagnostico": "'gracias al avance de la Inteligencia Artificial' y 'auge de la IA' enuncian el avance sin sujeto, que es la fórmula literal de 1.1.DIF ('avanza', 'llegó'). A lo omitió aplicando 'ante la duda no codifiques', pero la regla de presencia se cumple; B lo codificó con calidad 1 y lo declaró marginal."
+    },
+    {
+      "codigo": "1.1.CIE",
+      "alias": "N75865",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "1.1.CORP y 1.1.CIE con la misma cita (calidad 2 y 1)",
+      "b": "solo 1.1.CORP",
+      "diagnostico": "La cita dice que 26 de los 30 principales solicitantes de patentes son empresas y 'los otros cuatro' universidades. El libro no dice si una cifra de titularidad atribuye impulso, ni si un agente minoritario dentro de la misma cifra merece código. A marcó calidad 1 en CIE, señal de duda.",
+      "propuesta_regla": "Una estadística de titularidad (patentes, inversión, publicaciones) sustenta un 1.1 solo para el agente que el texto presenta como principal o destacado. Un agente minoritario de la misma cifra se codifica solo si otro fragmento lo destaca por sí mismo."
+    },
+    {
+      "codigo": "2.1.REV",
+      "alias": "N75865",
+      "tipo": "presencia",
+      "causa": "ambiguedad_libro",
+      "a": "no codificado",
+      "b": "2.1.REV, v=D ('Las ramificaciones de la IA ... son de gran alcance')",
+      "diagnostico": "'De gran alcance' no nombra un cambio profundo, y la nota ya recoge la transformación futura en 3.1.EST (ambos coinciden). El libro no traza la frontera entre 2.1.REV (presente) y 3.1.EST (proyección) ni exige un término explícito de cambio.",
+      "propuesta_regla": "2.1.REV exige una fórmula explícita de cambio profundo atribuido a la IA en presente ('revolución', 'cambio de época', 'cambia las reglas del juego'); 'de gran alcance' o 'ramificaciones' sin nombrar el cambio no basta. La transformación enunciada en futuro ('transformarán nuestro quehacer') va en 3.1.EST; ambos códigos solo se aplican con fragmentos distintos."
+    },
+    {
+      "codigo": "2.3.SEG vs 2.3.OTR",
+      "alias": "N94566",
+      "tipo": "presencia",
+      "causa": "juicio_legitimo",
+      "a": "2.3.SEG (G2, RES)",
+      "b": "2.3.OTR, etiqueta 'carrera tecnologica peligrosa' (G2, RES)",
+      "diagnostico": "Ambos leen el mismo daño: la carrera Washington-Beijing por sistemas 'más peligrosos'. El texto no nombra un daño concreto (militar, delito), solo peligro genérico entre rivales estatales. SEG por rivalidad de seguridad y OTR por falta de daño específico son lecturas defendibles; coinciden en G2 y RES."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N29468",
+      "tipo": "v",
+      "causa": "ambiguedad_libro",
+      "a": "v=D",
+      "b": "v=+",
+      "diagnostico": "El plan se presenta con objetivo declarado ('tiene el objetivo de fortalecer'), promesa de Vergara ('El 100% de los municipios tendrá vehículos...') y aval de la alcaldesa. A reportó solo el lanzamiento (D); B lo leyó como defensa (+). El libro lista 'promesas' como marca, pero no dice si el objetivo declarado de una medida o la promesa de su promotor la valora.",
+      "propuesta_regla": "En 3.3, un objetivo declarado ('busca', 'tiene el objetivo de') o el mero anuncio es D. La medida es + cuando el fragmento incluye aval explícito: adjetivo favorable, promesa de resultado en voz de su promotor o fuente que la defiende. Con varios fragmentos rige una entrada por código y gana el de marca explícita."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N29468",
+      "tipo": "voz",
+      "causa": "error_codificador",
+      "a": "voz=P",
+      "b": "voz=FG",
+      "diagnostico": "B asigna FG a una cita que es narración del periodista ('el lanzamiento del Plan de Patrullaje... utilizando las herramientas de la inteligencia artificial'), no palabras de Vergara. La regla de voz es clara: voz es quien enuncia el fragmento citado."
+    },
+    {
+      "codigo": "2.2.EST",
+      "alias": "N29468",
+      "tipo": "voz",
+      "causa": "juicio_legitimo",
+      "a": "voz=FG (alcaldesa Ríos: 'es un aporte contar con nueva tecnología...')",
+      "b": "voz=P ('la inteligencia artificial podría predecir la hora...')",
+      "diagnostico": "Cada codificador es coherente con su fragmento. A cita una valoración entre comillas de una fuente política, aunque habla de 'nueva tecnología' sin nombrar la IA; B cita la capacidad predictiva en voz del periodista. Ambas lecturas sostienen 2.2.EST con v=+."
+    },
+    {
+      "codigo": "citas de 3.2 / 3.3 / 3.4 / 2.3.SEG",
+      "alias": "N96708; N75865; N36943",
+      "tipo": "otro",
+      "causa": "ambiguedad_libro",
+      "a": "N96708 3.3.GOB cita 'La ONU es el único organismo verdaderamente global...' (igual que 3.4.INT); N36943 cita el titular",
+      "b": "N96708 3.3.GOB cita 'el Pacto Mundial Digital demuestra...'; N36943 cita la oración inicial, más larga",
+      "diagnostico": "Mismos códigos con citas distintas: 3.2.DEC y 3.3.GOB en N96708, 3.4.INT en N75865 y 2.3.SEG en N36943. La sección 5 pide el tramo mínimo, pero no dice qué debe mostrar la cita de los códigos estructurales ni qué elegir entre titular y cuerpo. A cita para 3.3.GOB al actor, no la medida.",
+      "propuesta_regla": "La cita de 3.2 y 3.3 debe contener la acción o decisión (el verbo de la medida), no solo al actor; la de 3.4 debe nombrar a quien ejecuta. Si titular y cuerpo sustentan el código por igual, cita el titular por ser el tramo mínimo. No reutilices la cita de 3.4 en 3.3 salvo que contenga la medida."
+    },
+    {
+      "codigo": "c4",
+      "alias": "N45886; N32378; N36943; N94566; N29468",
+      "tipo": "otro",
+      "causa": "ambiguedad_libro",
+      "a": "p. ej. 'Municipalidad de Vitacura', 'Gobierno de Estados Unidos', 'Agencia Nacional de Investigación de Delitos Cibernéticos de Pakistán', 'Emilia Ríos'",
+      "b": "p. ej. omite la Municipalidad; 'Wall Street', 'NCCIA', 'Estados Unidos' y 'China', 'Municipios'",
+      "diagnostico": "En 5 de 8 notas difieren los actores nombrados: sigla frente a nombre oficial, 'Estados Unidos' frente a 'Gobierno de Estados Unidos', mercados o colectivos tomados como actor ('Wall Street', 'Municipios') y personas citadas frente a instituciones. Sin criterio de normalización, c4 no es comparable entre codificadores.",
+      "propuesta_regla": "c4: nombre oficial completo, sin siglas; 'Gobierno de X' cuando actúa el gobierno; solo actores con rol activo en el discurso sobre la IA (no mercados ni colectivos genéricos como 'Wall Street' o 'Municipios'); una persona solo si habla o decide sobre la IA; orden por relevancia."
+    },
+    {
+      "codigo": "c2",
+      "alias": "N75865",
+      "tipo": "otro",
+      "causa": "juicio_legitimo",
+      "a": "['generica', 'sistemas_especificos']",
+      "b": "['generica']",
+      "diagnostico": "'Automóviles sin conductor' y 'traducción automática' aparecen como ejemplos de pasada. Agregar sistemas_especificos o no hacerlo es defendible, porque c2 admite 'uno o más' sin fijar un umbral."
+    },
+    {
+      "codigo": "emergente (suma positiva)",
+      "alias": "N96708",
+      "tipo": "otro",
+      "causa": "juicio_legitimo",
+      "a": "sin emergentes",
+      "b": "'IA como suma positiva'",
+      "diagnostico": "El fragmento combina 2.2 (beneficio para todos) y 3.2.DEC (decisión colectiva); solo B lo registró como emergente. Hay un matiz que ningún código recoge (la IA como cooperación de suma positiva, contrastada con el clima), pero su cercanía a 2.2 hace defendible no registrarlo."
+    }
+  ],
+  "emergentes": [
+    {
+      "etiqueta": "IA como suma positiva",
+      "indicador": "2",
+      "definicion": "La IA se presenta como asunto transnacional cuya política beneficia a todos, a diferencia del clima (v +, voz P).",
+      "origen": "B",
+      "alias": "N96708",
+      "cita": "la IA es la rara cuestión transnacional cuya política es de suma positiva."
+    },
+    {
+      "etiqueta": "Reto global de acción colectiva",
+      "indicador": "2",
+      "definicion": "La IA se enmarca como problema transnacional que ningún Estado resuelve solo y que exige provisión global de bienes públicos; no es solo riesgo (2.3) ni solo gobernanza (3.3). Aparece también en N96708 ('uno de los mayores retos transnacionales del mundo').",
+      "origen": "adjudicador",
+      "alias": "N94566",
+      "cita": "desde la amenaza que puede representar la Inteligencia Artificial hasta las duras realidades de un planeta que se va calentando aceleradamente"
+    },
+    {
+      "etiqueta": "Resurrección digital de personas",
+      "indicador": "2",
+      "definicion": "La IA recrea la imagen y la voz de personas fallecidas o las rejuvenece, con 'dilemas éticos aún por zanjar'; ni 2.2.CUL ni 2.3.DEM recogen la suplantación de identidad.",
+      "origen": "adjudicador",
+      "alias": "N14406",
+      "cita": "producciones del cine y la televisión han utilizado la inteligencia artificial para crear a fallecidos actores o simplemente para rejuvenecerlos."
+    }
+  ],
+  "vacios_del_libro": [
+    "El libro no dice si un mismo código puede registrarse más de una vez por nota cuando los fragmentos tienen distinta v; la sección 6 ('registra ambos fragmentos con sus propios v') contradice el formato JSON, que supone una entrada por código (N14406 2.1.INN, N29468 3.3.ADO).",
+    "La valoración 'implícita' choca con 3.1 paso 1 ('no infieras la valoración desde el tema'): ambos codificadores pusieron 2.3.SEG con v='-' implícita en N36943, una nota de crimen sin marca verbal; falta una regla para usos delictivos donde la IA es solo instrumento y el daño es del usuario.",
+    "Falta la frontera entre 2.1.REV (cambio profundo en presente) y 3.1.EST (transformación proyectada). Además la regla 'daño futuro es D2' no cubre beneficios ni transformaciones futuras: en N96708 ('debería catalizar oportunidades', 'esta oportunidad fomentará una mayor divergencia') ambos dejaron 3.1.NIN.",
+    "3.3 no tiene código para producir conocimiento o evidencia común (base fáctica de la OMPI, Grupo Científico Internacional): ambos forzaron 3.3.GOB con duda y mencionaron ADA o NIN. Tampoco hay criterio para la prescripción implícita por contraste ('en vez de colaborar...', N94566), que ambos dejaron en 3.3.NIN.",
+    "No hay regla de solapamiento entre 2.1.HER y 2.2.* ni para enumeraciones de ámbitos: ningún codificador usó 2.1.HER pese a 'herramientas de la inteligencia artificial' en N29468, y en N96708 ambos codificaron tres 2.2 de una frase y omitieron el clima (2.2.OTR).",
+    "1.1.DIF no tiene umbral frente a 1.3.SIN ('la nota no aborda el origen') cuando 'avance' o 'auge' aparece como causa de otro hecho, y no se dice cuándo una estadística de titularidad (patentes) atribuye impulso a un agente (N32378, N75865)."
+  ]
+}

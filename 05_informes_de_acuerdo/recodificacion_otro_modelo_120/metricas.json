@@ -1,0 +1,225 @@
+{
+ "c1_A": {
+  "n": 100,
+  "acuerdo": 0.9,
+  "kappa": 0.726027397260274,
+  "alpha": 0.7272478070175439,
+  "tabla": {
+   "central": {
+    "central": 71,
+    "secundaria": 4
+   },
+   "secundaria": {
+    "central": 6,
+    "secundaria": 19
+   }
+  }
+ },
+ "c1_nueva_B": {
+  "tangencial": 14,
+  "secundaria": 6
+ },
+ "c1_nueva_todas": {
+  "central": 75,
+  "secundaria": 31,
+  "tangencial": 14
+ },
+ "alguna_nota_con_codigo": {
+  "acuerdo": 0.9666666666666667,
+  "kappa": 0.8695652173913043,
+  "tabla": {
+   "0": {
+    "0": 16,
+    "1": 0
+   },
+   "1": {
+    "0": 4,
+    "1": 100
+   }
+  }
+ },
+ "presencia_codigo": {
+  "celdas": 8280,
+  "ambos": 455,
+  "solo_original": 61,
+  "solo_nueva": 164,
+  "ninguno": 7600,
+  "dice": 0.801762114537445,
+  "jaccard": 0.6691176470588235,
+  "precision_nueva_vs_original": 0.7350565428109854,
+  "recall_nueva_vs_original": 0.8817829457364341,
+  "kappa": 0.7873042925487316
+ },
+ "presencia_codigo_A": {
+  "ambos": 455,
+  "solo_original": 61,
+  "solo_nueva": 157,
+  "dice": 0.8067375886524822,
+  "jaccard": 0.6760772659732541,
+  "kappa": 0.7896699151632299
+ },
+ "dice_por_nota_mediana_A": 0.8054054054054054,
+ "dice_por_nota_media_A": 0.7874780930686025,
+ "comunes": {
+  "pares_nota_codigo": 455,
+  "con_entradas_duplicadas": 19,
+  "sin_valoracion_en_ambas_excluidas_de_v": 26
+ },
+ "v_comunes": {
+  "n": 379,
+  "acuerdo": 0.8680738786279684,
+  "kappa": 0.7999894453533167,
+  "alpha": 0.8002174647411536,
+  "tabla": {
+   "+": {
+    "+": 130,
+    "-": 0,
+    "A": 1,
+    "C": 1,
+    "D": 19
+   },
+   "-": {
+    "+": 0,
+    "-": 80,
+    "A": 0,
+    "C": 0,
+    "D": 6
+   },
+   "A": {
+    "+": 1,
+    "-": 0,
+    "A": 2,
+    "C": 0,
+    "D": 0
+   },
+   "D": {
+    "+": 13,
+    "-": 6,
+    "A": 3,
+    "C": 0,
+    "D": 117
+   }
+  }
+ },
+ "polaridad_comunes": {
+  "n": 379,
+  "acuerdo": 0.8680738786279684,
+  "kappa": 0.7999831120305673,
+  "alpha": 0.8002079737340786
+ },
+ "voz_comunes": {
+  "n": 455,
+  "acuerdo": 0.8285714285714286,
+  "kappa": 0.7483621203097084,
+  "alpha": 0.7483897754734858,
+  "tabla": {
+   "FC": {
+    "FC": 52,
+    "FE": 4,
+    "FG": 0,
+    "FI": 0,
+    "FS": 0,
+    "P": 5
+   },
+   "FE": {
+    "FC": 1,
+    "FE": 73,
+    "FG": 0,
+    "FI": 0,
+    "FS": 1,
+    "P": 7
+   },
+   "FG": {
+    "FC": 0,
+    "FE": 1,
+    "FG": 23,
+    "FI": 0,
+    "FS": 11,
+    "P": 3
+   },
+   "FI": {
+    "FC": 0,
+    "FE": 1,
+    "FG": 1,
+    "FI": 2,
+    "FS": 0,
+    "P": 0
+   },
+   "FM": {
+    "FC": 0,
+    "FE": 0,
+    "FG": 1,
+    "FI": 0,
+    "FS": 0,
+    "P": 0
+   },
+   "FS": {
+    "FC": 0,
+    "FE": 11,
+    "FG": 0,
+    "FI": 2,
+    "FS": 22,
+    "P": 1
+   },
+   "P": {
+    "FC": 15,
+    "FE": 8,
+    "FG": 3,
+    "FI": 2,
+    "FS": 0,
+    "P": 205
+   }
+  }
+ },
+ "totales": {
+  "codigos_originales": 529,
+  "pares_nota_codigo_originales": 516,
+  "codigos_nueva_sustantivos": 633,
+  "pares_nota_codigo_nueva": 619,
+  "emergentes_nueva": 29,
+  "notas_central_nueva": 75,
+  "notas_secundaria_nueva": 31,
+  "notas_tangencial_nueva": 14
+ },
+ "marca_nueva": {
+  "explicita": 323,
+  "na": 308,
+  "implicita": 2
+ },
+ "calidad_nueva": {
+  "2": 457,
+  "1": 140,
+  "3": 36
+ },
+ "calidad_original": {
+  "2": 386,
+  "1": 100,
+  "3": 43
+ },
+ "c5_nueva": {
+  "noticia": 88,
+  "columna_opinion": 11,
+  "reportaje": 7,
+  "contenido_patrocinado": 6,
+  "otro": 5,
+  "entrevista": 3
+ },
+ "por_medio_dice": {
+  "count": {
+   "BioBioChile": 10,
+   "CNN Chile": 12,
+   "Cooperativa": 23,
+   "Emol": 15,
+   "La Tercera": 36,
+   "T13": 4
+  },
+  "mean": {
+   "BioBioChile": 0.838,
+   "CNN Chile": 0.765,
+   "Cooperativa": 0.799,
+   "Emol": 0.76,
+   "La Tercera": 0.773,
+   "T13": 0.894
+  }
+ }
+}

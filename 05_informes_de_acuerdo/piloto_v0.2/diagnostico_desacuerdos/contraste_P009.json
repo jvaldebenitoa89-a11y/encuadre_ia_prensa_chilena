@@ -1,0 +1,195 @@
+{
+  "lote": "P009",
+  "desacuerdos": [
+    {
+      "codigo": "3.4.NES",
+      "alias": "N33475, N57650",
+      "tipo": "presencia",
+      "a": "A agrega 3.4.NES (sin cita) junto a 3.4.EST en N33475 y N57650.",
+      "b": "B no usa 3.4.NES en ninguna nota.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La sección 4 limita NES a 'prescripción sin sujeto'; la sección 5 lo lista entre los códigos por defecto con cita vacía. A lo trató como relleno aunque ya había un actor explícito.",
+      "propuesta_regla": "3.4.NES se codifica solo si hay un 3.3 distinto de 3.3.NIN y ningún actor ejecutor identificable en la nota; es excluyente con el resto de 3.4. No es código por defecto: eliminarlo de la lista de la sección 5 (si no hay 3.3 no hay 3.4)."
+    },
+    {
+      "codigo": "3.4.EMP / 3.4.EST",
+      "alias": "N57650, N33475",
+      "tipo": "presencia",
+      "a": "N57650: 3.4.EST (opinión de IBM sobre regulación) + NES. N33475: 3.4.EST + NES.",
+      "b": "N57650: 3.4.EMP (IBM 'lo hemos estado impulsando') + 3.4.EST (legisladores). N33475: 3.4.EST + 3.4.EMP (empresas acuerdan publicar políticas).",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "3.4 no está ligado a un 3.3 concreto y 'quien debe ejecutar' no distingue entre quien ya actuó (IBM, empresas que acordaron) y quien debe actuar (legisladores, fabricantes). Cada codificador usó un criterio distinto y B asigna EMP a la acción pasada de la entrevistada.",
+      "propuesta_regla": "3.4 lleva una entrada por actor distinto que el texto designa como ejecutor de alguno de los 3.3 de la nota (quien debe legislar, adoptar, supervisar, o quien ejecutó la medida si esta es reportada), citando la frase que lo vincula a la acción. Una acción propia narrada que no es la medida prescrita o reportada no genera 3.4."
+    },
+    {
+      "codigo": "3.3.PRO / 3.3.REG",
+      "alias": "N23935",
+      "tipo": "presencia",
+      "a": "3.3.PRO (v=A, alcance parcial) para la directiva que suspende el acceso de extranjeros; no codifica REG.",
+      "b": "3.3.REG (v=A) para la misma directiva; no codifica PRO.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La directiva es a la vez norma estatal vinculante (REG) y suspensión de un uso (PRO). El libro pone REG en 'ordenamiento' y PRO en 'restricción' sin decir si se excluyen. A además descartó REG porque la columna objeta la palabra 'regulación' (lectura de léxico, contra el principio 1).",
+      "propuesta_regla": "Una medida se codifica por su contenido dominante: si prohíbe, veta, suspende o detiene, 3.3.PRO (con alcance); si limita, condiciona o supervisa, 3.3.CON; 3.3.REG se reserva para marcos normativos o de fiscalización generales sin contenido restrictivo específico. REG y PRO/CON no se aplican a la misma medida salvo que el texto describa dos medidas distintas."
+    },
+    {
+      "codigo": "3.3.CON",
+      "alias": "N23935",
+      "tipo": "v",
+      "a": "v=+ con cita que termina en 'puede ser defendible, incluso valiosa'.",
+      "b": "v=A con la cita ampliada a 'Pero también es posicionamiento'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La sección 5 pide el tramo mínimo y la sección 6 dice 'valora lo que construye el fragmento citado', por lo que v depende de dónde corte cada codificador. El contrapunto está en la oración contigua y el párrafo afirma ambas valencias sobre la medida (límites de uso que se impone Anthropic).",
+      "propuesta_regla": "v se decide sobre el pasaje valorativo completo (la oración y su contrapunto inmediato, dentro de las 50 palabras) y la cita debe incluir ambos tramos. Si se afirman ambas valencias sobre la medida, v=A (C si hay condición explícita). Los límites de uso que una empresa se impone se codifican 3.3.CON; 3.3.GOB solo si se presentan como política, estándar o acuerdo."
+    },
+    {
+      "codigo": "2.3.SEG",
+      "alias": "N23935",
+      "tipo": "v",
+      "a": "v=-, G1, resp=RTE, citando 'puede ser un riesgo genuino'.",
+      "b": "v=C, G1, resp=RMA, citando el pasaje de doble uso ('según quién lo use').",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Mismo pasaje de doble uso: A valora el tramo unilateral y B el tramo con condición explícita, que por 3.1 paso 3 corresponde a C. En resp, el libro no dice a quién atribuir el daño cuando una capacidad de doble uso depende de quién la usa (RTE, RMA o RDI).",
+      "propuesta_regla": "Si el texto afirma beneficio y daño de la misma capacidad y los hace depender de quién la usa, 2.3.* lleva v=C y se agrega 2.4.USO. resp=RMA si el daño proviene de usos hostiles; RDI si no se nombra quién; RTE solo si el daño se atribuye al comportamiento, fallas o autonomía de la tecnología, no a su capacidad."
+    },
+    {
+      "codigo": "2.3.DEM",
+      "alias": "N23935",
+      "tipo": "presencia",
+      "a": "No codifica 2.3.DEM (solo 2.3.DES por acceso desigual).",
+      "b": "Codifica 2.3.DEM (G2, RES) por opacidad de las decisiones a medida que la IA se securitiza.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El daño (opacidad democrática) se atribuye a la securitización estatal de la IA, no a la tecnología. 2.3 exige 'daño atribuido a la IA' y excluye hechos adversos sin vínculo explícito, pero no dice si cuentan los daños derivados de la respuesta política a la IA. B mismo declara aplicación moderada.",
+      "propuesta_regla": "2.3 se codifica cuando el texto liga el daño, con un vínculo causal verbalizado, al despliegue o gobierno de la IA, aunque el agente inmediato sea el Estado o una empresa (se registra en resp: RES o RCO). Un daño que existiría igual sin IA o sin vínculo verbalizado no se codifica."
+    },
+    {
+      "codigo": "2.1.INN",
+      "alias": "N23935",
+      "tipo": "voz",
+      "a": "v=D, voz=P: 'En términos técnicos, era avance de frontera...'.",
+      "b": "v=+, voz=FC: 'Lo presentó como un salto...' (la presentación de Anthropic).",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro no regula el discurso referido: quién es voz cuando el columnista relata cómo una empresa presenta su producto. A y B divergen en voz y v, y ambos usan FC para el 2.3.PRI referido en la misma columna, es decir, el criterio no es estable.",
+      "propuesta_regla": "Si la oración atribuye la valoración con verbos de presentación o dicción ('lo presentó como', 'según X', 'desde su punto de vista'), voz es el tipo de ese sujeto y v refleja la marca que él emite. Si el columnista afirma sin atribuir, voz=P. Si el columnista toma distancia o contrasta, registrar además su propia valoración con voz=P."
+    },
+    {
+      "codigo": "3.3.ADA / 3.3.ADO",
+      "alias": "N61032",
+      "tipo": "presencia",
+      "a": "3.3.ADO (colaboración de cuatro universidades para una 'oferta más potente'); sin ADA.",
+      "b": "3.3.ADO (fomento de la ministra) + 3.3.ADA (cita con 'capacitación' del doctorado).",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "ADA lista 'capacitar' pero no distingue formar especialistas que desarrollen IA (impulso) de preparar a la población para convivir con ella. B activó ADA por la palabra 'capacitación' (principio 1) y lo declara como duda.",
+      "propuesta_regla": "Formar especialistas o investigadores para desarrollar IA (doctorados, becas, programas de talento) es 3.3.ADO. 3.3.ADA se reserva para preparar a la población general o a trabajadores para convivir con la IA (alfabetización, reconversión, capacitación de usuarios)."
+    },
+    {
+      "codigo": "3.3.GOB",
+      "alias": "N57650, N61032",
+      "tipo": "presencia",
+      "a": "N57650: no codifica GOB. N61032: duda sobre 'marcos éticos' y no codifica.",
+      "b": "N57650: codifica 3.3.GOB (+, FE) por 'promover el diálogo global en torno a la ética y la confianza de la IA'. N61032: duda y no codifica.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El umbral de GOB no está definido: una mención a 'ética', 'diálogo' o 'marcos éticos' puede leerse como gobernanza. Ambos codificadores dudaron en N61032 y divergieron en N57650.",
+      "propuesta_regla": "3.3.GOB exige un instrumento o arreglo identificable (acuerdo, estándar, principios publicados, código, mesa multiactor) presentado como medida. Una mención genérica a 'ética', 'diálogo' o 'marcos éticos' sin instrumento no basta y no se codifica."
+    },
+    {
+      "codigo": "3.3.GOB",
+      "alias": "N33475",
+      "tipo": "otro",
+      "a": "Un solo 3.3.GOB (+, FG) con la valoración del primer ministro británico.",
+      "b": "Dos 3.3.GOB: (+, FG) y (-, FS) por la crítica de la sociedad civil a la cumbre 'a puerta cerrada'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El libro no dice si un código puede repetirse en una nota con distinta v y voz, ni cómo se articula con FM, que exige el mismo objeto con signos opuestos. Aquí los objetos difieren (la declaración frente al carácter cerrado de la cumbre) y A omitió la crítica.",
+      "propuesta_regla": "Un código aparece una sola vez por nota y objeto. Si el mismo objeto recibe valoraciones opuestas de voces distintas: una entrada con voz=FM y v=A. Si los objetos son distintos (p. ej. la declaración y el proceso de la cumbre), se permite repetir el código, una entrada por objeto, indicándolo en mod.objeto."
+    },
+    {
+      "codigo": "3.1.CON / 3.1.NIN",
+      "alias": "N57650",
+      "tipo": "presencia",
+      "a": "3.1.NIN (por defecto).",
+      "b": "3.1.CON, v=D, FC, calidad 1: 'La IA está todavía en su infancia y le queda un largo camino por recorrer'.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La entrevistada proyecta continuidad ('largo camino', 'los años que vienen', 'más próspero para todos'), pero el libro no fija el umbral mínimo para salir de NIN ni cómo valorar un futuro con cierre favorable (B puso D).",
+      "propuesta_regla": "3.1 se codifica cuando el texto enuncia cómo evolucionará la IA o su ámbito (futuro, condicional proyectivo, 'queda camino', 'preparando el camino'). Un adjetivo del presente ('clave', 'indispensable') sin enunciado de evolución no basta. v valora el futuro proyectado: marcas favorables sobre ese futuro ('más próspero') dan v=+."
+    },
+    {
+      "codigo": "1.1.CORP / 1.1.CIE",
+      "alias": "N69264, N33475",
+      "tipo": "presencia",
+      "a": "N69264: no codifica 1.1.CORP. N33475: codifica 1.1.CIE por 'padres fundadores de esta tecnología' (calidad 1).",
+      "b": "N69264: codifica 1.1.CORP (HONOR 'ha invertido en este ámbito durante años'). N33475: no codifica 1.1.CIE.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La frontera entre empresa impulsora y empresa usuaria de IA, y entre epíteto de paternidad y atribución de avance, no está definida. HONOR integra IA en smartphones pero declara inversión previa, y 'padres fundadores' es una mención de pasada. Ambos son casos límite que el libro resuelve solo con 'ante la duda no codifiques'.",
+      "propuesta_regla": "1.1.* se codifica cuando un sujeto identificable aparece como quien crea, desarrolla, financia o impulsa la IA (verbos de hacer, invertir o fundar; epítetos de paternidad si el texto los usa para explicar el avance). La empresa que solo integra IA en un producto es usuaria y no genera 1.1.CORP, salvo que declare haber invertido en I+D o desarrollado sus propios modelos."
+    },
+    {
+      "codigo": "2.1.INN / 3.1.EST",
+      "alias": "N69264",
+      "tipo": "presencia",
+      "a": "2.1.INN y 3.1.EST con la misma cita: 'la IA en dispositivos está preparando el camino para una era transformadora'.",
+      "b": "Solo 3.1.EST con esa cita.",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La sección 6 autoriza que una frase sustente códigos de D1 y D2, pero no de D2 y D3. La frase es un enunciado prospectivo, propio de 3.1.EST, y no caracteriza lo que la IA es hoy. 'Era transformadora' podría tentar a 2.1.REV, pero sin alcance general.",
+      "propuesta_regla": "Una misma cita puede sustentar códigos de D2 y D3 solo si contiene dos enunciados distintos: 2.1.* exige una caracterización de lo que la IA es hoy (presente) y 3.1.* un enunciado sobre lo que será. Una frase puramente prospectiva ('preparando el camino para una era') va solo en 3.1."
+    },
+    {
+      "codigo": "c5",
+      "alias": "N81517",
+      "tipo": "otro",
+      "a": "c5=noticia.",
+      "b": "c5=otro (anuncio de obra con ficha técnica, horarios y precio de entradas).",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La nota es una gacetilla o cartelera cultural con ficha técnica y entrevista televisiva, sin hecho noticioso ni fuentes. c5 no tiene categoría para anuncios de eventos y define 'noticia' solo por la forma, por lo que A usó la categoría más cercana.",
+      "propuesta_regla": "c5=otro para anuncios de eventos, carteleras, fichas técnicas y gacetillas culturales sin hechos reportados ni fuentes. 'noticia' exige un hecho reportado con fuentes."
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N23935",
+      "etiqueta": "Soberanía sobre el instrumento",
+      "indicador": "2",
+      "definicion": "La IA se construye como instrumento cuyo control último (condiciones de uso y de encendido) define la soberanía estatal frente a las empresas.",
+      "origen": "A",
+      "cita": "Eso no es simplemente regulación de mercado. Es soberanía sobre el instrumento."
+    },
+    {
+      "alias": "N23935",
+      "etiqueta": "Acceso como poder",
+      "indicador": "2",
+      "definicion": "El poder sobre la IA reside en decidir quién accede, bajo qué condiciones y con qué revocabilidad.",
+      "origen": "B",
+      "cita": "En la IA de frontera, el poder no está solo en tener el modelo. Está en decidir quién lo usa, bajo qué condiciones, con qué salvaguardas, en qué país,"
+    },
+    {
+      "alias": "N23935",
+      "etiqueta": "Securitización de la IA",
+      "indicador": "3",
+      "definicion": "La IA pasa a gobernarse con lógica de seguridad nacional y excepción, con opacidad.",
+      "origen": "B",
+      "cita": "La seguridad nacional cumple aquí una función conocida: abre la puerta de la excepción."
+    },
+    {
+      "alias": "N33475",
+      "etiqueta": "Confianza pública como meta",
+      "indicador": "3",
+      "definicion": "El horizonte deseable es una IA segura y confiable ante el público; la confianza (también en N57650: 'ética y confianza') funciona como criterio de legitimidad que ningún código recoge.",
+      "origen": "adjudicador",
+      "cita": "aumentar la confianza del público en la IA, garantizando que sea segura"
+    },
+    {
+      "alias": "N52820",
+      "etiqueta": "Objetividad algorítmica",
+      "indicador": "2",
+      "definicion": "La IA se presenta como decisor superior al humano por estar libre de sesgos emocionales (objetividad como atributo de su naturaleza).",
+      "origen": "adjudicador",
+      "cita": "eliminan los sesgos emocionales que afectan las decisiones de inversión humana"
+    }
+  ],
+  "vacios_del_libro": [
+    "3.4 no está ligado a un 3.3 concreto ni dice si se registra por nota o por código, si admite varios actores o si cuenta quien ya actuó; además 3.4.NES es contradictorio (sección 4: solo prescripción sin sujeto; sección 5: código por defecto con cita vacía).",
+    "No se define si un código puede repetirse en una nota con distinta v o voz (ni su relación con FM), ni si una misma cita puede sustentar códigos de D2 y D3 (la sección 6 solo autoriza D1 y D2).",
+    "3.3 se solapa cuando una medida estatal vinculante prohíbe o limita (REG frente a PRO/CON), la autorregulación empresarial cae entre GOB y CON, y no hay umbral para que 'ética' o 'diálogo' cuenten como GOB.",
+    "`voz` no regula el discurso referido (el columnista relata la posición de una empresa) ni la narración de un comunicado en contenido patrocinado: en N52820 y N69264 ambos codificaron P sobre texto de voz corporativa, mientras que en N23935 el criterio varió.",
+    "`v` depende del tramo citado, pero la regla de cita mínima puede excluir el contrapunto contiguo; además `g` mezcla gravedad ('catastrófico') con modalidad ('potencialmente'), por lo que cae a la vez en G1 y G2, y `resp` no tiene criterio para capacidades de doble uso (RTE, RMA o RDI).",
+    "Variables y modificadores sin criterio: c4 no dice qué actores son 'relevantes para el discurso sobre la IA' en notas tangenciales (A listó 3 en N81517, B 1), c2 no dice cuándo agregar `generica` a otros referentes, mod.ambito de 3.1.EST no tiene vocabulario controlado y 2.1.AGE no aclara si la 'autonomía operativa' ('sustituye tramos de agencia humana', N23935) cuenta; ambos la omitieron."
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "lote": "P006",
+  "desacuerdos": [
+    {
+      "codigo": "2.1.INN",
+      "alias": "N82240",
+      "tipo": "presencia",
+      "a": "2.1.INN, v +, voz P, marca implícita, cita = titular (calidad 1)",
+      "b": "No codificado (por cautela)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La única base es el titular 'el próximo paso de la justicia', que ubica la IA como etapa de una secuencia de modernización más que como hito (lectura alternativa: 3.1.CON). 2.1.INN no fija umbral: no dice si basta un titular con marca implícita ni si la adopción institucional equivale a 'innovación'.",
+      "propuesta_regla": "2.1.INN requiere un fragmento que enuncie a la IA misma como novedad, avance o capacidad ('nueva', 'innovadora', 'capaz de', 'hito'). Que una institución la adopte o la llame 'próximo paso' no basta (eso va en 3.3.ADO, 2.2 o 3.1.CON). Un titular solo sustenta 2.1.INN si contiene ese tipo de término; si no, no codificar."
+    },
+    {
+      "codigo": "3.1.CON / 2.2.CUL",
+      "alias": "N58345",
+      "tipo": "presencia",
+      "a": "3.1.CON, v +, voz FC (director de Scatter Lab: 'dentro de cinco años sería efectivo para ayudar a las personas solitarias')",
+      "b": "2.2.CUL, v +, voz FC (misma frase); sin código 3.1 (deja 3.1.NIN)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La misma frase promete un beneficio futuro de un producto. El libro dice que el daño futuro es D2 ('podría destruir empleos' = 2.3), pero calla sobre el beneficio futuro: A lo llevó a D3, B aplicó la analogía con D2. Además 2.2 no tiene ámbito nítido para compañía emocional o soledad.",
+      "propuesta_regla": "Un beneficio o capacidad futura atribuida a la IA ('será efectiva para', 'permitirá') es D2 (2.2.xxx, con v según marcas), igual que el daño futuro es 2.3. 3.1 se reserva para fragmentos que proyectan el rumbo de la IA o de un ámbito (continuidad, transformación, ruptura, incertidumbre), no la promesa de una función de un producto. Bienestar emocional o soledad: 2.2.CUL (vida cotidiana). Si un fragmento hace ambas cosas, aplicar ambos."
+    },
+    {
+      "codigo": "2.1.AGE",
+      "alias": "N58345",
+      "tipo": "presencia",
+      "a": "No codificado (dudó; cita el encabezado '¿Demasiado humana?' en dudas)",
+      "b": "2.1.AGE, v D, voz P, calidad 1 ('Luda, quien aprendió todo a través del método de aprendizaje profundo, que permite que la inteligencia artificial se desarrolle sin ayuda humana')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La exclusión solo cubre términos técnicos lexicalizados ('aprendizaje automático'), pero el texto trata al chatbot como sujeto que 'dice', 'aprende' y 'responde', y titula '¿Demasiado humana?'. No hay regla sobre verbos de habla de un chatbot ni sobre encabezados retóricos; la lectura de B es defendible y la de A también bajo 'ante la duda, no codifiques'.",
+      "propuesta_regla": "2.1.AGE se codifica cuando hay atribución explícita de mente, voluntad, aprendizaje autónomo o semejanza humana ('quiere', 'aprendió sola', 'demasiado humana', 'sin ayuda humana'). Los verbos de habla o de salida de un chatbot ('dijo', 'respondió') por sí solos no bastan, y un término lexicalizado no cuenta aunque aparezca en la cita. v = D salvo marca valorativa sobre lo 'humano' de la IA."
+    },
+    {
+      "codigo": "2.5.HYP",
+      "alias": "N58345",
+      "tipo": "presencia",
+      "a": "No codificado",
+      "b": "2.5.HYP, v NA, voz P (cierre: 'Teniendo en cuenta lo que dijo Lee Luda, todavía queda trabajo por hacer antes de que se logre este objetivo')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El párrafo final contrapone la confianza de la empresa ('sigue siendo muy positiva') con el desempeño del chatbot, es decir, cuestiona una promesa. El libro pide cuestionar una 'narrativa dominante' pero no aclara si basta la promesa de un solo actor; A omitió por el principio de duda.",
+      "propuesta_regla": "2.5 se codifica cuando la voz del texto o una fuente contradice o pone en duda explícitamente una promesa o advertencia concreta ('todavía queda trabajo', 'no hay evidencia'), aunque provenga de un solo actor; no se exige que la narrativa sea general. Mostrar fallas de un producto sin contraponerlas a una promesa va en 2.1.LIM, no en 2.5."
+    },
+    {
+      "codigo": "3.1.CON",
+      "alias": "N47355",
+      "tipo": "v",
+      "a": "+ (voz FC, marca explícita)",
+      "b": "D (voz FC, marca na)",
+      "causa": "error_codificador",
+      "diagnostico": "El fragmento ('Con el tiempo, el sistema constará de distintos cañones...') es una hoja de ruta sin adjetivos ni verbos valorativos; el paso 1 de 3.1 manda D y prohíbe inferir la valoración desde el tema. A dedujo '+' porque una empresa proyecta crecimiento de su producto."
+    },
+    {
+      "codigo": "2.1.HER",
+      "alias": "N27499",
+      "tipo": "presencia",
+      "a": "2.1.HER, v +, voz FE",
+      "b": "No codificado",
+      "causa": "error_codificador",
+      "diagnostico": "El texto enuncia dos veces la IA como 'herramienta' al servicio de los radiólogos ('estamos desarrollando una herramienta que sirva para los radiólogos'): la definición se cumple de forma literal. B omitió el código aunque lo aplicó en N41757 y N57299, probablemente por contención en una nota secundaria."
+    },
+    {
+      "codigo": "2.1.LIM",
+      "alias": "N27499",
+      "tipo": "presencia",
+      "a": "No codificado (por no sobrecodificar una nota secundaria)",
+      "b": "2.1.LIM, v -, voz FE (herramientas existentes entrenadas con imágenes de EE.UU. o Europa que no representan a la población chilena)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El sesgo de las herramientas existentes está afirmado de forma explícita, por lo que 2.1.LIM aplica. A lo omitió por el tope de 0 a 3 códigos en notas secundarias (principio 6), que choca con el paso 4 ('registra cada código que el texto construya con claridad'). Ambos codificadores superaron 3 códigos sustantivos en esta nota.",
+      "propuesta_regla": "El rango de códigos por tipo de nota es orientativo y nunca justifica omitir un código que el texto construye con claridad y con cita propia; el tope solo se usa para descartar candidatos de calidad 1. Si se supera el rango, anotarlo en dudas."
+    },
+    {
+      "codigo": "1.1.CIE",
+      "alias": "N27499",
+      "tipo": "v",
+      "a": "D, voz P (cita descriptiva: 'el Instituto Milenio iHEALTH trabaja para mejorar la calidad de las imágenes...')",
+      "b": "+, voz P, marca explícita (cita: 'ha trabajado arduamente en mejorar la calidad... gracias a la Inteligencia Artificial')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Dos fragmentos distintos sostienen el mismo código: uno descriptivo y otro con marca favorable ('arduamente'). El libro no dice si un código se registra una o varias veces ni qué fragmento manda para decidir v (solo lo prevé para titular vs cuerpo). La diferencia de v nace de la elección del fragmento, no de la lectura del texto.",
+      "propuesta_regla": "Si varios fragmentos sostienen el mismo código con la misma orientación, se registra una sola vez con el fragmento de marca más explícita y su v (D solo si ningún fragmento tiene marca). Si los fragmentos tienen signos opuestos, se registran dos entradas, cada una con su propio v."
+    },
+    {
+      "codigo": "2.2.SAL; 3.3.ADA (voz)",
+      "alias": "N27499; N57299",
+      "tipo": "voz",
+      "a": "N27499 2.2.SAL: voz P (narración de lo que hace iHEALTH); N57299 3.3.ADA: voz FC (cita textual de García, ACTI)",
+      "b": "N27499 2.2.SAL: voz FE (cita textual de Chabert); N57299 3.3.ADA: voz P (frase 'Las empresas deben capacitar...' del periodista)",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El mismo contenido aparece como cita textual de una fuente y como paráfrasis o narración del periodista. Sin regla sobre cuál citar ni qué voz tiene una paráfrasis, la voz queda determinada por el fragmento elegido. A tampoco es consistente: en N57299 usa FC para 3.3.ADA pero P para el 3.4.EMP que nace del mismo contenido.",
+      "propuesta_regla": "Cuando el contenido proviene de una fuente identificada, citar preferentemente el fragmento textual de esa fuente y asignar su voz. Una paráfrasis del periodista de lo que una fuente dijo o hace ('explica que', 'ha trabajado para', 'recomendó') conserva la voz de la fuente. Se usa P solo si el juicio lo agrega el texto sin atribución (titular, bajada, conectores propios). Los códigos 3.4 heredan la cita y la voz del 3.3."
+    },
+    {
+      "codigo": "3.3.ADO",
+      "alias": "N41757",
+      "tipo": "v",
+      "a": "D, voz P, marca na (el periodista reporta la guía)",
+      "b": "+, voz P, marca explícita (por 'potenciar el aprendizaje activo' y 'mejores prácticas')",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "Los términos de mejora provienen del propio emisor de la medida (el Mineduc), no de un juicio del periodista. El libro dice 'solo reportarla = D' sin aclarar si el autoetiquetado de la medida es marca valorativa; y si lo fuera, la regla de la sección 6 exigiría voz de la fuente (FG), no P como asignó B. Ambas lecturas de v son defendibles hoy.",
+      "propuesta_regla": "En 3.3, el nombre, la finalidad declarada o los calificativos con que el emisor presenta su medida ('para potenciar', 'mejores prácticas') cuentan como marca favorable: v = + con voz de la fuente emisora (FG, FC, etc.) y marca explícita. Es D solo si la nota describe la medida sin calificativos ni finalidad valorativa."
+    },
+    {
+      "codigo": "2.4.USO",
+      "alias": "N57299",
+      "tipo": "presencia",
+      "a": "2.4.USO, v NA, voz P, calidad 1 (bajada: 'conozcan los peligros a los que se exponen al utilizarla de forma poco responsable')",
+      "b": "No codificado",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La bajada liga el peligro a un modo de uso, pero sin fórmula tipo 'depende de'; A misma anotó la cita como débil. El libro exige fórmula 'explícita' sin decir si cláusulas como 'al usarla de forma X' cuentan, ni cómo separar 2.4.USO de las recomendaciones de buen uso (3.3.ADA y 3.3.CON), que son el cuerpo de la nota.",
+      "propuesta_regla": "2.4 se codifica solo con fórmula condicional verbal que ligue un efecto concreto de la IA a un factor ('depende de', 'según cómo', 'siempre que', 'solo si', 'si se usa mal, ...'). Un llamado a 'uso responsable' o una lista de buenas prácticas sin esa fórmula se codifica en 3.3 y no activa 2.4."
+    },
+    {
+      "codigo": "calidad",
+      "alias": "N82240; N47355; N58345",
+      "tipo": "otro",
+      "a": "Misma cita, calidad distinta: 3.4.EST en N82240 (A 1, B 2); 1.2.NEC y 2.2.OTR en N47355 (A 2, B 1); 2.3.DES en N58345 (A 2, B 3 con cita distinta)",
+      "b": "Ver columna A: B usa 2 en 3.4.EST y 1 en 1.2.NEC y 2.2.OTR; usa 3 para una cita vívida de 2.3.DES",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "La escala de calidad solo tiene definiciones vagas (débil, clara, paradigmática), así que la misma cita recibe 1 o 2 según el codificador. Hay además calidad heredada sin criterio en los 3.4, que repiten la cita del 3.3.",
+      "propuesta_regla": "calidad 1: la cita solo sugiere el código o exige inferencia (titular implícito, condicional implícito, frase compartida con otro objeto). calidad 2: la cita contiene por sí sola la marca (adjetivo, verbo, fórmula) que sustenta código y v. calidad 3: además es autocontenida y citable sin contexto; máximo una por nota. Un código 3.4 lleva la misma calidad que el 3.3 que lo origina."
+    }
+  ],
+  "emergentes": [
+    {
+      "etiqueta": "IA como espejo social",
+      "indicador": "2",
+      "definicion": "El sesgo del chatbot se atribuye a la discriminación latente de la sociedad que aportó los datos, no a un defecto técnico ni a mala intención de la empresa. Fuente: codificador A (v D, voz P).",
+      "origen": "A",
+      "alias": "N58345",
+      "cita": "una revelación de la discriminación latente en la sociedad surcoreana"
+    },
+    {
+      "etiqueta": "IA superior al humano",
+      "indicador": "2",
+      "definicion": "La IA se presenta como capaz de lograr lo que ningún humano podría, lo que legitima reemplazar la acción humana en una tarea letal. Valoración +, voz FC.",
+      "origen": "adjudicador",
+      "alias": "N47355",
+      "cita": "Ningún humano podría hacer ese tiro"
+    },
+    {
+      "etiqueta": "Autonomía letal supervisada",
+      "indicador": "2",
+      "definicion": "Un arma autónoma se describe con humano en el circuito por diseño, pero con capacidad plena de autonomía disponible a pedido del Estado; la autonomía queda como opción ajustable, no como riesgo. v D, voz P. Ningún código la recoge (2.1.AGE y 3.3.CON no calzan).",
+      "origen": "adjudicador",
+      "alias": "N47355",
+      "cita": "no dispara hasta que un operador humano emita la orden"
+    },
+    {
+      "etiqueta": "Validación local de IA",
+      "indicador": "1",
+      "definicion": "La IA importada se presenta como sesgada hacia poblaciones de otros países, y se plantea desarrollarla y validarla localmente. Es un significado sobre el origen y la pertinencia territorial, más allá de 1.1.CIE con escala Chile. v D, voz FE.",
+      "origen": "adjudicador",
+      "alias": "N27499",
+      "cita": "queremos avanzar en una tecnología validada en nuestra población local"
+    },
+    {
+      "etiqueta": "Propósito corporativo encubierto",
+      "indicador": "1",
+      "definicion": "Se atribuye a la empresa, en condicional, un propósito de diseño no declarado y moralmente reprochable (fines sexuales con datos obtenidos sin consentimiento claro). Queda en frontera con 1.2.CTR, que B dudó y ninguno codificó. v -, voz P.",
+      "origen": "adjudicador",
+      "alias": "N58345",
+      "cita": "el propósito mismo de la compañía habría sido crear discusiones dirigidas a satisfacer sexualmente a los usuarios de Internet a través del chat"
+    }
+  ],
+  "vacios_del_libro": [
+    "c1 se contradice: 'central' incluye 'aparece en el titular', pero la cláusula de titular o bajada y la exclusión de 'con IA como adjetivo' llevan a secundaria o tangencial. N82240 (IA en titular y un párrafo) y N47355 ('ametralladora con IA') se resolvieron contra la letra en ambos codificadores, con dudas escritas.",
+    "c5 no tiene categoría para comunicados institucionales de organismos públicos (N82240 'con tono de comunicado') ni para notas que promueven el proyecto de quien habla (N27499); 'contenido_patrocinado' solo prevé promoción comercial de empresas.",
+    "3.1 no dice si una hoja de ruta de producto o empresa cuenta como 'futuro proyectado' de la IA: ambos codificaron 3.1.CON en N47355 ('con el tiempo el sistema constará...') pero 3.1.NIN en N46390 (Siri 'debería presentar una actualización'), casos análogos. Tampoco aclara si v de 3.1 valora marcas verbales o deseabilidad del futuro.",
+    "Los ámbitos de 2.2 y 2.3 son asimétricos: 2.2 no tiene seguridad o defensa ni bienestar social, lo que obligó a usar 2.2.OTR (N47355) y estirar 2.2.CUL; y 1.2.NEC se define con necesidades sociales, de modo que una necesidad militar quedó dudosa frente a 1.2.GEO (B lo anotó).",
+    "3.3.CON frente a 3.3.PRO no distingue una recomendación no vinculante ('no deberían asignarse a la IA') de una prohibición; ambos dudaron en N57299. Tampoco dice dónde va la autocorrección de una empresa que detiene su servicio (N58345, ambos PRO con 3.4.EMP), cuando 3.3.GOB incluye la autorregulación.",
+    "voz: no resuelve si un gremio empresarial (ACTI A.G.) es FC o FS ('gremios'), ni si un 'experto' de una consultora (Pacheco) es FE o FC, pese a la regla 'expertos advierten = FE'; ambos usaron FC. En 2.3, resp no tiene regla para sesgo heredado de datos sociales (RTE, RCO o RDI, N58345)."
+  ]
+}

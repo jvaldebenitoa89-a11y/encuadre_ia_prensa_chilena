@@ -1,0 +1,136 @@
+{
+  "lote": "P002",
+  "desacuerdos": [
+    {
+      "alias": "N45439",
+      "codigo": "c1",
+      "tipo": "c1",
+      "a": "secundaria",
+      "b": "central",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El titular tiene a la IA como sujeto (\"Inteligencia artificial sorprende...\") y la bajada y el cuerpo la repiten, pero el tema es un sketch de la Teletón. La definición de central (\"aparece en el titular o articula el argumento\") es más laxa que \"la IA es el tema\", y las dos lecturas son defendibles. El desacuerdo arrastra el número de códigos (B 2.1.INN+2.1.HER, A solo 2.1.INN).",
+      "propuesta_regla": "Central: la IA es el sujeto de la acción noticiosa del titular (la IA \"hace\", \"provoca\" o \"sorprende\") o articula el argumento; no basta con que aparezca en el titular. Secundaria: la IA es el medio o recurso de un hecho cuyo sujeto es otro (\"X lanza app con IA\") y el titular o el texto construyen algún sentido sobre ella. Tangencial: solo la nombra como etiqueta."
+    },
+    {
+      "alias": "N45439",
+      "codigo": "2.1.HER",
+      "tipo": "presencia",
+      "a": "ausente",
+      "b": "2.1.HER D",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "\"Mediante el uso de la inteligencia artificial (IA), Don Francisco apareció...\" enuncia a la IA como medio al servicio de un fin humano, que es la definición de HER. Pero el libro define tangencial como \"con IA\" adjetivo de un evento y no dice cuándo una mención instrumental pasa a ser HER. A probablemente aplicó \"ante la duda, no codifiques\" por haber elegido secundaria.",
+      "propuesta_regla": "2.1.HER exige que el fragmento nombre la función que la IA cumple para un fin humano (\"para\", \"permite\", \"ayuda a\", \"mediante el uso de IA, X logró Y\"). La etiqueta \"con IA\" o \"que utiliza IA\" sin función atribuida a la IA no se codifica. Si la función la cumple la herramienta y no la IA, no es HER."
+    },
+    {
+      "alias": "N88664",
+      "codigo": "1.1.CORP",
+      "tipo": "presencia",
+      "a": "ausente (IBM solo en c4)",
+      "b": "1.1.CORP D, escala global",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "\"IBM desarrolló la DeepBlue\" calza literalmente con 1.1.CORP, pero el libro no dice si D1 se refiere al origen de la IA como campo o al desarrollo de cualquier sistema puntual. Aquí además la columna llama a DeepBlue \"IA por fuerza bruta\", es decir, la desinfla. B asignó escala \"global\" sin base textual. Ambos codificaron 1.3.TRA con duda por la misma razón.",
+      "propuesta_regla": "D1 (1.1, 1.2, 1.3) se aplica solo al origen o impulso de la IA como tecnología o campo, no al de un producto, startup o sistema puntual. El desarrollo de un sistema histórico (p. ej. DeepBlue) se codifica en 1.1 solo si el texto lo presenta como hito del origen de la IA; si no, no hay 1.1 y 1.3 es SIN. La escala es no_especificada si el texto no localiza al agente."
+    },
+    {
+      "alias": "N86934",
+      "codigo": "3.3.CON / 3.3.GOB",
+      "tipo": "presencia",
+      "a": "3.3.CON D FC",
+      "b": "3.3.GOB D FC",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El fragmento es una medida unilateral de la empresa (un aviso para personas con pensamientos suicidas). GOB incluye \"autorregulación\" y CON incluye \"límites y supervisión\", y el libro no ubica los avisos, filtros o moderación que una empresa aplica a su propio producto. A y B coincidieron en v, voz y 3.4.EMP, y solo difieren en el código.",
+      "propuesta_regla": "Medida unilateral de una empresa sobre su propio producto (aviso, filtro, moderación, límite de uso) = 3.3.CON. 3.3.GOB exige un compromiso, estándar o código de conducta de alcance general, sectorial o multiactor, no una decisión de una sola empresa."
+    },
+    {
+      "alias": "N86934",
+      "codigo": "3.3.ADA (+ 3.4.NES)",
+      "tipo": "presencia",
+      "a": "ausente",
+      "b": "3.3.ADA + con 3.4.NES",
+      "causa": "juicio_legitimo",
+      "diagnostico": "\"Ha llevado a muchos a pedir una mejor protección [...] y la necesidad de crear conciencia\" es una demanda reportada de un colectivo difuso, y el texto no dice quién debe ejecutarla. Codificarla como ADA es defendible (alfabetizar) y omitirla también (nadie prescribe; el periodista solo reporta). 3.4.NES de B es consecuencia directa de ADA."
+    },
+    {
+      "alias": "N57405",
+      "codigo": "c2",
+      "tipo": "otro",
+      "a": "sistemas_especificos",
+      "b": "generica",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "El texto solo dice \"herramienta que utiliza inteligencia artificial\" y no dice qué hace la IA. El libro define sistemas_especificos como \"aprendizaje automático aplicado a un fin concreto\" y genérica como \"la IA sin especificar\", sin criterio para una herramienta con fin concreto cuya IA no se describe. En N20183 ambos usaron generica ante un caso casi idéntico, así que A tampoco es consistente.",
+      "propuesta_regla": "c2 = sistemas_especificos solo si el texto describe qué función cumple la IA (\"detectar fallas\", \"reconocer rostros\"). Si solo dice \"IA\" o \"herramienta que utiliza IA\" sin función atribuida a la IA, es generica. No inferir el tipo de sistema desde el producto."
+    },
+    {
+      "alias": "N29054",
+      "codigo": "2.1.INN",
+      "tipo": "presencia",
+      "a": "ausente",
+      "b": "2.1.INN + P (bajada)",
+      "causa": "error_codificador",
+      "diagnostico": "La bajada dice \"una inteligencia artificial capaz de detectar fallas en tiempo real [...] y promete cambiar la forma en que las empresas gestionan...\", con capacidad tecnológica y promesa verbalizadas, lo que cumple 2.1.INN. A omitió la bajada, aunque sí aplicó INN con la bajada en N45439. Ninguno codificó 2.1.MER, que también cabía (inversión de US$18 mil millones, mercado de US$15.000 millones)."
+    },
+    {
+      "alias": "N88664",
+      "codigo": "2.1.HER",
+      "tipo": "presencia",
+      "a": "2.1.HER D (calidad 1)",
+      "b": "ausente",
+      "causa": "juicio_legitimo",
+      "diagnostico": "\"Validar y dimensionar cuánto valor vamos a generar [...] con esta tecnología\" presenta la IA como medio para crear valor de negocio. Es defendible como HER, y también omitirlo porque ese contenido ya está recogido en 2.2.ECO y 3.3.ADO. La cita de A es débil (calidad 1)."
+    },
+    {
+      "alias": "N72175",
+      "codigo": "c3",
+      "tipo": "otro",
+      "a": "cultura_medios",
+      "b": "trabajo_economia",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "c3 es \"el ámbito donde la nota ubica a la IA\", pero en una nota tangencial la IA no tiene ámbito propio. La huelga de actores de Hollywood es a la vez un conflicto laboral y una industria cultural, y el libro no dice si c3 sigue a la nota o a la IA.",
+      "propuesta_regla": "c3 = ámbito donde la nota usa o produce el efecto de la IA. En notas tangenciales, donde la IA no tiene ámbito propio, c3 = ámbito del problema que enmarca la nota (conflicto laboral = trabajo_economia), no el sector donde ocurre (cine)."
+    },
+    {
+      "alias": "N64266, N88664, N29054, N86934",
+      "codigo": "c4",
+      "tipo": "otro",
+      "a": "p. ej. \"Congreso Futuro\"; sin Droppelman, Google ni Gobierno de Bélgica",
+      "b": "p. ej. \"Comisión Desafíos del Futuro\"; con Droppelman, Google y Gobierno de Bélgica",
+      "causa": "ambiguedad_libro",
+      "diagnostico": "c4 difiere en 4 de las 8 notas. Las diferencias son si se incluye al autor de una columna, a una empresa solo mencionada de pasada (Google), si se normaliza al gobierno o a la persona (Gobierno de Bélgica o Mathieu Michel), y si se anota el evento o la institución (Congreso Futuro o Comisión). El libro solo dice \"los más relevantes para el discurso\".",
+      "propuesta_regla": "c4: hasta 3 actores que el texto presenta como agentes del discurso sobre la IA (quien desarrolla, regula, usa o advierte), ordenados por relevancia. Se normalizan por nombre oficial de la institución. No se anotan eventos ni se incluye al autor de una columna salvo que sea la fuente central. Una empresa nombrada solo como empleador previo no se incluye."
+    }
+  ],
+  "emergentes": [
+    {
+      "alias": "N45439",
+      "etiqueta": "Recreación digital de personas",
+      "indicador": "2",
+      "definicion": "La IA se construye como capaz de reconstruir la imagen y voz de una persona de otra época y de hacerla dialogar con su yo actual. Es una simulación emotiva de lo humano, v + y voz P, que no cabe en INN ni en AGE.",
+      "cita": "expresó el Don Francisco de hace 46 años con el trabajo de la IA.",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N86934",
+      "etiqueta": "Compañía afectiva artificial",
+      "indicador": "2",
+      "definicion": "El chatbot se construye como refugio e interlocutor emocional que sustituye vínculos humanos y genera dependencia (v -, voz P). El daño no es un error técnico ni una falla (LIM), ni una capacidad humana atribuida (AGE).",
+      "cita": "terminó buscando \"refugio\" en un chatbot llamado \"Eliza\"",
+      "origen": "adjudicador"
+    },
+    {
+      "alias": "N88664",
+      "etiqueta": "IA como rótulo de cómputo",
+      "indicador": "2",
+      "definicion": "La nota redefine el concepto: lo que hoy se llama IA sería fuerza bruta de cómputo y datos, no inteligencia (v -, voz P). Es una deflación de la naturaleza de la IA, distinta de 2.5.HYP (que cuestiona promesas) y de 2.1.LIM (que trata fallas).",
+      "cita": "Hoy a esta hazaña se le llama Inteligencia Artificial por fuerza bruta.",
+      "origen": "adjudicador"
+    }
+  ],
+  "vacios_del_libro": [
+    "2.3 no tiene un ámbito de salud o bienestar psicológico aunque 2.2 sí tiene SAL: en N86934 A y B usaron 2.3.OTR con la misma etiqueta (\"salud mental y suicidio\"). Además `resp` admite un solo valor, pero la nota atribuye el daño a la tecnología (la viuda) y a los editores de contenido o la empresa (el secretario de Estado), y B lo anotó como duda.",
+    "D1 no dice si se aplica al origen de la IA como campo o al de un producto, startup o sistema puntual. N29054 narra con detalle la génesis de una startup y nadie codificó 1.1 ni 1.2, y en N88664 el desacuerdo sobre 1.1.CORP se debe a esto. 1.3.TRA no tiene umbral: ambos lo aplicaron a una anécdota de aniversario (DeepBlue) pese a que 1.3.IRR dice que si no se narra de dónde viene la IA es SIN.",
+    "C1 contradice su propio criterio, porque define central como \"el tema\" y a la vez como \"aparece en el titular\". Falta separar la IA como sujeto de la nota de la IA como recurso de un hecho cuyo tema es otro, y falta decir cuándo \"mediante el uso de IA\" o \"que utiliza IA\" ya es 2.1.HER y no mención tangencial.",
+    "c5 contenido_patrocinado no tiene criterio para una nota promocional de fuente única sin llamado comercial ni firma visible. A y B coincidieron en tratar N29054 (solo voces de la startup) como noticia y N20183 (solo el CEO) como contenido_patrocinado, sin una regla que justifique la diferencia, y ambos dejaron la duda anotada.",
+    "3.3 no tiene umbral de especificidad ni regla de frontera para medidas de una sola empresa. Ambos codificaron 3.3.REG con duda para \"aclarar las responsabilidades\" (sin ley ni norma), y CON y GOB quedaron sin deslindar para el aviso de Chai. Tampoco se distingue 3.1 de 3.3.ADO cuando \"proyecta que las empresas comiencen a incorporar la IA\" es a la vez proyección y exhortación, ni qué hacer con una proyección de futuro atribuida a terceros (\"su éxito futuro dependerá de... IA\").",
+    "2.4 exige fórmula condicional explícita, pero ambos codificaron 2.4.CTX en N88664 con \"sin tener clara la estrategia [...] conlleva al fracaso\". Además c2, c3 y c4 carecen de reglas para notas tangenciales y de normalización de actores, y c4 difirió en 4 de 8 notas."
+  ]
+}
